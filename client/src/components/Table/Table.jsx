@@ -10,7 +10,7 @@ import TableCell from "@material-ui/core/TableCell";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 
-import tableStyle from "assets/jss/material-dashboard-pro-react/components/tableStyle";
+import style from "assets/jss/material-kit-pro-react/components/tableStyle.jsx";
 
 function CustomTable({ ...props }) {
   const {
@@ -43,9 +43,9 @@ function CustomTable({ ...props }) {
                   cx({
                     [customHeadCellClasses[
                       customHeadClassesForCells.indexOf(key)
-                    ]]: customHeadClassesForCells.indexOf(key) !== -1,
-                    [classes.tableShoppingHead]: tableShopping,
-                    [classes.tableHeadFontSize]: !tableShopping
+                    ]]:
+                      customHeadClassesForCells.indexOf(key) !== -1,
+                    [classes.tableShoppingHead]: tableShopping
                   });
                 return (
                   <TableCell className={tableCellClasses} key={key}>
@@ -105,6 +105,18 @@ function CustomTable({ ...props }) {
                     className={classes.tableCell}
                     colSpan={prop.colspan}
                   />
+                  <TableCell
+                    className={classes.tableCell + " " + classes.tableCellTotal}
+                  >
+                    Total
+                  </TableCell>
+                  <TableCell
+                    className={
+                      classes.tableCell + " " + classes.tableCellAmount
+                    }
+                  >
+                    {prop.amount}
+                  </TableCell>
                   <TableCell
                     className={classes.tableCell + " " + classes.right}
                     colSpan={prop.col.colspan}
@@ -184,4 +196,4 @@ CustomTable.propTypes = {
   tableShopping: PropTypes.bool
 };
 
-export default withStyles(tableStyle)(CustomTable);
+export default withStyles(style)(CustomTable);

@@ -1,194 +1,98 @@
+/* eslint-disable */
 import React from "react";
-import classNames from "classnames";
+// nodejs library to set properties for components
 import PropTypes from "prop-types";
-// import { Manager, Target, Popper } from "react-popper";
+// react components for routing our app without refresh
+import { Link } from "react-router-dom";
 
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-import MenuItem from "@material-ui/core/MenuItem";
-import MenuList from "@material-ui/core/MenuList";
-import ClickAwayListener from "@material-ui/core/ClickAwayListener";
-import Paper from "@material-ui/core/Paper";
-import Grow from "@material-ui/core/Grow";
-import Hidden from "@material-ui/core/Hidden";
-import Popper from "@material-ui/core/Popper";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
 
 // @material-ui/icons
-import Person from "@material-ui/icons/Person";
-import Notifications from "@material-ui/icons/Notifications";
-import Dashboard from "@material-ui/icons/Dashboard";
-import Search from "@material-ui/icons/Search";
+import PersonAdd from "@material-ui/icons/PersonAdd";
 
 // core components
-import CustomInput from "components/CustomInput/CustomInput.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
-import headerLinksStyle from "assets/jss/material-dashboard-pro-react/components/headerLinksStyle";
+import headerLinksStyle from "assets/jss/material-kit-pro-react/components/headerLinksStyle.jsx";
 
-class HeaderLinks extends React.Component {
-  state = {
-    open: false
+function HeaderLinks({ ...props }) {
+  const easeInOutQuad = (t, b, c, d) => {
+    t /= d / 2;
+    if (t < 1) return c / 2 * t * t + b;
+    t--;
+    return -c / 2 * (t * (t - 2) - 1) + b;
   };
-  handleClick = () => {
-    this.setState({ open: !this.state.open });
+
+  const smoothScroll = (e, target) => {
+    if (window.location.pathname === "/sections") {
+      var isMobile = navigator.userAgent.match(
+        /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
+      );
+      if (isMobile) {
+        // if we are on mobile device the scroll into view will be managed by the browser
+      } else {
+        e.preventDefault();
+        var targetScroll = document.getElementById(target);
+        scrollGo(document.documentElement, targetScroll.offsetTop, 1250);
+      }
+    }
   };
-  handleClose = () => {
-    this.setState({ open: false });
+  const scrollGo = (element, to, duration) => {
+    var start = element.scrollTop,
+      change = to - start,
+      currentTime = 0,
+      increment = 20;
+
+    var animateScroll = function() {
+      currentTime += increment;
+      var val = easeInOutQuad(currentTime, start, change, duration);
+      element.scrollTop = val;
+      if (currentTime < duration) {
+        setTimeout(animateScroll, increment);
+      }
+    };
+    animateScroll();
   };
-  render() {
-    const { classes } = this.props;
-    const { open } = this.state;
-    const searchButton = classes.top + " " + classes.searchButton;
-    const dropdownItem = classNames(classes.dropdownItem, classes.primaryHover);
-    const managerClasses = classNames({
-      [classes.managerClasses]: true
-    });
-    return (
-      <div>
-        <CustomInput
-          formControlProps={{
-            className: classes.top + " " + classes.search
-          }}
-          inputProps={{
-            placeholder: "Search",
-            inputProps: {
-              "aria-label": "Search",
-              className: classes.searchInput
-            }
-          }}
-        />
-        <Button
-          color="white"
-          aria-label="edit"
-          justIcon
-          round
-          className={searchButton}
-        >
-          <Search
-            className={classes.headerLinksSvg + " " + classes.searchIcon}
-          />
-        </Button>
-        <Button
-          color="transparent"
-          simple
-          aria-label="Dashboard"
-          justIcon
-          className={classes.buttonLink}
-          muiClasses={{
-            label: ""
-          }}
-        >
-          <Dashboard className={classes.headerLinksSvg + " " + classes.links} />
-          <Hidden mdUp implementation="css">
-            <span className={classes.linkText}>{"Dashboard"}</span>
-          </Hidden>
-        </Button>
-        <div className={managerClasses}>
+  const { classes } = props;
+  return (
+    <List className={classes.list + " " + classes.mlAuto}>
+      <ListItem className={classes.listItem}>
+        <Link to="/login-page" className={classes.dropdownLink}>
+          Login
+        </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Link to="/signup-page">
           <Button
-            color="transparent"
-            justIcon
-            aria-label="Notifications"
-            aria-owns={open ? "menu-list" : null}
-            aria-haspopup="true"
-            onClick={this.handleClick}
-            className={classes.buttonLink}
-            muiClasses={{
-              label: ""
-            }}
-            buttonRef={node => {
-              this.anchorEl = node;
-            }}
+              color={window.innerWidth < 960 ? "info" : "white"}
+              className={classes.navButton}
+              round
           >
-            <Notifications
-              className={classes.headerLinksSvg + " " + classes.links}
-            />
-            <span className={classes.notifications}>5</span>
-            <Hidden mdUp implementation="css">
-              <span onClick={this.handleClick} className={classes.linkText}>
-                {"Notification"}
-              </span>
-            </Hidden>
+            <PersonAdd className={classes.icons} /> Register
           </Button>
-          <Popper
-            open={open}
-            anchorEl={this.anchorEl}
-            transition
-            disablePortal
-            placement="bottom"
-            className={classNames({
-              [classes.popperClose]: !open,
-              [classes.popperResponsive]: true,
-              [classes.popperNav]: true
-            })}
-          >
-            {({ TransitionProps }) => (
-              <Grow
-                {...TransitionProps}
-                id="menu-list"
-                style={{ transformOrigin: "0 0 0" }}
-              >
-                <Paper className={classes.dropdown}>
-                  <ClickAwayListener onClickAway={this.handleClose}>
-                    <MenuList role="menu">
-                      <MenuItem
-                        onClick={this.handleClose}
-                        className={dropdownItem}
-                      >
-                        {"Mike John responded to your email"}
-                      </MenuItem>
-                      <MenuItem
-                        onClick={this.handleClose}
-                        className={dropdownItem}
-                      >
-                        {"You have 5 new tasks"}
-                      </MenuItem>
-                      <MenuItem
-                        onClick={this.handleClose}
-                        className={dropdownItem}
-                      >
-                        {"You're now friend with Andrew"}
-                      </MenuItem>
-                      <MenuItem
-                        onClick={this.handleClose}
-                        className={dropdownItem}
-                      >
-                        {"Another Notification"}
-                      </MenuItem>
-                      <MenuItem
-                        onClick={this.handleClose}
-                        className={dropdownItem}
-                      >
-                        {"Another One"}
-                      </MenuItem>
-                    </MenuList>
-                  </ClickAwayListener>
-                </Paper>
-              </Grow>
-            )}
-          </Popper>
-        </div>
-        <Button
-          color="transparent"
-          aria-label="Person"
-          justIcon
-          className={classes.buttonLink}
-          muiClasses={{
-            label: ""
-          }}
-        >
-          <Person className={classes.headerLinksSvg + " " + classes.links} />
-          <Hidden mdUp implementation="css">
-            <span className={classes.linkText}>{"Profile"}</span>
-          </Hidden>
-        </Button>
-      </div>
-    );
-  }
+        </Link>
+    </ListItem>
+    </List>
+  );
 }
 
+HeaderLinks.defaultProps = {
+  hoverColor: "primary"
+};
+
 HeaderLinks.propTypes = {
-  classes: PropTypes.object.isRequired,
-  rtlActive: PropTypes.bool
+  dropdownHoverColor: PropTypes.oneOf([
+    "dark",
+    "primary",
+    "info",
+    "success",
+    "warning",
+    "danger",
+    "rose"
+  ])
 };
 
 export default withStyles(headerLinksStyle)(HeaderLinks);

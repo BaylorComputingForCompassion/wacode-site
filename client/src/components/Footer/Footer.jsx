@@ -1,60 +1,45 @@
+/* eslint-disable */
 import React from "react";
+// nodejs library to set properties for components
 import PropTypes from "prop-types";
-import cx from "classnames";
-
+// nodejs library that concatenates classes
+import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
+// @material-ui/icons
+import Favorite from "@material-ui/icons/Favorite";
 
-import footerStyle from "assets/jss/material-dashboard-pro-react/components/footerStyle";
+import footerStyle from "assets/jss/material-kit-pro-react/components/footerStyle.jsx";
 
-function Footer({ ...props }) {
-  const { classes, fluid, white } = props;
-  var container = cx({
-    [classes.container]: !fluid,
-    [classes.containerFluid]: fluid,
-    [classes.whiteColor]: white
+function Footer(props) {
+  const { children, content, classes, theme, big, className } = props;
+  const themeType =
+    theme === "transparent" || theme == undefined ? false : true;
+  const footerClasses = classNames({
+    [classes.footer]: true,
+    [classes[theme]]: themeType,
+    [classes.big]: big || children !== undefined,
+    [className]: className !== undefined
   });
-  var anchor =
-    classes.a +
-    cx({
-      [" " + classes.whiteColor]: white
-    });
-  var block = cx({
-    [classes.block]: true,
-    [classes.whiteColor]: white
+  const aClasses = classNames({
+    [classes.a]: true
   });
+
   return (
-    <footer className={classes.footer}>
-      <div className={container}>
-        <div className={classes.left}>
-          <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.baylor.edu/lib/index.php?id=98506"
-                className={block}
-              >
-                {"Contact Us"}
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.baylor.edu/lib/factech/index.php?id=30385"
-                className={block}
-              >
-                {"About Us"}
-              </a>
-            </ListItem>
-          </List>
-        </div>
-        <p className={classes.right}>
-          &copy; {1900 + new Date().getYear()}{" "}
-          <a href="https://github.com/MarioLopezBaylor" className={anchor}>
-            {"Mario Lopez & Sean Blonien"}
-          </a>
-          {", made with ❤️ in Waco, TX"}
-        </p>
+    <footer className={footerClasses}>
+      <div className={classes.container}>
+        {children !== undefined ? (
+          <div>
+            <div className={classes.content}>{children}</div>
+            <hr />
+          </div>
+        ) : (
+          " "
+        )}
+        {content}
+        <div className={classes.clearFix} />
       </div>
     </footer>
   );
@@ -62,9 +47,9 @@ function Footer({ ...props }) {
 
 Footer.propTypes = {
   classes: PropTypes.object.isRequired,
-  fluid: PropTypes.bool,
-  white: PropTypes.bool,
-  rtlActive: PropTypes.bool
+  theme: PropTypes.oneOf(["dark", "white", "transparent"]),
+  big: PropTypes.bool,
+  content: PropTypes.node.isRequired
 };
 
 export default withStyles(footerStyle)(Footer);

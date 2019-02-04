@@ -2,6 +2,7 @@
   "name": "cts-web-app-backend",
   "version": "1.0.0",
   "description": "CTS Web App Backend",
+  "repository": "https://github.com/MarioLopezBaylor/wacode-site.git",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

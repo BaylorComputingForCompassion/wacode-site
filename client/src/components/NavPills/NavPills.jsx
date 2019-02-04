@@ -5,7 +5,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
 
-// material-ui components
+// @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
@@ -14,7 +14,7 @@ import Tabs from "@material-ui/core/Tabs";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 
-import navPillsStyle from "assets/jss/material-dashboard-pro-react/components/navPillsStyle.jsx";
+import navPillsStyle from "assets/jss/material-kit-pro-react/components/navPillsStyle.jsx";
 
 class NavPills extends React.Component {
   constructor(props) {
@@ -83,7 +83,7 @@ class NavPills extends React.Component {
     const tabContent = (
       <div className={classes.contentWrapper}>
         <SwipeableViews
-          axis={direction === "x"}
+          axis={direction === "rtl" ? "x-reverse" : "x"}
           index={this.state.active}
           onChangeIndex={this.handleChangeIndex}
         >

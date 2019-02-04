@@ -1,19 +1,22 @@
 import React from "react";
+// nodejs library to set properties for components
 import PropTypes from "prop-types";
-import cx from "classnames";
+// nodejs library that concatenates classes
+import classNames from "classnames";
 
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import Button from "@material-ui/core/Button";
 
-import paginationStyle from "assets/jss/material-dashboard-pro-react/components/paginationStyle.jsx";
+import paginationStyle from "assets/jss/material-kit-pro-react/components/paginationStyle.jsx";
 
 function Pagination({ ...props }) {
-  const { classes, pages, color } = props;
+  const { classes, pages, color, className } = props;
+  const paginationClasses = classNames(classes.pagination, className);
   return (
-    <ul className={classes.pagination}>
+    <ul className={paginationClasses}>
       {pages.map((prop, key) => {
-        const paginationLink = cx({
+        const paginationLink = classNames({
           [classes.paginationLink]: true,
           [classes[color]]: prop.active,
           [classes.disabled]: prop.disabled
@@ -21,13 +24,18 @@ function Pagination({ ...props }) {
         return (
           <li className={classes.paginationItem} key={key}>
             {prop.onClick !== undefined ? (
-              <Button onClick={prop.onClick} className={paginationLink}>
+              <Button
+                onClick={prop.onClick}
+                className={paginationLink}
+                disabled={prop.disabled}
+              >
                 {prop.text}
               </Button>
             ) : (
               <Button
                 onClick={() => console.log("you've clicked " + prop.text)}
                 className={paginationLink}
+                disabled={prop.disabled}
               >
                 {prop.text}
               </Button>
@@ -49,10 +57,8 @@ Pagination.propTypes = {
     PropTypes.shape({
       active: PropTypes.bool,
       disabled: PropTypes.bool,
-      text: PropTypes.oneOfType([
-        PropTypes.number,
-        PropTypes.oneOf(["PREV", "NEXT", "..."])
-      ]).isRequired,
+      text: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+        .isRequired,
       onClick: PropTypes.func
     })
   ).isRequired,

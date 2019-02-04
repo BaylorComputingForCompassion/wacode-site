@@ -1,37 +1,20 @@
-# [Material Dashboard PRO React](https://demos.creative-tim.com/material-dashboard-pro-react/#/dashboard) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fcreativetimofficial.github.io%2Fmaterial-dashboard-pro-react%2F%23%2Fdashboard&text=Material%20Dashboard%20PRO%20React%20-%20Premium%20Material-UI%20Admin%20Template&original_referer=https%3A%2F%2Fdemos.creative-tim.com%2Fmaterial-dashboard-pro-react%2F%3F_ga%3D2.234372891.44370326.1533641128-1803433978.1528781151&via=creativetim&hashtags=react%2Cmaterial-ui)
+# [Material Kit PRO React](https://demos.creative-tim.com/material-kit-pro-react) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Material%20Kit%20PRO%20is%20a%20Bootstrap%20UI%20Kit%20with%20a%20fresh,%20new%20design%20inspired%20by%20Google's%20Material%20Design%20%E2%9D%A4%EF%B8%8Fhttps%3A//demos.creative-tim.com/material-kit-pro/presentation.html%20%23bootstrap%20%23material%20%23design%20%23uikit%20%23premium%20%20via%20%40CreativeTim)
 
 
+ ![version](https://img.shields.io/badge/version-1.2.0-blue.svg)  [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/ct-material-kit-pro-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/ct-material-kit-pro-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
-![version](https://img.shields.io/badge/version-1.3.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/ct-material-dashboard-pro-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/ct-material-dashboard-pro-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-material-dashboard-pro/issues-react?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim/material-dashboard) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
+![Product Presentation Image](https://s3.amazonaws.com/creativetim_bucket/products/89/original/opt_mkp_react_thumbnail.jpg)
 
-![Product Gif](./src/assets/github/material-dashboard-pro-react.gif)
+**[Material Kit PRO React](https://demos.creative-tim.com/material-kit-pro-react/#/components)** is a beautiful resource built for Material Design. It was made over the powerful Material-UI. We used and have redesigned all components to make it look flat, minimalist and easy to use. We are proud of this new Material-UI skin and the possibilities for customisation.
 
-Material Dashboard PRO React is a Premium Material-UI Admin with a fresh, new design inspired by Google's Material Design. We are very excited to introduce our take on the material concepts through an easy to use and beautiful set of components. Material Dashboard PRO React was built over the popular Material-UI framework.
+Using it is very simple and it will enable you to refresh you classic looking application. To get the desired effect you will also need to integrate ReactJS plugins that take a little bit more effort. In the end the result will be worth it.
 
-Material Dashboard PRO React makes use of light, surface and movement. The general layout resembles sheets of paper following multiple different layers, so that the depth and order is obvious. The navigation stays mainly on the left sidebar and the content is on the right inside the main panel.
+**[Material Kit PRO React](https://demos.creative-tim.com/material-kit-pro-react/#/components)** uses a framework built by our friend Olivier and his team - [Material-UI](https://material-ui.com/) and was created starting with [create-react-app](https://github.com/facebook/create-react-app), who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to his team for the effort and forward thinking they put into it.
 
-Material Dashboard PRO React comes with 7 color filter choices for the links of the Sidebar (`blue`, `green`, `orange`, `red`, `purple`, `rose`, `white`), 3 filter color choices for background of the Sidebar (`white`, `blue`, `black`), an option to have a background image on the Sidebar and 6 color filter choices the card headers (`blue`, `green`, `orange`, `red`, `purple`, `rose`).
-
-Material Dashboard PRO React was created with [create-react-app](https://github.com/facebook/create-react-app) and it uses a framework built by our friend [Olivier - Material-UI](https://github.com/mui-org/material-ui), who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to his team for the effort and forward thinking they put into it.
-
-#### Special thanks
-During the development of this dashboard, we have used many existing resources from awesome developers. We want to thank them for providing their tools open source:
-+ [Perfect-scrollbar](https://github.com/utatti/perfect-scrollbar) for the slim and beautiful scrollbars.
-+ [React-chartist](https://github.com/fraserxu/react-chartist) for the wonderful charts.
-+ [React-datetime](https://github.com/YouCanBookMe/react-datetime) for the easy to use date and time pickers.
-+ [React-big-calendar](https://github.com/intljusticemission/react-big-calendar) for the a wonderful calendar.
-+ [React-bootstrap-sweetalert](https://github.com/djorg83/react-bootstrap-sweetalert) for the wonderful alerts.
-+ [React-google-maps](https://github.com/tomchentw/react-google-maps) for the nice and easy to use map components.
-+ [React-jvectormap](https://github.com/kadoshms/react-jvectormap) for the nice vector map components.
-+ [React-nouislider](https://github.com/algolia/react-nouislider) for the nice and clean slider.
-+ [React-tables](https://react-table.js.org/#/story/simple-table) for the nice and clean slider.
-+ [React-tagsinput](https://github.com/olahol/react-tagsinput) for the easy and beatiful to use tags components.
-
-Let us know your thoughts below. And good luck with development!
 
 ## Table of Contents
 
-* [Versions](#versions)
+
 * [Demo](#demo)
 * [Quick Start](#quick-start)
 * [Documentation](#documentation)
@@ -44,57 +27,46 @@ Let us know your thoughts below. And good luck with development!
 * [Useful Links](#useful-links)
 
 
-## Versions
 
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/html.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-pro)
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/react.svg" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-pro-react)
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-dashboard-pro)
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/angular.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-pro-angular2)
-
-
-| HTML | React | Vue | Angular |
-| --- | --- | --- | --- |
-| [![Material Dashboard Pro HTML](https://s3.amazonaws.com/creativetim_bucket/products/51/thumb/opt_mdp_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-pro) | [![Material Dashboard Pro React](https://s3.amazonaws.com/creativetim_bucket/products/80/thumb/opt_mdp_react_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-pro-react)  | [![Vue Material Dashboard Pro](https://s3.amazonaws.com/creativetim_bucket/products/87/thumb/opt_mdp_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard-pro)  | [![Material Dashboard Pro Angular](https://s3.amazonaws.com/creativetim_bucket/products/55/thumb/opt_mdp_angular_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-pro-angular2)
 
 ## Demo
 
-- [Start page](https://demos.creative-tim.com/material-dashboard-pro-react/#/dashboard)
-- [User profile page](https://demos.creative-tim.com/material-dashboard-pro-react/#/user-page)
-- [Tables page ](https://demos.creative-tim.com/material-dashboard-pro-react/#/tables/extended-tables)
-- [Maps Page](https://demos.creative-tim.com/material-dashboard-pro-react/#/maps/google-maps)
-- [Notifications page](https://demos.creative-tim.com/material-dashboard-pro-react/#/components/notifications)
+- [Index Page](https://demos.creative-tim.com/material-kit-pro-react/#/components)
+- [Buttons Section](https://demos.creative-tim.com/material-kit-pro-react/#/components#buttons)
+- [Navigation Section](https://demos.creative-tim.com/material-kit-pro-react/#/components#navigation)
+- [Notifications Section](https://demos.creative-tim.com/material-kit-pro-react/#/components#notifications)
+- [User profile page](https://demos.creative-tim.com/material-kit-pro-react/#/profile-page)
+- [Landing page](https://demos.creative-tim.com/material-kit-pro-react/#/landing-page)
 
-[View More](https://demos.creative-tim.com/material-dashboard-pro-react/#/dashboard).
+[View More](https://demos.creative-tim.com/material-kit-pro-react/#/components).
 
 
 ## Quick start
 
-Quick start options:
-
-- Buy from [Creative Tim](https://www.creative-tim.com/product/material-dashboard-pro-react)
+- Buy from [Creative Tim](https://www.creative-tim.com/product/material-kit-pro-react)
 
 
 ## Documentation
-The documentation for the Material Dashboard Pro is hosted at our [website](https://demos.creative-tim.com/material-dashboard-pro-react/#/documentation/tutorial).
+The documentation for the Material Kit PRO React is hosted at our [website](https://demos.creative-tim.com/material-kit-pro-react/#/documentation/tutorial).
 
 
 ## File Structure
-
 Within the download you'll find the following directories and files:
 
 ```
-material-dashboard-pro-react
-│
+material-kit-pro
+.
 ├── CHANGELOG.md
 ├── README.md
-├── documentation
+├── package.json
+├── .env
+├── Documentation
 │   ├── assets
 │   │   ├── css
 │   │   ├── img
 │   │   │   └── faces
 │   │   └── js
 │   └── tutorial-components.html
-├── package.json
 ├── public
 │   ├── favicon.ico
 │   ├── index.html
@@ -102,20 +74,38 @@ material-dashboard-pro-react
 └── src
     ├── assets
     │   ├── img
+    │   │   ├── arrow-left.cur
+    │   │   ├── arrow-right.cur
+    │   │   ├── assets-for-demo
+    │   │   │   ├── example-pages
+    │   │   │   ├── ourClients
+    │   │   │   ├── presentationViewSectionComponent
+    │   │   │   └── sections
+    │   │   │       └── imgs.jsx
+    │   │   ├── examples
     │   │   ├── faces
     │   │   ├── flags
-    │   │   └── logo-white.svg
+    │   │   └── sections
     │   ├── jss
-    │   │   ├── material-dashboard-pro-react
+    │   │   ├── material-kit-pro-react
     │   │   │   ├── components
-    │   │   │   ├── layouts
     │   │   │   └── views
-    │   │   └── material-dashboard-pro-react.jsx
+    │   │   │       ├── aboutUsSections
+    │   │   │       ├── blogPostSections
+    │   │   │       ├── blogPostsSections
+    │   │   │       ├── componentsSections
+    │   │   │       ├── ecommerceSections
+    │   │   │       ├── landingPageSections
+    │   │   │       ├── presentationSections
+    │   │   │       ├── pricingSections
+    │   │   │       └── sectionsSections
+    │   │   └── material-kit-pro-react.jsx
     │   └── scss
-    │       ├── material-dashboard-pro-react
+    │       ├── core
     │       │   ├── mixins
-    │       │   └── plugins
-    │       └── material-dashboard-pro-react.scss
+    │       │   └── variables
+    │       ├── plugins
+    │       └── material-kit-pro-react.scss
     ├── components
     │   ├── Accordion
     │   │   └── Accordion.jsx
@@ -126,15 +116,15 @@ material-dashboard-pro-react
     │   │   ├── CardAvatar.jsx
     │   │   ├── CardBody.jsx
     │   │   ├── CardFooter.jsx
-    │   │   ├── CardHeader.jsx
-    │   │   ├── CardIcon.jsx
-    │   │   └── CardText.jsx
+    │   │   └── CardHeader.jsx
     │   ├── Clearfix
     │   │   └── Clearfix.jsx
     │   ├── CustomButtons
     │   │   └── Button.jsx
     │   ├── CustomDropdown
     │   │   └── CustomDropdown.jsx
+    │   ├── CustomFileInput
+    │   │   └── CustomFileInput.jsx
     │   ├── CustomInput
     │   │   └── CustomInput.jsx
     │   ├── CustomLinearProgress
@@ -142,8 +132,7 @@ material-dashboard-pro-react
     │   ├── CustomTabs
     │   │   └── CustomTabs.jsx
     │   ├── CustomUpload
-    │   │   ├── ImageUpload.jsx
-    │   │   └── PictureUpload.jsx
+    │   │   └── ImageUpload.jsx
     │   ├── Footer
     │   │   └── Footer.jsx
     │   ├── Grid
@@ -151,95 +140,129 @@ material-dashboard-pro-react
     │   │   └── GridItem.jsx
     │   ├── Header
     │   │   ├── Header.jsx
-    │   │   ├── HeaderLinks.jsx
-    │   │   └── PagesHeader.jsx
-    │   ├── Heading
-    │   │   └── Heading.jsx
+    │   │   └── HeaderLinks.jsx
     │   ├── InfoArea
     │   │   └── InfoArea.jsx
     │   ├── Instruction
     │   │   └── Instruction.jsx
+    │   ├── Media
+    │   │   └── Media.jsx
     │   ├── NavPills
     │   │   └── NavPills.jsx
     │   ├── Pagination
     │   │   └── Pagination.jsx
-    │   ├── Sidebar
-    │   │   └── Sidebar.jsx
+    │   ├── Parallax
+    │   │   └── Parallax.jsx
     │   ├── Snackbar
-    │   │   ├── Snackbar.jsx
     │   │   └── SnackbarContent.jsx
     │   ├── Table
     │   │   └── Table.jsx
-    │   ├── Tasks
-    │   │   └── Tasks.jsx
-    │   ├── Timeline
-    │   │   └── Timeline.jsx
-    │   ├── Typography
-    │   │   ├── Danger.jsx
-    │   │   ├── Info.jsx
-    │   │   ├── Muted.jsx
-    │   │   ├── Primary.jsx
-    │   │   ├── Quote.jsx
-    │   │   ├── Success.jsx
-    │   │   └── Warning.jsx
-    │   └── Wizard
-    │       └── Wizard.jsx
+    │   └── Typography
+    │       ├── Danger.jsx
+    │       ├── Info.jsx
+    │       ├── Muted.jsx
+    │       ├── Primary.jsx
+    │       ├── Quote.jsx
+    │       ├── Rose.jsx
+    │       ├── Small.jsx
+    │       ├── Success.jsx
+    │       └── Warning.jsx
     ├── index.js
-    ├── layouts
-    │   ├── Dashboard.jsx
-    │   ├── Pages.jsx
-    │   └── RTL.jsx
+    ├── logo.svg
     ├── routes
-    │   ├── dashboard.jsx
-    │   ├── index.jsx
-    │   ├── pages.jsx
-    │   └── rtl.jsx
-    ├── variables
-    │   ├── charts.jsx
-    │   └── general.jsx
+    │   └── index.jsx
     └── views
-        ├── Calendar
-        │   └── Calendar.jsx
-        ├── Charts
-        │   └── Charts.jsx
-        ├── Components
-        │   ├── Buttons.jsx
-        │   ├── GridSystem.jsx
-        │   ├── Icons.jsx
-        │   ├── Notifications.jsx
-        │   ├── Panels.jsx
-        │   ├── SweetAlert.jsx
-        │   └── Typography.jsx
-        ├── Dashboard
-        │   └── Dashboard.jsx
-        ├── Forms
-        │   ├── ExtendedForms.jsx
-        │   ├── RegularForms.jsx
-        │   ├── ValidationForms.jsx
-        │   ├── Wizard.jsx
-        │   └── WizardSteps
-        │       ├── Step1.jsx
-        │       ├── Step2.jsx
-        │       └── Step3.jsx
-        ├── Maps
-        │   ├── FullScreenMap.jsx
-        │   ├── GoogleMaps.jsx
-        │   └── VectorMap.jsx
-        ├── Pages
-        │   ├── LockScreenPage.jsx
-        │   ├── LoginPage.jsx
+        ├── AboutUsPage
+        │   ├── AboutUsPage.jsx
+        │   └── Sections
+        │       ├── SectionContact.jsx
+        │       ├── SectionDescription.jsx
+        │       ├── SectionOffice.jsx
+        │       ├── SectionServices.jsx
+        │       └── SectionTeam.jsx
+        ├── BlogPostPage
+        │   ├── BlogPostPage.jsx
+        │   └── Sections
+        │       ├── SectionBlogInfo.jsx
+        │       ├── SectionComments.jsx
+        │       ├── SectionSimilarStories.jsx
+        │       └── SectionText.jsx
+        ├── BlogPostsPage
+        │   ├── BlogPostsPage.jsx
+        │   └── Sections
+        │       ├── SectionImage.jsx
+        │       ├── SectionInterested.jsx
+        │       ├── SectionPills.jsx
+        │       └── SubscribeLine.jsx
+        ├── ComponentsPage
+        │   ├── ComponentsPage.jsx
+        │   └── Sections
+        │       ├── SectionBasics.jsx
+        │       ├── SectionCards.jsx
+        │       ├── SectionCarousel.jsx
+        │       ├── SectionContentAreas.jsx
+        │       ├── SectionFooter.jsx
+        │       ├── SectionJavascript.jsx
+        │       ├── SectionNavbars.jsx
+        │       ├── SectionNotifications.jsx
+        │       ├── SectionPills.jsx
+        │       ├── SectionPreFooter.jsx
+        │       ├── SectionTabs.jsx
+        │       └── SectionTypography.jsx
+        ├── ContactUsPage
+        │   └── ContactUsPage.jsx
+        ├── EcommercePage
+        │   ├── EcommercePage.jsx
+        │   └── Sections
+        │       ├── SectionBlog.jsx
+        │       ├── SectionLatestOffers.jsx
+        │       └── SectionProducts.jsx
+        ├── LandingPage
+        │   ├── LandingPage.jsx
+        │   └── Sections
+        │       ├── SectionProduct.jsx
+        │       ├── SectionTeam.jsx
+        │       └── SectionWork.jsx
+        ├── LoginPage
+        │   └── LoginPage.jsx
+        ├── PresentationPage
+        │   ├── PresentationPage.jsx
+        │   └── Sections
+        │       ├── SectionCards.jsx
+        │       ├── SectionComponents.jsx
+        │       ├── SectionContent.jsx
+        │       ├── SectionDescription.jsx
+        │       ├── SectionExamples.jsx
+        │       ├── SectionFreeDemo.jsx
+        │       ├── SectionOverview.jsx
+        │       ├── SectionPricing.jsx
+        │       └── SectionSections.jsx
+        ├── PricingPage
         │   ├── PricingPage.jsx
-        │   ├── RTLSupport.jsx
-        │   ├── RegisterPage.jsx
-        │   ├── Timeline.jsx
-        │   └── UserProfile.jsx
-        ├── Tables
-        │   ├── ExtendedTables.jsx
-        │   ├── ReactTables.jsx
-        │   └── RegularTables.jsx
-        └── Widgets
-            └── Widgets.jsx
+        │   └── Sections
+        │       ├── SectionFeatures.jsx
+        │       └── SectionPricing.jsx
+        ├── ProductPage
+        │   └── ProductPage.jsx
+        ├── ProfilePage
+        │   └── ProfilePage.jsx
+        ├── SectionsPage
+        │   ├── Sections
+        │   │   ├── SectionBlogs.jsx
+        │   │   ├── SectionContacts.jsx
+        │   │   ├── SectionFeatures.jsx
+        │   │   ├── SectionHeaders.jsx
+        │   │   ├── SectionPricing.jsx
+        │   │   ├── SectionProjects.jsx
+        │   │   ├── SectionTeams.jsx
+        │   │   └── SectionTestimonials.jsx
+        │   └── SectionsPage.jsx
+        ├── ShoppingCartPage
+        │   └── ShoppingCartPage.jsx
+        └── SignupPage
+            └── SignupPage.jsx
 ```
+
 
 ## Browser Support
 
@@ -249,39 +272,50 @@ At present, we officially aim to support the last two versions of the following 
 
 
 ## Resources
-- [Live Preview](https://demos.creative-tim.com/material-dashboard-pro-react/#/dashboard)
-- Buy Page: https://www.creative-tim.com/product/material-dashboard-pro-react
-- Documentation is [here](https://demos.creative-tim.com/material-dashboard-pro-react/#/documentation/tutorial)
-- License Agreement: https://www.creative-tim.com/license
-- Support: https://www.creative-tim.com/contact-us
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues)
-- Material Dashboard React - [demo](https://www.creative-tim.com/product/material-dashboard-react?ref=github-md-pro-react)
-- For Front End Development - [Material Kit Pro React ](https://www.creative-tim.com/product/material-kit-pro-react?ref=github-md-pro-react)
+- Demo: <https://demos.creative-tim.com/material-kit-pro-react/#/components>
+- Download Page: <https://www.creative-tim.com/product/material-kit-pro-react>
+- Documentation: <https://demos.creative-tim.com/material-kit-pro-react/#/documentation/tutorial>
+- License Agreement: <https://www.creative-tim.com/license>
+- Support: <https://www.creative-tim.com/contact-us>
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues)
++ [Material Kit Free React](https://demos.creative-tim.com/material-kit-react/#/)
++ [Material Kit Free](https://demos.creative-tim.com/material-kit/index.html)
++ [Material Dashboard Free React](https://demos.creative-tim.com/material-dashboard-react/#/dashboard)
++ [Material Dashboard Pro React](https://demos.creative-tim.com/material-dashboard-pro-react/#/dashboard)
++ [Material Dashboard Free HTML](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html)
++ [Material Dashboard Pro HTML](https://demos.creative-tim.com/material-dashboard-pro/examples/dashboard.html)
++ [Material Dashboard Free Angular](https://demos.creative-tim.com/material-dashboard-angular2/dashboard)
++ [Material Dashboard Pro Angular](https://demos.creative-tim.com/material-dashboard-pro-angular2/dashboard)
+
 
 ## Reporting Issues
-We use GitHub Issues as the official bug tracker for the Material Dashboard Pro. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the Material Dashboard Pro. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
+We use GitHub Issues as the official bug tracker for the Material Kit PRO React. Here are some advices for our users that want to report an issue:
+
+1. Make sure that you are using the latest version of the Material Kit PRO React. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
+
 
 ## Technical Support or Questions
 
 If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
 
+
+
 ## Licensing
 
-- Copyright 2018 Creative Tim (https://www.creative-tim.com)
+- Copyright 2018 Creative Tim (https://www.creative-tim.com/)
+
 - Creative Tim [license](https://www.creative-tim.com/license)
+
+
 
 ## Useful Links
 
- - [More products](https://www.creative-tim.com/bootstrap-themes) from Creative Tim
-
+- [More products](https://www.creative-tim.com/bootstrap-themes) from Creative Tim
 - [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
-
 - [Freebies](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
-
 - [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
 
 ##### Social Media
@@ -294,4 +328,4 @@ Dribbble: <https://dribbble.com/creativetim>
 
 Google+: <https://plus.google.com/+CreativetimPage>
 
-Instagram: <https://instagram.com/creativetimofficial>
+Instagram: <https://www.instagram.com/CreativeTimOfficial>
