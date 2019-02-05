@@ -2,15 +2,6 @@ import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
-import GroupWork from "@material-ui/icons/GroupWork";
-import Airplay from "@material-ui/icons/Airplay";
-import LocationOn from "@material-ui/icons/LocationOn";
-import Extension from "@material-ui/icons/Extension";
-import ChildFriendly from "@material-ui/icons/ChildFriendly";
-import WatchLater from "@material-ui/icons/WatchLater";
 import Code from "@material-ui/icons/Code";
 import FormatPaint from "@material-ui/icons/FormatPaint";
 import Dashboard from "@material-ui/icons/Dashboard";
@@ -23,242 +14,15 @@ import GridItem from "components/Grid/GridItem.jsx";
 import InfoArea from "components/InfoArea/InfoArea.jsx";
 
 import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx";
-
-import iphone from "assets/img/sections/iphone.png";
-import iphone2 from "assets/img/sections/iphone2.png";
-import bg9 from "assets/img/bg9.jpg";
+import tech_background from "assets/img/tech_background.jpg";
 
 function SectionFeatures({ ...props }) {
   const { classes, ...rest } = props;
   return (
     <div className="cd-section" {...rest}>
-      <div className={classes.container}>
-        {/* Feature 1 START */}
-        <div className={classes.features1}>
-          <GridContainer>
-            <GridItem
-              xs={12}
-              sm={8}
-              md={8}
-              className={`${classes.mlAuto} ${classes.mrAuto}`}
-            >
-              <h2 className={classes.title}>Why our product is the best</h2>
-              <h5 className={classes.description}>
-                This is the paragraph where you can write more details about
-                your product. Keep you user engaged by providing meaningful
-                information. Remember that by this time, the user is curious,
-                otherwise he wouldn't scroll to get here. Add a button if you
-                want the user to see more.
-              </h5>
-            </GridItem>
-          </GridContainer>
-          <GridContainer>
-            <GridItem xs={12} sm={4} md={4}>
-              <InfoArea
-                vertical
-                icon={Chat}
-                title="Free Chat"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough"
-                iconColor="info"
-              />
-            </GridItem>
-            <GridItem xs={12} sm={4} md={4}>
-              <InfoArea
-                vertical
-                icon={VerifiedUser}
-                title="Verified Users"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                iconColor="success"
-              />
-            </GridItem>
-            <GridItem xs={12} sm={4} md={4}>
-              <InfoArea
-                vertical
-                icon={Fingerprint}
-                title="Fingerprint"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                iconColor="danger"
-              />
-            </GridItem>
-          </GridContainer>
-        </div>
-        {/* Feature 1 END */}
-        {/* Feature 2 START */}
-        <div className={classes.features2}>
-          <GridContainer>
-            <GridItem
-              xs={12}
-              sm={8}
-              md={8}
-              className={`${classes.mlAuto} ${classes.mrAuto} ${
-                classes.textCenter
-              }`}
-            >
-              <h2 className={classes.title}>Why our product is the best</h2>
-              <h5 className={classes.description}>
-                This is the paragraph where you can write more details about
-                your product. Keep you user engaged by providing meaningful
-                information.
-              </h5>
-            </GridItem>
-          </GridContainer>
-          <GridContainer>
-            <GridItem xs={12} sm={4} md={4}>
-              <InfoArea
-                icon={GroupWork}
-                title="Collaborate"
-                description={
-                  <span>
-                    <p>
-                      The moment you use Material Kit, you know you’ve never
-                      felt anything like it. With a single use, this powerfull
-                      UI Kit lets you do more than ever before.
-                    </p>
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      Find more...
-                    </a>
-                  </span>
-                }
-                iconColor="info"
-              />
-            </GridItem>
-            <GridItem xs={12} sm={4} md={4}>
-              <InfoArea
-                icon={Airplay}
-                title="Airplay"
-                description={
-                  <span>
-                    <p>
-                      Divide details about your product or agency work into
-                      parts. Write a few lines about each one. A paragraph
-                      describing a feature will be enough.
-                    </p>
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      Find more...
-                    </a>
-                  </span>
-                }
-                iconColor="danger"
-              />
-            </GridItem>
-            <GridItem xs={12} sm={4} md={4}>
-              <InfoArea
-                icon={LocationOn}
-                title="Location Integrated"
-                description={
-                  <span>
-                    <p>
-                      Divide details about your product or agency work into
-                      parts. Write a few lines about each one. A paragraph
-                      describing a feature will be enough.
-                    </p>
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      Find more...
-                    </a>
-                  </span>
-                }
-                iconColor="success"
-              />
-            </GridItem>
-          </GridContainer>
-        </div>
-        {/* Feature 2 END */}
-        {/* Feature 3 START */}
-        <div className={classes.features3}>
-          <GridContainer>
-            <GridItem xs={12} sm={6} md={6}>
-              <div className={classes.phoneContainer}>
-                <img src={iphone} alt="..." />
-              </div>
-            </GridItem>
-            <GridItem xs={12} sm={6} md={6}>
-              <h2 className={classes.title}>Your life will be much easier</h2>
-              <InfoArea
-                className={classes.infoArea}
-                icon={Extension}
-                title="Hundreds of Components"
-                description="The moment you use Material Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before."
-                iconColor="primary"
-              />
-              <InfoArea
-                className={classes.infoArea}
-                icon={ChildFriendly}
-                title="Easy to Use"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                iconColor="primary"
-              />
-              <InfoArea
-                className={classes.infoArea}
-                icon={WatchLater}
-                title="Fast Prototyping"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                iconColor="primary"
-              />
-            </GridItem>
-          </GridContainer>
-        </div>
-        {/* Feature 3 END */}
-        {/* Feature 4 START */}
-        <div className={classes.features4}>
-          <GridContainer>
-            <GridItem
-              xs={12}
-              sm={8}
-              md={8}
-              className={`${classes.mlAuto} ${classes.mrAuto} ${
-                classes.textCenter
-              }`}
-            >
-              <h2 className={classes.title}>Your life will be much easier</h2>
-              <h5 className={classes.description}>
-                This is the paragraph where you can write more details about
-                your product. Keep you user engaged by providing meaningful
-                information.
-              </h5>
-            </GridItem>
-          </GridContainer>
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={12} lg={3} className={classes.mlAuto}>
-              <InfoArea
-                icon={Code}
-                title="For Developers"
-                description="The moment you use Material Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before."
-                iconColor="info"
-              />
-              <InfoArea
-                icon={FormatPaint}
-                title="For Designers"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                iconColor="danger"
-              />
-            </GridItem>
-            <GridItem xs={12} sm={12} md={12} lg={4}>
-              <div className={classes.phoneContainer}>
-                <img src={iphone2} alt="..." />
-              </div>
-            </GridItem>
-            <GridItem xs={12} sm={12} md={12} lg={3} className={classes.mrAuto}>
-              <InfoArea
-                icon={Dashboard}
-                title="Material-UI Grid"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                iconColor="primary"
-              />
-              <InfoArea
-                icon={ViewCarousel}
-                title="Example Pages Included"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                iconColor="success"
-              />
-            </GridItem>
-          </GridContainer>
-        </div>
-        {/* Feature 4 END */}
-      </div>
-      {/* Feature 5 START */}
       <div
         className={classes.features5}
-        style={{ backgroundImage: `url(${bg9})` }}
+        style={{ backgroundImage: `url(${tech_background})` }}
       >
         <GridContainer>
           <GridItem
@@ -269,53 +33,60 @@ function SectionFeatures({ ...props }) {
               classes.textCenter
             }`}
           >
-            <h2 className={classes.title}>Your life will be much easier</h2>
+            <h2 className={classes.title}>Frequently Asked Questions</h2>
           </GridItem>
           <div className={classes.container}>
             <GridContainer className={classes.gridContainer}>
-              <GridItem xs={12} sm={4} className={classes.gridItem}>
+              <GridItem xs={12} md={4} className={classes.gridItem}>
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
                   icon={Code}
-                  title="For Developers"
+                  title="What is a hackathon?"
                   description={
                     <p>
-                      The moment you use Material Kit, you know you’ve never
-                      felt anything like it. With a single use, this powerfull
-                      UI Kit lets you do more than ever before.
+                      A hackathon is best described as an &quot;invention
+                      marathon.&quot; Anyone who has an interest in technology
+                      attends one to learn, build & share their creations over
+                      the course of an entire day in a relaxed and welcoming
+                      atmosphere.
                     </p>
                   }
                   iconColor="info"
                 />
               </GridItem>
-              <GridItem xs={12} sm={4} className={classes.gridItem}>
+              <GridItem xs={12} md={4} className={classes.gridItem}>
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
                   icon={FormatPaint}
-                  title="For Designers"
+                  title="Who can attend Wacode?"
                   description={
                     <p>
-                      Divide details about your product or agency work into
-                      parts. Write a few lines about each one. A paragraph
-                      describing a feature will be enough.
+                      Any community resident or university student over the age
+                      of 18 can participate, regardless of area of study,
+                      background, or skill level. While this event is not an
+                      official MLH sponsored event, we will be requiring all
+                      attendants to abide by the{" "}
+                      <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">
+                        MLH Code of Conduct.
+                      </a>
                     </p>
                   }
                   iconColor="danger"
                 />
               </GridItem>
-              <GridItem xs={12} sm={4} className={classes.gridItem}>
+              <GridItem xs={12} md={4} className={classes.gridItem}>
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
                   icon={Dashboard}
-                  title="Material-UI Grid"
+                  title="Will Wacode cost me anything?"
                   description={
                     <p>
-                      Divide details about your product or agency work into
-                      parts. Write a few lines about each one. A paragraph
-                      describing a feature will be enough.
+                      Admission to Wacode is completely free for all attendees.
+                      Food and drinks are provided by us through our generous
+                      sponsors & community partners.
                     </p>
                   }
                   iconColor="primary"
@@ -323,47 +94,52 @@ function SectionFeatures({ ...props }) {
               </GridItem>
             </GridContainer>
             <GridContainer className={classes.gridContainer}>
-              <GridItem xs={12} sm={4} className={classes.gridItem}>
+              <GridItem xs={12} md={4} className={classes.gridItem}>
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
                   icon={ViewCarousel}
-                  title="Example Pages Included"
+                  title="Are teams allowed?"
                   description={
                     <p>
-                      The moment you use Material Kit, you know you’ve never
-                      felt anything like it. With a single use, this powerfull
-                      UI Kit lets you do more than ever before.
+                      We encourage everyone to work with a team! Teams may
+                      contain up to 5 people. If you don&apos;t have one before
+                      coming to Wacode, no worries! We will have a team-building
+                      session at the beginning of the hacking period.
                     </p>
                   }
                 />
               </GridItem>
-              <GridItem xs={12} sm={4} className={classes.gridItem}>
+              <GridItem xs={12} md={4} className={classes.gridItem}>
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
                   icon={AccessTime}
-                  title="Save Time"
+                  title="What should I plan on bringing?"
                   description={
                     <p>
-                      The moment you use Material Kit, you know you’ve never
-                      felt anything like it. With a single use, this powerfull
-                      UI Kit lets you do more than ever before.
+                      You should bring your computer, chargers, and any other
+                      hardware or software you plan on using. WiFi and outlets
+                      will be provided but it doesn&apos;t hurt to bring an
+                      extra power strip.
                     </p>
                   }
                 />
               </GridItem>
-              <GridItem xs={12} sm={4} className={classes.gridItem}>
+              <GridItem xs={12} md={4} className={classes.gridItem}>
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
                   icon={AttachMoney}
-                  title="Save Money"
+                  title="What to do if my question wasn't answered?"
                   description={
                     <p>
-                      The moment you use Material Kit, you know you’ve never
-                      felt anything like it. With a single use, this powerfull
-                      UI Kit lets you do more than ever before.
+                      Hey, we&apos;re here to help! Email us at
+                      Wacode.Team@Gmail.com or reach out to Computing for
+                      Compassion via{" "}
+                      <a href="https://www.instagram.com/baylorc4c/">
+                        Instagram
+                      </a>
                     </p>
                   }
                 />
@@ -372,7 +148,6 @@ function SectionFeatures({ ...props }) {
           </div>
         </GridContainer>
       </div>
-      {/* Feature 5 END */}
     </div>
   );
 }

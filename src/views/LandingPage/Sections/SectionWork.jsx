@@ -21,7 +21,7 @@ class SectionWork extends React.Component {
               Wacode is looking for sponsors and community partners. We want to
               find business and organizations who believe and support our
               mission of bringing technology to our local community, and
-              providing a platform for our new flourishing tech community.
+              providing a platform for our flourishing tech community.
             </h4>
             <form>
               <GridContainer>

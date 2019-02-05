@@ -14,6 +14,8 @@ import InfoArea from "components/InfoArea/InfoArea.jsx";
 
 import productStyle from "assets/jss/material-kit-pro-react/views/landingPageSections/productStyle.jsx";
 
+import logo from "assets/img/logo.png";
+
 class SectionProduct extends React.Component {
   render() {
     const { classes } = this.props;
@@ -21,23 +23,19 @@ class SectionProduct extends React.Component {
       <div className={classes.section}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={8} md={8}>
-            <h2 className={classes.title}>Let&apos;s talk tech</h2>
+            <h2 className={classes.title}>
+              What is{" "}
+              <img src={logo} alt="Wacode Logo" style={{ height: "4vh" }} /> ?
+            </h2>
             <h5 className={classes.description}>
-              The Wacode team wants participants (students, professionals, and
-              anyone interested in learning about emerging technologies) to
-              learn new skills and meet new people who are also interested in
-              expanding their technical knowledge and growing as technical &
-              entrepreneurial professionals. Members of this event will also be
-              able to engage in a 12-hour hackathon that will take course during
-              the event.
-              <br />
-              <br />
-              Sponsors will be able to connect with local talent through
-              workshops and activities during the event; they will be able to
-              host a booth and activities at the venue in order to engage with
-              participants and provide them an opportunity to win prizes, gain
-              technical mentorship, build a stronger professional network, and
-              even invite qualified candidates to interview.
+              Wacode is an annual 12-hour hackathon held at the Blume Conference
+              Center on Baylor University&apos;s campus. We plan on bringing the
+              students, professionals, hobbyists, and anyone else curious and
+              passionate about tech in the greater Waco together to build,
+              collaborate, and share their knowledge and projects with us. We
+              are here to provide a comfortable learning environment for all
+              hackers to use their creativity and innovation at its full
+              potential.
             </h5>
           </GridItem>
         </GridContainer>

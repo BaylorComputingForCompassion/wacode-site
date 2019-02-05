@@ -14,12 +14,14 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
+import Button from "components/CustomButtons/Button.jsx";
 
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 
 // Sections for this page
 import SectionProduct from "./Sections/SectionProduct.jsx";
 import SectionWork from "./Sections/SectionWork.jsx";
+import SectionFeatures from "../SectionsPage/Sections/SectionFeatures.jsx";
 
 const dashboardRoutes = [];
 
@@ -48,16 +50,39 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={6} md={6}>
-                <h1 className={classes.title}>Your story starts with us.</h1>
-                <h4>
-                  At Baylor University we strive to integrate “academic
-                  excellence and Christian commitment within a caring community”
-                  – a community whose bounds supersede those of our campus.
+                <h1 className={classes.title}>
+                  Your potential.
                   <br />
-                  <br/>
-                  Computing for Compassion is focused on bringing that community
-                  together and sharing our love for technology with Waco, TX.
+                  Our passion.
+                </h1>
+                <h4>
+                  Baylor Computing for Compassion wants to bring our community
+                  together and promote technology through a day of collaboration
+                  and sharing.
+                  <br />
+                  <br />
+                  Register today for our 12-hour community hackathon happening
+                  on Saturday, March 2nd, 2019 from 9:00am-9:00pm at the{" "}
+                  <a href="https://www.baylor.edu/map/?c=BLUME">
+                    Bessie Blume Conference Center
+                  </a>{" "}
+                  on Baylor University&apos;s Campus.
                 </h4>
+                <br />
+                {/* @TODO ADD TYPEFORM LINK*/}
+                <Button
+                  color="danger"
+                  size="lg"
+                  href="TYPEFORM LINK HERE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i
+                    className="fa fa-id-badge"
+                    style={{ marginRight: "10px" }}
+                  />
+                  Register
+                </Button>
               </GridItem>
             </GridContainer>
           </div>
@@ -66,6 +91,7 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             {/* Introducing the event */}
             <SectionProduct />
+            <SectionFeatures id="features" />
             {/* Sponsor Slot */}
             {/*<SectionTeam />*/}
             {/* Sponsorship Quick Request Form */}
