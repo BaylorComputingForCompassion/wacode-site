@@ -22,6 +22,7 @@ import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPag
 import SectionProduct from "./Sections/SectionProduct.jsx";
 import SectionWork from "./Sections/SectionWork.jsx";
 import SectionFeatures from "../SectionsPage/Sections/SectionFeatures.jsx";
+import SectionSchedule from "./Sections/SectionSchedule";
 
 const dashboardRoutes = [];
 
@@ -64,7 +65,9 @@ class LandingPage extends React.Component {
                   Register today for our 12-hour community hackathon happening
                   on Saturday, March 2nd, 2019 from 9:00am-9:00pm at the{" "}
                   <a href="https://www.baylor.edu/map/?c=BLUME">
-                    Bessie Blume Conference Center
+                    <span style={{ color: "#3EAD7B" }}>
+                      Bessie Blume Conference Center
+                    </span>
                   </a>{" "}
                   on Baylor University&apos;s Campus.
                 </h4>
@@ -89,13 +92,10 @@ class LandingPage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            {/* Introducing the event */}
-            <SectionProduct />
-            <SectionFeatures id="features" />
-            {/* Sponsor Slot */}
-            {/*<SectionTeam />*/}
-            {/* Sponsorship Quick Request Form */}
-            <SectionWork />
+            <SectionProduct id="info" />
+            <SectionFeatures id="faq" />
+            <SectionSchedule id="schedule" />
+            <SectionWork id="contact-us" />
           </div>
         </div>
         <Footer

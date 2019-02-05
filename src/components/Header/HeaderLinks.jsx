@@ -27,7 +27,7 @@ function HeaderLinks({ ...props }) {
   };
 
   const smoothScroll = (e, target) => {
-    if (window.location.pathname === "/sections") {
+    if (window.location.pathname === "/") {
       var isMobile = navigator.userAgent.match(
         /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
       );
@@ -56,14 +56,11 @@ function HeaderLinks({ ...props }) {
     };
     animateScroll();
   };
+
   const { classes } = props;
+
   return (
     <List className={classes.list + " " + classes.mlAuto}>
-      <ListItem className={classes.listItem}>
-        <Link to="/login-page" className={classes.dropdownLink}>
-          Login
-        </Link>
-      </ListItem>
       <ListItem className={classes.listItem}>
         <Link to="/signup-page">
           <Button

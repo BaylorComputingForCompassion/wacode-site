@@ -69,7 +69,9 @@ function SectionFeatures({ ...props }) {
                       official MLH sponsored event, we will be requiring all
                       attendants to abide by the{" "}
                       <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">
-                        MLH Code of Conduct.
+                        <span style={{ color: "#3EAD7B" }}>
+                          MLH Code of Conduct.
+                        </span>
                       </a>
                     </p>
                   }
@@ -138,7 +140,7 @@ function SectionFeatures({ ...props }) {
                       Wacode.Team@Gmail.com or reach out to Computing for
                       Compassion via{" "}
                       <a href="https://www.instagram.com/baylorc4c/">
-                        Instagram
+                        <span style={{ color: "#3EAD7B" }}>Instagram</span>
                       </a>
                     </p>
                   }
