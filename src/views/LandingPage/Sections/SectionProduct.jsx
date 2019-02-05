@@ -22,11 +22,13 @@ class SectionProduct extends React.Component {
     return (
       <div className={classes.section}>
         <GridContainer justify="center">
-          <GridItem xs={12} sm={8} md={8}>
-            <h2 className={classes.title}>
-              What is{" "}
-              <img src={logo} alt="Wacode Logo" style={{ height: "4vh" }} /> ?
-            </h2>
+          <GridItem sm={12} md={9}>
+            <div style={{ whiteSpace: "nowrap", overflow: "hidden" }}>
+              <h2 className={classes.title}>
+                What is{" "}
+                <img src={logo} alt="Wacode Logo" style={{ height: "4vh" }} />?
+              </h2>
+            </div>
             <h5 className={classes.description}>
               Wacode is an annual 12-hour hackathon held at the Blume Conference
               Center on Baylor University&apos;s campus. We plan on bringing the

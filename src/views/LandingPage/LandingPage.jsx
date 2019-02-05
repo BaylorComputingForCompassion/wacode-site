@@ -50,20 +50,19 @@ class LandingPage extends React.Component {
         <Parallax image={require("assets/img/waco_bg.jpg")} filter={"dark"}>
           <div className={classes.container}>
             <GridContainer>
-              <GridItem xs={12} sm={6} md={6}>
+              <GridItem xs={12} sm={8} md={8}>
                 <h1 className={classes.title}>
                   Your potential.
                   <br />
                   Our passion.
                 </h1>
                 <h4>
-                  Baylor Computing for Compassion wants to bring our community
-                  together and promote technology through a day of collaboration
-                  and sharing.
-                  <br />
-                  <br />
-                  Register today for our 12-hour community hackathon happening
-                  on Saturday, March 2nd, 2019 from 9:00am-9:00pm at the{" "}
+                  Register today for{" "}
+                  <a href="http://computingforcompassion.org/">
+                    Baylor C4C&apos;s
+                  </a>{" "}
+                  12-hour community hackathon happening on Saturday, March 2nd,
+                  9:00am - 9:00pm at the{" "}
                   <a href="https://www.baylor.edu/map/?c=BLUME">
                     <span style={{ color: "#3EAD7B" }}>
                       Bessie Blume Conference Center
