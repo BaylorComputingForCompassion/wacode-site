@@ -1,9 +1,6 @@
 import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-
-// @material-ui/icons
-
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -21,13 +18,22 @@ class SectionWork extends React.Component {
           <GridItem cs={12} sm={8} md={8}>
             <h2 className={classes.title}>Work with us</h2>
             <h4 className={classes.description}>
-              Divide details about your product or agency work into parts. Write
-              a few lines about each one and contact us about any further
-              collaboration. We will responde get back to you in a couple of
-              hours.
+              Wacode is looking for sponsors and community partners. We want to
+              find business and organizations who believe and support our
+              mission of bringing technology to our local community, and
+              providing a platform for our new flourishing tech community.
             </h4>
             <form>
               <GridContainer>
+                <GridItem xs={12} sm={12} md={12}>
+                  <CustomInput
+                    labelText="Your organization"
+                    id="org_name"
+                    formControlProps={{
+                      fullWidth: true
+                    }}
+                  />
+                </GridItem>
                 <GridItem xs={12} sm={6} md={6}>
                   <CustomInput
                     labelText="Your Name"

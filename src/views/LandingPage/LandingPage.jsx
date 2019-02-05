@@ -19,7 +19,6 @@ import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPag
 
 // Sections for this page
 import SectionProduct from "./Sections/SectionProduct.jsx";
-import SectionTeam from "./Sections/SectionTeam.jsx";
 import SectionWork from "./Sections/SectionWork.jsx";
 
 const dashboardRoutes = [];
@@ -51,10 +50,13 @@ class LandingPage extends React.Component {
               <GridItem xs={12} sm={6} md={6}>
                 <h1 className={classes.title}>Your story starts with us.</h1>
                 <h4>
-                  Every landing page needs a small description after the big
-                  bold title, that&apos;s why we added this text here. Add here
-                  all the information that can make you or your product create
-                  the first impression.
+                  At Baylor University we strive to integrate “academic
+                  excellence and Christian commitment within a caring community”
+                  – a community whose bounds supersede those of our campus.
+                  <br />
+                  <br/>
+                  Computing for Compassion is focused on bringing that community
+                  together and sharing our love for technology with Waco, TX.
                 </h4>
               </GridItem>
             </GridContainer>
@@ -62,8 +64,11 @@ class LandingPage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
+            {/* Introducing the event */}
             <SectionProduct />
-            <SectionTeam />
+            {/* Sponsor Slot */}
+            {/*<SectionTeam />*/}
+            {/* Sponsorship Quick Request Form */}
             <SectionWork />
           </div>
         </div>
