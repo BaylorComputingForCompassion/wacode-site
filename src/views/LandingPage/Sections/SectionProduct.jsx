@@ -31,7 +31,7 @@ class SectionProduct extends React.Component {
               able to engage in a 12-hour hackathon that will take course during
               the event.
               <br />
-              <br/>
+              <br />
               Sponsors will be able to connect with local talent through
               workshops and activities during the event; they will be able to
               host a booth and activities at the venue in order to engage with
