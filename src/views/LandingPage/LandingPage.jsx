@@ -71,11 +71,10 @@ class LandingPage extends React.Component {
                   on Baylor University&apos;s Campus.
                 </h4>
                 <br />
-                {/* @TODO ADD TYPEFORM LINK*/}
                 <Button
                   color="danger"
                   size="lg"
-                  href="TYPEFORM LINK HERE"
+                  href="https://wacodeteam.typeform.com/to/kwVvx8"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
