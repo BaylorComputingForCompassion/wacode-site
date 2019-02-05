@@ -88,7 +88,7 @@ class SectionsPage extends React.Component {
       if (currentTime < duration) {
         setTimeout(animateScroll, increment);
       }
-    }.bind(this);
+    };
     animateScroll();
   }
   render() {

@@ -9,7 +9,6 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
-import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
 // @material-ui/icons
@@ -19,7 +18,6 @@ import Close from "@material-ui/icons/Close";
 import headerStyle from "assets/jss/material-kit-pro-react/components/headerStyle.jsx";
 
 import logo from "assets/img/logo.png";
-import PersonAdd from "./HeaderLinks";
 
 class Header extends React.Component {
   constructor(props) {
@@ -63,7 +61,7 @@ class Header extends React.Component {
     }
   }
   render() {
-    const { classes, color, links, brand, fixed, absolute } = this.props;
+    const { classes, color, links, fixed, absolute } = this.props;
     const appBarClasses = classNames({
       [classes.appBar]: true,
       [classes[color]]: color,
