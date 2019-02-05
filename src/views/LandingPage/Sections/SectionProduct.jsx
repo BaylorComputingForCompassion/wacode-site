@@ -46,7 +46,7 @@ class SectionProduct extends React.Component {
             <GridItem xs={12} sm={4} md={4}>
               <InfoArea
                 title="Learn Modern Development Techniques"
-                description="Bacon ipsum dolor amet dolore in pork ea picanha. Pork belly fugiat leberkas bresaola prosciutto aliqua hamburger rump brisket exercitation sed."
+                description="Guest lectures and workshops hosted by industry professionals with decades of experience. We hope this provides individuals a unique opportunity to interact with some of the brightest minds around."
                 icon={Code}
                 iconColor="info"
                 vertical
@@ -55,7 +55,7 @@ class SectionProduct extends React.Component {
             <GridItem xs={12} sm={4} md={4}>
               <InfoArea
                 title="Code For Good"
-                description="Bacon ipsum dolor amet dolore corned beef null brisket pork belly tenderloin in pork ea picanha. Pork belly landjaeger consequat pig filet mignon fugiat leberkas bresaola prosciutto."
+                description="Our programming prompts are centered around solving certain issues in our community; we want to help combat issues like low literacy rates, providing rehabilitation for victims of drug abuse, and fending against human trafficking. Specific prompts will be posted a few days before our event begins."
                 icon={Favorite}
                 iconColor="success"
                 vertical
@@ -64,7 +64,7 @@ class SectionProduct extends React.Component {
             <GridItem xs={12} sm={4} md={4}>
               <InfoArea
                 title="Built Your Professional Network"
-                description="Bacon ipsum dolor amet dolore corned beef nulla frankfurter tongue brisket pork belly tenderloin in pork ea picanha. Pork belly landjaeger consequat pig hamburger rump brisket exercitation sed."
+                description="We want to provide an opportunity for you to meet with students and professionals in the area to build and learn something new. Our goal is to provide an environment that allows curious minds to work together to create something truly innovative."
                 icon={Group}
                 iconColor="danger"
                 vertical

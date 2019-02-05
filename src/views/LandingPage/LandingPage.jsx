@@ -59,7 +59,7 @@ class LandingPage extends React.Component {
                 <h4>
                   Register today for{" "}
                   <a href="http://computingforcompassion.org/">
-                    Baylor C4C&apos;s
+                    <span style={{ color: "#3EAD7B" }}>Baylor C4C&apos;s</span>
                   </a>{" "}
                   12-hour community hackathon happening on Saturday, March 2nd,
                   9:00am - 9:00pm at the{" "}
