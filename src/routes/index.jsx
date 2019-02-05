@@ -1,7 +1,6 @@
 import AboutUsPage from "views/AboutUsPage/AboutUsPage.jsx";
 import BlogPostPage from "views/BlogPostPage/BlogPostPage.jsx";
 import BlogPostsPage from "views/BlogPostsPage/BlogPostsPage.jsx";
-import ComponentsPage from "views/ComponentsPage/ComponentsPage.jsx";
 import ContactUsPage from "views/ContactUsPage/ContactUsPage.jsx";
 import EcommercePage from "views/EcommercePage/EcommercePage.jsx";
 import LandingPage from "views/LandingPage/LandingPage.jsx";
@@ -17,7 +16,6 @@ var indexRoutes = [
   { path: "/about-us", name: "AboutUsPage", component: AboutUsPage },
   { path: "/blog-post", name: "BlogPostPage", component: BlogPostPage },
   { path: "/blog-posts", name: "BlogPostsPage", component: BlogPostsPage },
-  { path: "/components", name: "Components", component: ComponentsPage },
   { path: "/contact-us", name: "ContactUsPage", component: ContactUsPage },
   { path: "/ecommerce-page", name: "EcommercePage", component: EcommercePage },
   { path: "/landing-page", name: "LandingPage", component: LandingPage },
