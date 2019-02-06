@@ -24,6 +24,35 @@ function HeaderLinks({ ...props }) {
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
         <Button
+          color={"transparent"}
+          className={classes.navButton}
+          round
+        >
+          About Us
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href={"#faq"}
+          color={"transparent"}
+          className={classes.navButton}
+          round
+        >
+          F.A.Q.
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href={"#schedule"}
+          color={"transparent"}
+          className={classes.navButton}
+          round
+        >
+          Schedule
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
             href="https://wacodeteam.typeform.com/to/kwVvx8"
             color={"white"}
             className={classes.navButton}

@@ -24,7 +24,11 @@ import SectionWork from "./Sections/SectionWork.jsx";
 import SectionFeatures from "../SectionsPage/Sections/SectionFeatures.jsx";
 import SectionSchedule from "./Sections/SectionSchedule";
 
+import ScrollableAnchor from "react-scrollable-anchor";
+import { configureAnchors } from "react-scrollable-anchor";
+
 const dashboardRoutes = [];
+configureAnchors({ offset: -60, scrollDuration: 200 });
 
 class LandingPage extends React.Component {
   componentDidMount() {
@@ -90,9 +94,13 @@ class LandingPage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <SectionProduct id="info" />
-            <SectionFeatures id="faq" />
-            <SectionSchedule id="schedule" />
+            <SectionProduct />
+            <ScrollableAnchor id={"faq"}>
+              <SectionFeatures />
+            </ScrollableAnchor>
+            <ScrollableAnchor id={"schedule"}>
+              <SectionSchedule />
+            </ScrollableAnchor>
             <SectionWork id="contact-us" />
           </div>
         </div>
