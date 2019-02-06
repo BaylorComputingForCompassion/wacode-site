@@ -26,6 +26,7 @@ import SectionSchedule from "./Sections/SectionSchedule";
 
 import ScrollableAnchor from "react-scrollable-anchor";
 import { configureAnchors } from "react-scrollable-anchor";
+import SectionTeams from "../SectionsPage/Sections/SectionTeams";
 
 const dashboardRoutes = [];
 configureAnchors({ offset: -60, scrollDuration: 200 });
@@ -100,6 +101,9 @@ class LandingPage extends React.Component {
             </ScrollableAnchor>
             <ScrollableAnchor id={"schedule"}>
               <SectionSchedule />
+            </ScrollableAnchor>
+            <ScrollableAnchor id={"about-us"}>
+              <SectionTeams />
             </ScrollableAnchor>
             <SectionWork id="contact-us" />
           </div>

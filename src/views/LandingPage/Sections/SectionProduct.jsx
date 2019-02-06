@@ -29,7 +29,7 @@ class SectionProduct extends React.Component {
             </div>
             <h5 className={classes.description}>
               Wacode is an annual 12-hour hackathon held at the Blume Conference
-              Center on Baylor University&apos;s campus. We plan on bringing the
+              Center on Baylor University&apos;s campus. We plan on bringing in
               students, professionals, hobbyists, and anyone else curious and
               passionate about tech in the greater Waco together to build,
               collaborate, and share their knowledge and projects with us. We
