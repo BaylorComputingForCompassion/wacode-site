@@ -109,16 +109,6 @@ class LandingPage extends React.Component {
                       Baylor Computing for Compassion
                     </a>
                   </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a href="/contact-us" className={classes.block}>
-                      Contact Us
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a href="/about-us" className={classes.block}>
-                      About us
-                    </a>
-                  </ListItem>
                 </List>
               </div>
               <div className={classes.right}>

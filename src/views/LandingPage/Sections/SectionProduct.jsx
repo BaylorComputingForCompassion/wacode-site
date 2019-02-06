@@ -1,12 +1,10 @@
 import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-
 // @material-ui/icons
 import Code from "@material-ui/icons/Code";
 import Group from "@material-ui/icons/Group";
 import Favorite from "@material-ui/icons/Favorite";
-
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
