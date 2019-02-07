@@ -19,7 +19,7 @@ const teamStyle = {
     color: "#999"
   },
   team: {
-    padding: "80px 0px"
+    padding: "0px 0px"
   },
   textCenter: {
     textAlign: "center!important"

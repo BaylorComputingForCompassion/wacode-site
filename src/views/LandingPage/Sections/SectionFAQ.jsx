@@ -14,15 +14,16 @@ import GridItem from "components/Grid/GridItem.jsx";
 import InfoArea from "components/InfoArea/InfoArea.jsx";
 
 import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx";
-import tech_background from "assets/img/tech_background.jpg";
 
-function SectionFeatures({ ...props }) {
+import bg from "assets/img/baylor_background.jpg";
+
+function SectionFAQ({ ...props }) {
   const { classes, ...rest } = props;
   return (
     <div className="cd-section" {...rest}>
       <div
         className={classes.features5}
-        style={{ backgroundImage: `url(${tech_background})` }}
+        style={{ backgroundImage: `url(${bg})` }}
       >
         <GridContainer>
           <GridItem
@@ -154,4 +155,4 @@ function SectionFeatures({ ...props }) {
   );
 }
 
-export default withStyles(featuresStyle)(SectionFeatures);
+export default withStyles(featuresStyle)(SectionFAQ);

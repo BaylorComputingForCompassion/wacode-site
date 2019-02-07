@@ -14,7 +14,7 @@ import productStyle from "assets/jss/material-kit-pro-react/views/landingPageSec
 
 import logo from "assets/img/logo.png";
 
-class SectionProduct extends React.Component {
+class SectionAboutUs extends React.Component {
   render() {
     const { classes } = this.props;
     return (
@@ -75,4 +75,4 @@ class SectionProduct extends React.Component {
   }
 }
 
-export default withStyles(productStyle)(SectionProduct);
+export default withStyles(productStyle)(SectionAboutUs);

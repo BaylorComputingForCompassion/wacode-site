@@ -8,7 +8,7 @@ import Header from "components/Header/Header.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 // sections of this Page
 import SectionHeaders from "./Sections/SectionHeaders.jsx";
-import SectionFeatures from "./Sections/SectionFeatures.jsx";
+import SectionFeatures from "../LandingPage/Sections/SectionFAQ.jsx";
 import SectionBlogs from "./Sections/SectionBlogs.jsx";
 import SectionTeams from "./Sections/SectionTeams.jsx";
 import SectionProjects from "./Sections/SectionProjects.jsx";

@@ -19,17 +19,18 @@ import Button from "components/CustomButtons/Button.jsx";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 
 // Sections for this page
-import SectionProduct from "./Sections/SectionProduct.jsx";
 import SectionWork from "./Sections/SectionWork.jsx";
-import SectionFeatures from "../SectionsPage/Sections/SectionFeatures.jsx";
+import SectionFAQ from "./Sections/SectionFAQ.jsx";
 import SectionSchedule from "./Sections/SectionSchedule";
+import SectionAboutUs from "./Sections/SectionAboutUs";
+import SectionTeam from "./Sections/SectionTeam";
+// import SectionSponsors from "./Sections/SectionSponsors";
 
 import ScrollableAnchor from "react-scrollable-anchor";
 import { configureAnchors } from "react-scrollable-anchor";
-import SectionTeams from "../SectionsPage/Sections/SectionTeams";
 
 const dashboardRoutes = [];
-configureAnchors({ offset: -60, scrollDuration: 200 });
+configureAnchors({ offset: -60, scrollDuration: 500 });
 
 class LandingPage extends React.Component {
   componentDidMount() {
@@ -95,15 +96,15 @@ class LandingPage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <SectionProduct />
+            <ScrollableAnchor id={"about-us"}>
+              <SectionAboutUs />
+            </ScrollableAnchor>
+            <SectionTeam style={{ marginTop: "-150px" }} />
             <ScrollableAnchor id={"faq"}>
-              <SectionFeatures />
+              <SectionFAQ />
             </ScrollableAnchor>
             <ScrollableAnchor id={"schedule"}>
               <SectionSchedule />
-            </ScrollableAnchor>
-            <ScrollableAnchor id={"about-us"}>
-              <SectionTeams />
             </ScrollableAnchor>
             <SectionWork id="contact-us" />
           </div>
@@ -126,7 +127,7 @@ class LandingPage extends React.Component {
               <div className={classes.right}>
                 &copy; {1900 + new Date().getYear()} , made with{" "}
                 <Favorite className={classes.icon} /> by{" "}
-                <a href="/about-us">The Wacode Team</a>
+                <a href="#about-us">The Wacode Team</a>
               </div>
             </div>
           }
