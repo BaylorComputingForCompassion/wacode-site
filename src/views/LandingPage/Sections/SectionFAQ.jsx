@@ -15,7 +15,7 @@ import InfoArea from "components/InfoArea/InfoArea.jsx";
 
 import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx";
 
-import bg from "assets/img/baylor_background.jpg";
+import bg from "assets/img/tech_background.png";
 
 function SectionFAQ({ ...props }) {
   const { classes, ...rest } = props;
