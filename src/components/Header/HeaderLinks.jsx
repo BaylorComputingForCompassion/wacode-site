@@ -54,7 +54,7 @@ function HeaderLinks({ ...props }) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-            href="https://wacodeteam.typeform.com/to/kwVvx8"
+            href="https://scottyshaw.typeform.com/to/WFEVuG"
             color={"white"}
             className={classes.navButton}
             round

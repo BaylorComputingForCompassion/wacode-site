@@ -80,7 +80,7 @@ class LandingPage extends React.Component {
                 <Button
                   color="danger"
                   size="lg"
-                  href="https://wacodeteam.typeform.com/to/kwVvx8"
+                  href="https://scottyshaw.typeform.com/to/WFEVuG"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
