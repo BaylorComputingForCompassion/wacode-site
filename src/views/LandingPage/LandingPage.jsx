@@ -58,16 +58,18 @@ class LandingPage extends React.Component {
             <GridContainer>
               <GridItem xs={12} sm={8} md={8}>
                 <h1 className={classes.title}>
-                  Your potential.
+                  Hackathon.
                   <br />
-                  Our passion.
+                  Innovation Fest.
+                  <br />
+                  Start-up Competition.
                 </h1>
                 <h4>
                   Register today for{" "}
                   <a href="http://computingforcompassion.org/">
                     <span style={{ color: "#3EAD7B" }}>Baylor C4C&apos;s</span>
                   </a>{" "}
-                  12-hour community hackathon happening on Saturday, March 2nd,
+                  12-hour community event happening on Saturday, March 2nd,
                   9:00am - 9:00pm at the{" "}
                   <a href="https://www.baylor.edu/map/?c=BLUME">
                     <span style={{ color: "#3EAD7B" }}>

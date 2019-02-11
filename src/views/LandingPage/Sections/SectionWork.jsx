@@ -10,6 +10,29 @@ import Button from "components/CustomButtons/Button.jsx";
 import workStyle from "assets/jss/material-kit-pro-react/views/landingPageSections/workStyle.jsx";
 
 class SectionWork extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      org_name: "",
+      name: "",
+      message: ""
+    };
+  }
+  setMessage(e) {
+    this.setState = {
+      message: e.valueOf()
+    };
+  }
+  setOrgName(e) {
+    this.setState = {
+      org_name: e.target.org_name.valueOf()
+    };
+  }
+  setName(e) {
+    this.setState = {
+      name: e.valueOf()
+    };
+  }
   render() {
     const { classes } = this.props;
     return (
@@ -29,39 +52,39 @@ class SectionWork extends React.Component {
                   <CustomInput
                     labelText="Your organization"
                     id="org_name"
+                    onChange={this.setOrgName}
+                    value={this.state.org_name}
                     formControlProps={{
                       fullWidth: true
                     }}
                   />
                 </GridItem>
-                <GridItem xs={12} sm={6} md={6}>
+                <GridItem xs={12} sm={12} md={12}>
                   <CustomInput
                     labelText="Your Name"
                     id="name"
+                    onChange={this.setName}
+                    value={this.state.name}
                     formControlProps={{
                       fullWidth: true
                     }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={6} md={6}>
-                  <CustomInput
-                    labelText="Your Email"
-                    id="email"
-                    formControlProps={{
-                      fullWidth: true
+                    inputProps={{
+                      onChange: this.setName(this.valueOf())
                     }}
                   />
                 </GridItem>
                 <CustomInput
                   labelText="Your Message"
                   id="message"
+                  value={this.state.message}
                   formControlProps={{
                     fullWidth: true,
                     className: classes.textArea
                   }}
                   inputProps={{
                     multiline: true,
-                    rows: 5
+                    rows: 5,
+                    onChange: this.setMessage(this.valueOf())
                   }}
                 />
                 <GridItem
@@ -70,7 +93,12 @@ class SectionWork extends React.Component {
                   md={4}
                   className={`${classes.mrAuto} ${classes.mlAuto}`}
                 >
-                  <Button color="primary">Send Message</Button>
+                  <Button
+                    href={`mailto:Wacode.Team@Gmail.com?subject=Wacode Sponsorship Inquiry&body=My name is ${this.state.name.valueOf()} with ${this.state.org_name.valueOf()} and we'd like to help out.%0A%0A ${this.state.message.valueOf()}`}
+                    color="primary"
+                  >
+                    Send Message
+                  </Button>
                 </GridItem>
               </GridContainer>
             </form>
