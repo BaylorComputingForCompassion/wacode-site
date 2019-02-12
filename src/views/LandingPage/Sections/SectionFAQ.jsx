@@ -28,7 +28,7 @@ function SectionFAQ({ ...props }) {
         <GridContainer>
           <GridItem
             xs={12}
-            sm={8}
+            sm={12}
             md={8}
             className={`${classes.mlAuto} ${classes.mrAuto} ${
               classes.textCenter
@@ -38,7 +38,7 @@ function SectionFAQ({ ...props }) {
           </GridItem>
           <div className={classes.container}>
             <GridContainer className={classes.gridContainer}>
-              <GridItem xs={12} md={4} className={classes.gridItem}>
+              <GridItem xs={12} sm={12} md={4} className={classes.gridItem}>
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
@@ -47,16 +47,17 @@ function SectionFAQ({ ...props }) {
                   description={
                     <p>
                       A hackathon is best described as an &quot;invention
-                      marathon.&quot; Anyone who has an interest in technology
-                      attends one to learn, build & share their creations over
-                      the course of an entire day in a relaxed and welcoming
-                      atmosphere.
+                      marathon.&quot; A more well-known concept that is similar
+                      that of a start-up competition. Anyone who has an interest
+                      in innovation can attend to learn, build & share their
+                      creations over the course of an entire day in a relaxed
+                      relaxed and welcoming atmosphere.
                     </p>
                   }
                   iconColor="info"
                 />
               </GridItem>
-              <GridItem xs={12} md={4} className={classes.gridItem}>
+              <GridItem xs={12} sm={12} md={4} className={classes.gridItem}>
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
@@ -79,7 +80,7 @@ function SectionFAQ({ ...props }) {
                   iconColor="danger"
                 />
               </GridItem>
-              <GridItem xs={12} md={4} className={classes.gridItem}>
+              <GridItem xs={12} sm={12} md={4} className={classes.gridItem}>
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
@@ -89,7 +90,9 @@ function SectionFAQ({ ...props }) {
                     <p>
                       Admission to Wacode is completely free for all attendees.
                       Food and drinks are provided by us through our generous
-                      sponsors & community partners.
+                      sponsors & community partners. Shirts, swag, and any of
+                      the activities hosted at the event are also open to all at
+                      no cost.
                     </p>
                   }
                   iconColor="primary"
@@ -97,7 +100,7 @@ function SectionFAQ({ ...props }) {
               </GridItem>
             </GridContainer>
             <GridContainer className={classes.gridContainer}>
-              <GridItem xs={12} md={4} className={classes.gridItem}>
+              <GridItem xs={12} sm={12} md={4} className={classes.gridItem}>
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
@@ -113,7 +116,7 @@ function SectionFAQ({ ...props }) {
                   }
                 />
               </GridItem>
-              <GridItem xs={12} md={4} className={classes.gridItem}>
+              <GridItem xs={12} sm={12} md={4} className={classes.gridItem}>
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
@@ -129,7 +132,7 @@ function SectionFAQ({ ...props }) {
                   }
                 />
               </GridItem>
-              <GridItem xs={12} md={4} className={classes.gridItem}>
+              <GridItem xs={12} sm={12} md={4} className={classes.gridItem}>
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
