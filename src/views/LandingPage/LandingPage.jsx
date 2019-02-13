@@ -24,7 +24,7 @@ import SectionFAQ from "./Sections/SectionFAQ.jsx";
 import SectionSchedule from "./Sections/SectionSchedule";
 import SectionAboutUs from "./Sections/SectionAboutUs";
 import SectionTeam from "./Sections/SectionTeam";
-// import SectionSponsors from "./Sections/SectionSponsors";
+import SectionSponsors from "./Sections/SectionSponsors";
 
 import ScrollableAnchor from "react-scrollable-anchor";
 import { configureAnchors } from "react-scrollable-anchor";
@@ -108,7 +108,10 @@ class LandingPage extends React.Component {
             <ScrollableAnchor id={"schedule"}>
               <SectionSchedule />
             </ScrollableAnchor>
-            <SectionWork id="contact-us" />
+            <SectionSponsors />
+            <ScrollableAnchor>
+              <SectionWork id="contact-us" />
+            </ScrollableAnchor>
           </div>
         </div>
         <Footer
