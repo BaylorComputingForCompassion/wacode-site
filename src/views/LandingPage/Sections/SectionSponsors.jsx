@@ -18,7 +18,7 @@ import sectionInterestedStyle from "assets/jss/material-kit-pro-react/views/blog
 function SectionSponsors({ ...props }) {
   const { classes } = props;
   return (
-    <div className={classes.section} style={{ marginBottom: "-100px" }}>
+    <div className={classes.section}>
       <h2 className={classes.title + " " + classes.textCenter}>
         A special thanks to our sponsors & partners!
       </h2>

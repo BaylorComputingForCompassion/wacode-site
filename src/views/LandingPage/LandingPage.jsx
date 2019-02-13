@@ -109,9 +109,9 @@ class LandingPage extends React.Component {
               <SectionSchedule />
             </ScrollableAnchor>
             <SectionSponsors />
-            <ScrollableAnchor>
-              <SectionWork id="contact-us" />
-            </ScrollableAnchor>
+            {/*<ScrollableAnchor>*/}
+              {/*<SectionWork />*/}
+            {/*</ScrollableAnchor>*/}
           </div>
         </div>
         <Footer

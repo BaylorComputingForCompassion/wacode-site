@@ -25,7 +25,11 @@ class SectionWork extends React.Component {
               mission of bringing technology to our local community, and
               providing a platform for our flourishing tech community.
             </h4>
-            <ReactTypeformEmbed url="https://wacodeteam.typeform.com/to/mpK8Ns" />
+            <ReactTypeformEmbed
+              popup={false}
+              autoOpen={false}
+              url="https://wacodeteam.typeform.com/to/mpK8Ns"
+            />
           </GridItem>
         </GridContainer>
       </div>
