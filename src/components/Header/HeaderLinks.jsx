@@ -12,14 +12,58 @@ import ListItem from "@material-ui/core/ListItem";
 
 // @material-ui/icons
 import PersonAdd from "@material-ui/icons/PersonAdd";
+import HowToReg from "@material-ui/icons/HowToReg";
+import SupervisorAccount from "@material-ui/icons/SupervisorAccount";
 
 // core components
+import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
 import headerLinksStyle from "assets/jss/material-kit-pro-react/components/headerLinksStyle.jsx";
 
 function HeaderLinks({ ...props }) {
-  const { classes } = props;
+  const easeInOutQuad = (t, b, c, d) => {
+    t /= d / 2;
+    if (t < 1) return c / 2 * t * t + b;
+    t--;
+    return -c / 2 * (t * (t - 2) - 1) + b;
+  };
+
+  const smoothScroll = (e, target) => {
+    if (window.location.pathname === "/sections") {
+      var isMobile = navigator.userAgent.match(
+        /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
+      );
+      if (isMobile) {
+        // if we are on mobile device the scroll into view will be managed by the browser
+      } else {
+        e.preventDefault();
+        var targetScroll = document.getElementById(target);
+        scrollGo(document.documentElement, targetScroll.offsetTop, 1250);
+      }
+    }
+  };
+  const scrollGo = (element, to, duration) => {
+    var start = element.scrollTop,
+      change = to - start,
+      currentTime = 0,
+      increment = 20;
+
+    var animateScroll = function() {
+      currentTime += increment;
+      var val = easeInOutQuad(currentTime, start, change, duration);
+      element.scrollTop = val;
+      if (currentTime < duration) {
+        setTimeout(animateScroll, increment);
+      }
+    };
+    animateScroll();
+  };
+
+  var onClickSections = {};
+
+  {/* @TODO Add Mentor/Sponsor/Partner Registration */}
+  const { classes, dropdownHoverColor } = props;
   return (
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
@@ -53,15 +97,36 @@ function HeaderLinks({ ...props }) {
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
-            href="https://scottyshaw.typeform.com/to/WFEVuG"
-            color={"white"}
-            className={classes.navButton}
-            round
-        >
-          <PersonAdd className={classes.icons} /> Register Today
-        </Button>
-    </ListItem>
+        <CustomDropdown
+          noLiPadding
+          navDropdown
+          hoverColor={dropdownHoverColor}
+          buttonText="Registration Links"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent"
+          }}
+          buttonIcon={HowToReg}
+          dropdownList={[
+            <a
+              href="https://scottyshaw.typeform.com/to/WFEVuG"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              <PersonAdd className={classes.dropdownIcons} />
+              Participant
+            </a>,
+            <a
+              href="https://wacodeteam.typeform.com/to/mpK8Ns"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              <SupervisorAccount className={classes.dropdownIcons} />
+              Volunteer
+            </a>
+          ]}
+        />
+      </ListItem>
     </List>
   );
 }

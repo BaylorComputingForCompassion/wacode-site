@@ -19,7 +19,6 @@ import Button from "components/CustomButtons/Button.jsx";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 
 // Sections for this page
-import SectionWork from "./Sections/SectionWork.jsx";
 import SectionFAQ from "./Sections/SectionFAQ.jsx";
 import SectionSchedule from "./Sections/SectionSchedule";
 import SectionAboutUs from "./Sections/SectionAboutUs";
@@ -90,7 +89,7 @@ class LandingPage extends React.Component {
                     className="fa fa-id-badge"
                     style={{ marginRight: "10px" }}
                   />
-                  Register
+                  Register Now
                 </Button>
               </GridItem>
             </GridContainer>
@@ -109,9 +108,6 @@ class LandingPage extends React.Component {
               <SectionSchedule />
             </ScrollableAnchor>
             <SectionSponsors />
-            {/*<ScrollableAnchor>*/}
-              {/*<SectionWork />*/}
-            {/*</ScrollableAnchor>*/}
           </div>
         </div>
         <Footer
