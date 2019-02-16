@@ -32,7 +32,7 @@ function SectionSponsors({ ...props }) {
             target={"_blank"}
           >
             <img
-              style={{ width: "100%", height: "auto", margin: "20px" }}
+              style={{ width: "90%", height: "auto", margin: "20px" }}
               src={Pariveda}
               alt="Pariveda Logo"
             />
@@ -41,7 +41,7 @@ function SectionSponsors({ ...props }) {
         <GridItem sm={12} md={4}>
           <a href={"https://www.credera.com/jobs/"} target={"_blank"}>
             <img
-              style={{ width: "100%", height: "auto", margin: "20px" }}
+              style={{ width: "90%", height: "auto", margin: "20px" }}
               src={Credera}
               alt="Credera Logo"
             />
@@ -49,49 +49,49 @@ function SectionSponsors({ ...props }) {
         </GridItem>
         <GridItem sm={12} md={4}>
           <img
-            style={{ width: "100%", height: "auto", margin: "20px" }}
+            style={{ width: "90%", height: "auto", margin: "20px" }}
             src={TriStar}
             alt="Tri Star Logo"
           />
         </GridItem>
         <GridItem sm={12} md={4}>
           <img
-            style={{ width: "100%", height: "auto", margin: "20px" }}
+            style={{ width: "90%", height: "auto", margin: "20px" }}
             src={PMI}
             alt="PMI Logo"
           />
         </GridItem>
         <GridItem sm={12} md={4}>
           <img
-            style={{ width: "100%", height: "auto", margin: "5px" }}
+            style={{ width: "90%", height: "auto", margin: "5px" }}
             src={Agglo}
             alt="Agglo Logo"
           />
         </GridItem>
         <GridItem sm={12} md={4}>
           <img
-            style={{ width: "100%", height: "auto", margin: "20px" }}
+            style={{ width: "90%", height: "auto", margin: "20px" }}
             src={Blumania}
             alt="Blumania Logo"
           />
         </GridItem>
         <GridItem sm={12} md={4}>
           <img
-            style={{ width: "100%", height: "auto", margin: "20px" }}
+            style={{ width: "90%", height: "auto", margin: "20px" }}
             src={WC}
             alt="WC Logo"
           />
         </GridItem>
         <GridItem sm={12} md={4}>
           <img
-            style={{ width: "100%", height: "auto", margin: "5px" }}
+            style={{ width: "90%", height: "auto", margin: "5px" }}
             src={PremiumPoppers}
             alt="Premium Poppers Logo"
           />
         </GridItem>
         <GridItem sm={12} md={4}>
           <img
-            style={{ width: "100%", height: "auto", margin: "20px" }}
+            style={{ width: "90%", height: "auto", margin: "20px" }}
             src={Placeholder}
             alt="This could be your company!"
           />
