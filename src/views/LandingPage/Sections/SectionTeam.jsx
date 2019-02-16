@@ -16,6 +16,7 @@ import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections
 import mario from "assets/img/mario_profile.jpeg";
 import brandon from "assets/img/brandon_profile.jpeg";
 import miranda from "assets/img/miranda_profile.jpeg";
+import billicarole from "assets/img/billicarole_profile.jpeg";
 import scotty from "assets/img/placeholder.jpg";
 
 function SectionTeam({ ...props }) {
@@ -42,7 +43,7 @@ function SectionTeam({ ...props }) {
             </GridItem>
           </GridContainer>
           <GridContainer>
-            <GridItem xs={12} sm={6} md={3}>
+            <GridItem xs={12} sm={6} md={4}>
               <Card profile plain>
                 <CardAvatar profile plain>
                   <a href="https://www.linkedin.com/in/mariolopezarturo/">
@@ -61,7 +62,7 @@ function SectionTeam({ ...props }) {
                     </h6>
                   </Muted>
                   <p className={classes.description}>
-                    Baylor Computer Science Junior, Software Engineer, Meeting
+                    Baylor Computer Science Junior. Software Engineer. Meeting
                     Maniac.
                   </p>
                 </CardBody>
@@ -87,32 +88,32 @@ function SectionTeam({ ...props }) {
                 </CardFooter>
               </Card>
             </GridItem>
-            <GridItem xs={12} sm={6} md={3}>
+            <GridItem xs={12} sm={6} md={4}>
               <Card profile plain>
                 <CardAvatar profile plain>
-                  <a href="#scotty" onClick={e => e.preventDefault()}>
+                  <a href="https://www.linkedin.com/in/brandonmmork/">
                     <img
-                      src={scotty}
-                      alt="Scotty Profile"
+                      src={brandon}
+                      alt="Brandon Profile"
                       className={classes.img}
                     />
                   </a>
                 </CardAvatar>
                 <CardBody>
-                  <h4 className={classes.cardTitle}>Scotty Shaw</h4>
+                  <h4 className={classes.cardTitle}>Brandon Mork</h4>
                   <Muted>
                     <h6 className={classes.cardCategory}>
-                      Co-Founder & Hackathon Mentor
+                      Vice President & Logistics Coordinator
                     </h6>
                   </Muted>
                   <p className={classes.description}>
-                    Tried and True Wacoan. Hackathon Guru. Mr.
-                    Plan-for-the-best.
+                    Baylor Computer Science Junior. Right-hand man. Sends emails
+                    at 2am.
                   </p>
                 </CardBody>
-                <CardFooter profile className={classes.justifyContent}>
+                <CardFooter profile plain className={classes.justifyContent}>
                   <Button
-                    href="mailto:ScottyShaw1@Gmail.com"
+                    href="mailto:Brandon_Mork@Baylor.edu"
                     justIcon
                     simple
                     color="github"
@@ -121,7 +122,7 @@ function SectionTeam({ ...props }) {
                     <i className="fas fa-envelope" />
                   </Button>
                   <Button
-                    href="#scotty_profile"
+                    href="https://www.linkedin.com/in/brandonmmork/"
                     justIcon
                     simple
                     color="linkedin"
@@ -132,7 +133,41 @@ function SectionTeam({ ...props }) {
                 </CardFooter>
               </Card>
             </GridItem>
-            <GridItem xs={12} sm={6} md={3}>
+            <GridItem xs={12} sm={6} md={4}>
+              <Card profile plain>
+                <CardAvatar profile plain>
+                  <img
+                    src={billicarole}
+                    alt="Billicarole Profile"
+                    className={classes.img}
+                  />
+                </CardAvatar>
+                <CardBody>
+                  <h4 className={classes.cardTitle}>Billicarole Evans</h4>
+                  <Muted>
+                    <h6 className={classes.cardCategory}>
+                      Chief Financial Officer
+                    </h6>
+                  </Muted>
+                  <p className={classes.description}>
+                    Baylor Mechanical Engineering Junior. Official Hypewoman.
+                    Need change?
+                  </p>
+                </CardBody>
+                <CardFooter profile plain className={classes.justifyContent}>
+                  <Button
+                    href="mailto:Billicarole_Evans@Baylor.edu"
+                    justIcon
+                    simple
+                    color="github"
+                    className={classes.btn}
+                  >
+                    <i className="fas fa-envelope" />
+                  </Button>
+                </CardFooter>
+              </Card>
+            </GridItem>
+            <GridItem xs={12} sm={6} md={4}>
               <Card profile plain>
                 <CardAvatar profile plain>
                   <a href="https://www.linkedin.com/in/miranda-montroy-78107117b/">
@@ -177,47 +212,36 @@ function SectionTeam({ ...props }) {
                 </CardFooter>
               </Card>
             </GridItem>
-            <GridItem xs={12} sm={6} md={3}>
+            <GridItem xs={12} sm={6} md={4}>
               <Card profile plain>
                 <CardAvatar profile plain>
-                  <a href="https://www.linkedin.com/in/brandonmmork/">
-                    <img
-                      src={brandon}
-                      alt="Brandon Profile"
-                      className={classes.img}
-                    />
-                  </a>
+                  <img
+                    src={scotty}
+                    alt="Scotty Profile"
+                    className={classes.img}
+                  />
                 </CardAvatar>
                 <CardBody>
-                  <h4 className={classes.cardTitle}>Brandon Mork</h4>
+                  <h4 className={classes.cardTitle}>Scotty Shaw</h4>
                   <Muted>
                     <h6 className={classes.cardCategory}>
-                      Vice President & Logistics Coordinator
+                      Co-Founder & Hackathon Mentor
                     </h6>
                   </Muted>
                   <p className={classes.description}>
-                    Baylor Computer Science Junior. Right-hand man. Sends emails
-                    at 2am.
+                    Tried and True Wacoan. Hackathon Guru. Mr.
+                    Plan-for-the-best.
                   </p>
                 </CardBody>
-                <CardFooter profile plain className={classes.justifyContent}>
+                <CardFooter profile className={classes.justifyContent}>
                   <Button
-                    href="mailto:Brandon_Mork@Baylor.edu"
+                    href="mailto:ScottyShaw1@Gmail.com"
                     justIcon
                     simple
                     color="github"
                     className={classes.btn}
                   >
                     <i className="fas fa-envelope" />
-                  </Button>
-                  <Button
-                    href="https://www.linkedin.com/in/brandonmmork/"
-                    justIcon
-                    simple
-                    color="linkedin"
-                    className={classes.btn}
-                  >
-                    <i className="fab fa-linkedin" />
                   </Button>
                 </CardFooter>
               </Card>

@@ -9,6 +9,8 @@ import TriStar from "assets/img/SponsorLogos/TriStar.jpeg";
 import Agglo from "assets/img/SponsorLogos/Agglo.png";
 import Blumania from "assets/img/SponsorLogos/BLUMANIA.png";
 import Pariveda from "assets/img/SponsorLogos/Pariveda.jpeg";
+import Credera from "assets/img/SponsorLogos/Credera.png";
+import PMI from "assets/img/SponsorLogos/PMI.png";
 import WC from "assets/img/SponsorLogos/WC.png";
 import PremiumPoppers from "assets/img/SponsorLogos/PremiumPoppers.png";
 import Placeholder from "assets/img/image_placeholder.png";
@@ -25,6 +27,27 @@ function SectionSponsors({ ...props }) {
       <br />
       <GridContainer>
         <GridItem sm={12} md={4}>
+          <a
+            href={"https://www.parivedasolutions.com/privacy/careers-overview"}
+            target={"_blank"}
+          >
+            <img
+              style={{ width: "100%", height: "auto", margin: "20px" }}
+              src={Pariveda}
+              alt="Pariveda Logo"
+            />
+          </a>
+        </GridItem>
+        <GridItem sm={12} md={4}>
+          <a href={"https://www.credera.com/jobs/"} target={"_blank"}>
+            <img
+              style={{ width: "100%", height: "auto", margin: "20px" }}
+              src={Credera}
+              alt="Credera Logo"
+            />
+          </a>
+        </GridItem>
+        <GridItem sm={12} md={4}>
           <img
             style={{ width: "100%", height: "auto", margin: "20px" }}
             src={TriStar}
@@ -34,8 +57,8 @@ function SectionSponsors({ ...props }) {
         <GridItem sm={12} md={4}>
           <img
             style={{ width: "100%", height: "auto", margin: "20px" }}
-            src={Pariveda}
-            alt="Tri Star Logo"
+            src={PMI}
+            alt="PMI Logo"
           />
         </GridItem>
         <GridItem sm={12} md={4}>
@@ -45,8 +68,6 @@ function SectionSponsors({ ...props }) {
             alt="Agglo Logo"
           />
         </GridItem>
-      </GridContainer>
-      <GridContainer>
         <GridItem sm={12} md={4}>
           <img
             style={{ width: "100%", height: "auto", margin: "20px" }}
@@ -68,8 +89,6 @@ function SectionSponsors({ ...props }) {
             alt="Premium Poppers Logo"
           />
         </GridItem>
-      </GridContainer>
-      <GridContainer>
         <GridItem sm={12} md={4}>
           <img
             style={{ width: "100%", height: "auto", margin: "20px" }}
