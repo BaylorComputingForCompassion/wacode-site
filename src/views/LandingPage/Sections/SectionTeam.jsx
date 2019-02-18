@@ -17,7 +17,7 @@ import mario from "assets/img/mario_profile.jpeg";
 import brandon from "assets/img/brandon_profile.jpeg";
 import miranda from "assets/img/miranda_profile.jpeg";
 import billicarole from "assets/img/billicarole_profile.jpeg";
-import scotty from "assets/img/placeholder.jpg";
+import scotty from "assets/img/scotty_profile.jpeg";
 
 function SectionTeam({ ...props }) {
   const { classes, ...rest } = props;
@@ -46,7 +46,10 @@ function SectionTeam({ ...props }) {
             <GridItem xs={12} sm={6} md={4}>
               <Card profile plain>
                 <CardAvatar profile plain>
-                  <a href="https://www.linkedin.com/in/mariolopezarturo/">
+                  <a
+                    href="https://www.linkedin.com/in/mariolopezarturo/"
+                    target={"_blank"}
+                  >
                     <img
                       src={mario}
                       alt="Mario Profile"
@@ -91,7 +94,10 @@ function SectionTeam({ ...props }) {
             <GridItem xs={12} sm={6} md={4}>
               <Card profile plain>
                 <CardAvatar profile plain>
-                  <a href="https://www.linkedin.com/in/brandonmmork/">
+                  <a
+                    href="https://www.linkedin.com/in/brandonmmork/"
+                    target={"_blank"}
+                  >
                     <img
                       src={brandon}
                       alt="Brandon Profile"
@@ -170,7 +176,10 @@ function SectionTeam({ ...props }) {
             <GridItem xs={12} sm={6} md={4}>
               <Card profile plain>
                 <CardAvatar profile plain>
-                  <a href="https://www.linkedin.com/in/miranda-montroy-78107117b/">
+                  <a
+                    href="https://www.linkedin.com/in/miranda-montroy-78107117b/"
+                    target={"_blank"}
+                  >
                     <img
                       src={miranda}
                       alt="Miranda Profile"
@@ -215,11 +224,16 @@ function SectionTeam({ ...props }) {
             <GridItem xs={12} sm={6} md={4}>
               <Card profile plain>
                 <CardAvatar profile plain>
-                  <img
-                    src={scotty}
-                    alt="Scotty Profile"
-                    className={classes.img}
-                  />
+                  <a
+                    href={"https://www.linkedin.com/in/scottyshaw/"}
+                    target={"_blank"}
+                  >
+                    <img
+                      src={scotty}
+                      alt="Scotty Profile"
+                      className={classes.img}
+                    />
+                  </a>
                 </CardAvatar>
                 <CardBody>
                   <h4 className={classes.cardTitle}>Scotty Shaw</h4>
@@ -229,8 +243,7 @@ function SectionTeam({ ...props }) {
                     </h6>
                   </Muted>
                   <p className={classes.description}>
-                    Tried and True Wacoan. Hackathon Guru. Mr.
-                    Plan-for-the-best.
+                    Midway ‘05. Duke ‘09. The Fresh Duke. Just do it.
                   </p>
                 </CardBody>
                 <CardFooter profile className={classes.justifyContent}>
@@ -242,6 +255,15 @@ function SectionTeam({ ...props }) {
                     className={classes.btn}
                   >
                     <i className="fas fa-envelope" />
+                  </Button>
+                  <Button
+                    href="https://www.linkedin.com/in/scottyshaw/"
+                    justIcon
+                    simple
+                    color="linkedin"
+                    className={classes.btn}
+                  >
+                    <i className="fab fa-linkedin" />
                   </Button>
                 </CardFooter>
               </Card>
