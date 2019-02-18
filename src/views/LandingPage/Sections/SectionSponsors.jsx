@@ -22,7 +22,7 @@ function SectionSponsors({ ...props }) {
   return (
     <div className={classes.section}>
       <h2 className={classes.title + " " + classes.textCenter}>
-        A special thanks to our sponsors!
+        A special thanks to our sponsors & partners!
       </h2>
       <br />
       <GridContainer>
@@ -63,20 +63,6 @@ function SectionSponsors({ ...props }) {
         </GridItem>
         <GridItem sm={12} md={4}>
           <img
-            style={{ width: "90%", height: "auto", margin: "5px" }}
-            src={Agglo}
-            alt="Agglo Logo"
-          />
-        </GridItem>
-        <GridItem sm={12} md={4}>
-          <img
-            style={{ width: "90%", height: "auto", margin: "20px" }}
-            src={Blumania}
-            alt="Blumania Logo"
-          />
-        </GridItem>
-        <GridItem sm={12} md={4}>
-          <img
             style={{ width: "90%", height: "auto", margin: "20px" }}
             src={WC}
             alt="WC Logo"
@@ -85,16 +71,40 @@ function SectionSponsors({ ...props }) {
         <GridItem sm={12} md={4}>
           <img
             style={{ width: "90%", height: "auto", margin: "5px" }}
-            src={PremiumPoppers}
-            alt="Premium Poppers Logo"
+            src={Agglo}
+            alt="Agglo Logo"
           />
         </GridItem>
         <GridItem sm={12} md={4}>
-          <img
-            style={{ width: "90%", height: "auto", margin: "20px" }}
-            src={Placeholder}
-            alt="This could be your company!"
-          />
+          <a href={"https://www.blumaniaenergy.com/"} target={"_blank"}>
+            <img
+              style={{ width: "90%", height: "auto", margin: "20px" }}
+              src={Blumania}
+              alt="Blumania Logo"
+            />
+          </a>
+        </GridItem>
+        <GridItem sm={12} md={4}>
+          <a href={"https://www.premiumpopperspopcorn.com/"} target={"_blank"}>
+            <img
+              style={{ width: "90%", height: "auto", margin: "5px" }}
+              src={PremiumPoppers}
+              alt="Premium Poppers Logo"
+            />
+          </a>
+        </GridItem>
+        <GridItem sm={12} md={4}>
+          <a
+            href={
+              "mailto:Wacode.Team@gmail.com?subject=Sponsorship%20Inquiry&body=Howdy!"
+            }
+          >
+            <img
+              style={{ width: "90%", height: "auto", margin: "20px" }}
+              src={Placeholder}
+              alt="This could be your company!"
+            />
+          </a>
         </GridItem>
       </GridContainer>
     </div>
