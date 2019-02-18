@@ -38,6 +38,11 @@ class SectionAboutUs extends React.Component {
               makers to use their creativity and innovation at its full
               potential.
             </h5>
+            <br />
+            <h5 className={classes.description}>
+              More information on categories, tracks, prizes and workshops
+              coming soon!
+            </h5>
           </GridItem>
         </GridContainer>
         <div>

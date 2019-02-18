@@ -38,7 +38,7 @@ function SectionFAQ({ ...props }) {
           </GridItem>
           <div className={classes.container}>
             <GridContainer className={classes.gridContainer}>
-              <GridItem xs={12} sm={12} md={4} className={classes.gridItem}>
+              <GridItem sm={12} md={6} lg={4} className={classes.gridItem}>
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
@@ -57,7 +57,7 @@ function SectionFAQ({ ...props }) {
                   iconColor="info"
                 />
               </GridItem>
-              <GridItem xs={12} sm={12} md={4} className={classes.gridItem}>
+              <GridItem sm={12} md={6} lg={4} className={classes.gridItem}>
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
@@ -80,7 +80,7 @@ function SectionFAQ({ ...props }) {
                   iconColor="danger"
                 />
               </GridItem>
-              <GridItem xs={12} sm={12} md={4} className={classes.gridItem}>
+              <GridItem sm={12} md={6} lg={4} className={classes.gridItem}>
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
@@ -98,9 +98,7 @@ function SectionFAQ({ ...props }) {
                   iconColor="primary"
                 />
               </GridItem>
-            </GridContainer>
-            <GridContainer className={classes.gridContainer}>
-              <GridItem xs={12} sm={12} md={4} className={classes.gridItem}>
+              <GridItem sm={12} md={6} lg={4} className={classes.gridItem}>
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
@@ -116,7 +114,7 @@ function SectionFAQ({ ...props }) {
                   }
                 />
               </GridItem>
-              <GridItem xs={12} sm={12} md={4} className={classes.gridItem}>
+              <GridItem sm={12} md={6} lg={4} className={classes.gridItem}>
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
@@ -132,7 +130,7 @@ function SectionFAQ({ ...props }) {
                   }
                 />
               </GridItem>
-              <GridItem xs={12} sm={12} md={4} className={classes.gridItem}>
+              <GridItem sm={12} md={6} lg={4} className={classes.gridItem}>
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
