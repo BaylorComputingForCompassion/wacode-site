@@ -5,6 +5,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 // SponsorLogos
+import AmericanAirlines from "assets/img/SponsorLogos/AmericanAirlines.png";
 import TriStar from "assets/img/SponsorLogos/TriStar.jpeg";
 import Agglo from "assets/img/SponsorLogos/Agglo.png";
 import Blumania from "assets/img/SponsorLogos/BLUMANIA.png";
@@ -26,6 +27,15 @@ function SectionSponsors({ ...props }) {
       </h2>
       <br />
       <GridContainer>
+        <GridItem sm={12} md={12}>
+          <a href={"https://jobs.aa.com/"} target={"_blank"}>
+            <img
+              style={{ width: "90%", height: "auto", margin: "20px" }}
+              src={AmericanAirlines}
+              alt="American Airlines Logo"
+            />
+          </a>
+        </GridItem>
         <GridItem sm={12} md={4}>
           <a
             href={"https://www.parivedasolutions.com/privacy/careers-overview"}
