@@ -27,10 +27,10 @@ function SectionSponsors({ ...props }) {
       </h2>
       <br />
       <GridContainer>
-        <GridItem sm={12} md={12}>
+        <GridItem sm={12} md={12} lg={12}>
           <a href={"https://jobs.aa.com/"} target={"_blank"}>
             <img
-              style={{ width: "90%", height: "auto", margin: "20px" }}
+              style={{ width: "100%", height: "auto", margin: "20px" }}
               src={AmericanAirlines}
               alt="American Airlines Logo"
             />
