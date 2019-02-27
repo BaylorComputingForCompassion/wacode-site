@@ -8,6 +8,10 @@ import Dashboard from "@material-ui/icons/Dashboard";
 import ViewCarousel from "@material-ui/icons/ViewCarousel";
 import AccessTime from "@material-ui/icons/AccessTime";
 import AttachMoney from "@material-ui/icons/AttachMoney";
+import Assignment from "@material-ui/icons/Assignment";
+import Face from "@material-ui/icons/Face";
+import Work from "@material-ui/icons/Work";
+import SuprvisedUserCircle from "@material-ui/icons/SupervisedUserCircle";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -51,7 +55,8 @@ function SectionFAQ({ ...props }) {
                       that of a start-up competition. Anyone who has an interest
                       in innovation can attend to learn, build & share their
                       creations over the course of an entire day in a relaxed
-                      relaxed and welcoming atmosphere.
+                      relaxed and welcoming atmosphere. You don&apos;t have to
+                      be a great coder to do well at a hackathon.
                     </p>
                   }
                   iconColor="info"
@@ -61,7 +66,7 @@ function SectionFAQ({ ...props }) {
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
-                  icon={FormatPaint}
+                  icon={SuprvisedUserCircle}
                   title="Who can attend Wacode?"
                   description={
                     <p>
@@ -84,7 +89,7 @@ function SectionFAQ({ ...props }) {
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
-                  icon={Dashboard}
+                  icon={AttachMoney}
                   title="Will Wacode cost me anything?"
                   description={
                     <p>
@@ -118,14 +123,15 @@ function SectionFAQ({ ...props }) {
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
-                  icon={AccessTime}
+                  icon={Work}
                   title="What should I plan on bringing?"
                   description={
                     <p>
                       You should bring your computer, chargers, and any other
                       hardware or software you plan on using. WiFi and outlets
                       will be provided but it doesn&apos;t hurt to bring an
-                      extra power strip.
+                      extra power strip. Wouldn&apos;t be bad idea if you want
+                      to show it off to recruiters during the event!
                     </p>
                   }
                 />
@@ -134,7 +140,58 @@ function SectionFAQ({ ...props }) {
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
-                  icon={AttachMoney}
+                  icon={Face}
+                  title="What if I don’t have a team?"
+                  description={
+                    <p>
+                      Register anyway! If you want to compete by yourself that’s
+                      fine, or you want a team but don’t have one, we can help
+                      match you with some people the day of the event!
+                    </p>
+                  }
+                />
+              </GridItem>
+              <GridItem sm={12} md={6} lg={4} className={classes.gridItem}>
+                <InfoArea
+                  vertical
+                  className={classes.infoArea5}
+                  icon={Assignment}
+                  title="When does registration close?"
+                  description={
+                    <p>
+                      If you are a non-Baylor student we ask that you register
+                      by Thursday, February 28th to get you access to our WiFi.
+                      For Baylor students, staff, and faculty there is no
+                      deadline. We strongly encourage you to register as early
+                      as possible to reserve your shirt and food. All food and
+                      swag these will be given out on a first-come-first-serve
+                      basis on the day of, prioritizing those who have already
+                      registered online.
+                    </p>
+                  }
+                />
+              </GridItem>
+              <GridItem sm={12} md={6} lg={4} className={classes.gridItem}>
+                <InfoArea
+                  vertical
+                  className={classes.infoArea5}
+                  icon={AccessTime}
+                  title="What if I can't stay the whole day?"
+                  description={
+                    <p>
+                      It is NOT required to stay at the venue all day. Come for
+                      an hour! Come for 12! There is no time requirement for
+                      those wanting to participate and compete for prizes or
+                      those wanting to volunteer.
+                    </p>
+                  }
+                />
+              </GridItem>
+              <GridItem sm={12} md={6} lg={4} className={classes.gridItem}>
+                <InfoArea
+                  vertical
+                  className={classes.infoArea5}
+                  icon={Dashboard}
                   title="What to do if my question wasn't answered?"
                   description={
                     <p>
