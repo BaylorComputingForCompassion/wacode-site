@@ -14,6 +14,7 @@ import Credera from "assets/img/SponsorLogos/Credera.png";
 import PMI from "assets/img/SponsorLogos/PMI.png";
 import WC from "assets/img/SponsorLogos/WC.png";
 import PremiumPoppers from "assets/img/SponsorLogos/PremiumPoppers.png";
+import GitHub from "assets/img/SponsorLogos/GitHub.png";
 import Placeholder from "assets/img/image_placeholder.png";
 
 import sectionInterestedStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionInterestedStyle.jsx";
@@ -45,6 +46,18 @@ function SectionSponsors({ ...props }) {
               style={{ width: "90%", height: "auto", margin: "20px" }}
               src={Pariveda}
               alt="Pariveda Logo"
+            />
+          </a>
+        </GridItem>
+        <GridItem sm={12} md={4}>
+          <a
+            href={"https://github.com/about/careers"}
+            target={"_blank"}
+          >
+            <img
+              style={{ width: "90%", height: "auto", margin: "20px" }}
+              src={GitHub}
+              alt="GitHub Logo"
             />
           </a>
         </GridItem>
