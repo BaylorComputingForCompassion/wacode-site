@@ -18,15 +18,15 @@ import SectionContacts from "./Sections/SectionContacts.jsx";
 
 import sectionsPageStyle from "assets/jss/material-kit-pro-react/views/sectionsPageStyle.jsx";
 
-class SectionsPage extends React.Component {
+class LivePage extends React.Component {
   componentDidMount() {
     var href = window.location.href.substring(
       window.location.href.lastIndexOf("#") + 1
     );
     if (window.location.href.lastIndexOf("#") > 0)
       document.getElementById(href).scrollIntoView();
-    window.addEventListener("scroll", SectionsPage.updateView);
-    SectionsPage.updateView();
+    window.addEventListener("scroll", LivePage.updateView);
+    LivePage.updateView();
   }
   componentDidUpdate() {
     var href = window.location.href.substring(
@@ -35,7 +35,7 @@ class SectionsPage extends React.Component {
     document.getElementById(href).scrollIntoView();
   }
   componentWillUnmount() {
-    window.removeEventListener("scroll", SectionsPage.updateView);
+    window.removeEventListener("scroll", LivePage.updateView);
   }
   static easeInOutQuad(t, b, c, d) {
     t /= d / 2;
@@ -78,12 +78,7 @@ class SectionsPage extends React.Component {
 
     var animateScroll = function() {
       currentTime += increment;
-      var val = SectionsPage.easeInOutQuad(
-        currentTime,
-        start,
-        change,
-        duration
-      );
+      var val = LivePage.easeInOutQuad(currentTime, start, change, duration);
       element.scrollTop = val;
       if (currentTime < duration) {
         setTimeout(animateScroll, increment);
@@ -288,4 +283,4 @@ class SectionsPage extends React.Component {
   }
 }
 
-export default withStyles(sectionsPageStyle)(SectionsPage);
+export default withStyles(sectionsPageStyle)(LivePage);

@@ -18,6 +18,7 @@ import brandon from "assets/img/brandon_profile.jpeg";
 import miranda from "assets/img/miranda_profile.jpeg";
 import billicarole from "assets/img/billicarole_profile.jpeg";
 import scotty from "assets/img/scotty_profile.jpeg";
+import meghan from "assets/img/meghan_profile.jpeg";
 
 function SectionTeam({ ...props }) {
   const { classes, ...rest } = props;
@@ -258,6 +259,54 @@ function SectionTeam({ ...props }) {
                   </Button>
                   <Button
                     href="https://www.linkedin.com/in/scottyshaw/"
+                    justIcon
+                    simple
+                    color="linkedin"
+                    className={classes.btn}
+                  >
+                    <i className="fab fa-linkedin" />
+                  </Button>
+                </CardFooter>
+              </Card>
+            </GridItem>
+            <GridItem xs={12} sm={6} md={4}>
+              <Card profile plain>
+                <CardAvatar profile plain>
+                  <a
+                    href="https://www.linkedin.com/in/meghanbibb/"
+                    target={"_blank"}
+                  >
+                    <img
+                      src={meghan}
+                      alt="Meghan Profile"
+                      className={classes.img}
+                    />
+                  </a>
+                </CardAvatar>
+                <CardBody>
+                  <h4 className={classes.cardTitle}>Meghan Bibb</h4>
+                  <Muted>
+                    <h6 className={classes.cardCategory}>
+                      Head of Marketing & Philanthropy
+                    </h6>
+                  </Muted>
+                  <p className={classes.description}>
+                    Baylor Computer Science Sophomore. Spreads love & kindness
+                    as if they were a virus.
+                  </p>
+                </CardBody>
+                <CardFooter profile className={classes.justifyContent}>
+                  <Button
+                    href="mailto:Meghan_Bibb1@Baylor.edu"
+                    justIcon
+                    simple
+                    color="github"
+                    className={classes.btn}
+                  >
+                    <i className="fas fa-envelope" />
+                  </Button>
+                  <Button
+                    href="https://www.linkedin.com/in/meghanbibb/"
                     justIcon
                     simple
                     color="linkedin"
