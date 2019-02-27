@@ -3,7 +3,6 @@ import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import Code from "@material-ui/icons/Code";
-import FormatPaint from "@material-ui/icons/FormatPaint";
 import Dashboard from "@material-ui/icons/Dashboard";
 import ViewCarousel from "@material-ui/icons/ViewCarousel";
 import AccessTime from "@material-ui/icons/AccessTime";
@@ -130,8 +129,8 @@ function SectionFAQ({ ...props }) {
                       You should bring your computer, chargers, and any other
                       hardware or software you plan on using. WiFi and outlets
                       will be provided but it doesn&apos;t hurt to bring an
-                      extra power strip. Wouldn&apos;t be bad idea if you want
-                      to show it off to recruiters during the event!
+                      extra power strip. Wouldn&apos;t be bad idea to bring a
+                      resume to show it off to recruiters during the event!
                     </p>
                   }
                 />
