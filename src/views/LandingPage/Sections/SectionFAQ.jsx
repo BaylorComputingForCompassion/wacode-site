@@ -195,8 +195,12 @@ function SectionFAQ({ ...props }) {
                   description={
                     <p>
                       Hey, we&apos;re here to help! Email us at
-                      Wacode.Team@Gmail.com or reach out to Computing for
-                      Compassion via{" "}
+                      <a href="mailto:Wacode.Team@Gmail.com">
+                        <span style={{ color: "#3EAD7B" }}>
+                          &nbsp;Wacode.Team@Gmail.com
+                        </span>
+                      </a>{" "}
+                      or reach out to Computing for Compassion via{" "}
                       <a href="https://www.instagram.com/baylorc4c/">
                         <span style={{ color: "#3EAD7B" }}>Instagram</span>
                       </a>
