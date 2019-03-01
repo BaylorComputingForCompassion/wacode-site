@@ -8,7 +8,7 @@ import Table from "components/Table/Table.jsx";
 
 import style from "assets/jss/material-kit-pro-react/views/componentsSections/contentAreas.jsx";
 
-class SectionSchedule extends React.Component {
+class SectionMainSchedule extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
     return (
@@ -16,7 +16,7 @@ class SectionSchedule extends React.Component {
         {...rest}
         className="cd-section"
         id="contentAreas"
-        style={{ marginTop: "4vh" }}
+        style={{ marginTop: "-50px", paddingBottom: "4vh" }}
       >
         <div id="tables">
           <GridContainer>
@@ -108,4 +108,4 @@ class SectionSchedule extends React.Component {
   }
 }
 
-export default withStyles(style)(SectionSchedule);
+export default withStyles(style)(SectionMainSchedule);

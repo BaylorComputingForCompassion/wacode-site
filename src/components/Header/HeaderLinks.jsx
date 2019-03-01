@@ -22,11 +22,12 @@ function HeaderLinks({ ...props }) {
   const { classes, dropdownHoverColor } = props;
   return (
     <List className={classes.list + " " + classes.mlAuto}>
-      {/*<ListItem className={classes.listItem}>*/}
-        {/*<Link to="/live" className={classes.dropdownLink}>*/}
-          {/*Live*/}
-        {/*</Link>*/}
-      {/*</ListItem>*/}
+      {/* @TODO ONCE LivePage IS DONE RE-ENABLE THIS */}
+      <ListItem className={classes.listItem}>
+        <Link to="/live" className={classes.dropdownLink}>
+          Live
+        </Link>
+      </ListItem>
       <ListItem className={classes.listItem}>
         <Button
           href={"#about-us"}

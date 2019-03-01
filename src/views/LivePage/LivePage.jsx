@@ -23,6 +23,8 @@ import { configureAnchors } from "react-scrollable-anchor";
 
 // Sections
 import SectionLocation from "./Sections/SectionLocation";
+import SectionMainSchedule from "./Sections/SectionMainSchedule";
+import SectionWorkshopActivitySchedule from "./Sections/SectionWorkshopActivitySchedule";
 
 const dashboardRoutes = [];
 configureAnchors({ offset: -60, scrollDuration: 500 });
@@ -51,7 +53,7 @@ class LivePage extends React.Component {
         <Parallax image={require("assets/img/tech_background.png")}>
           <div className={classes.container}>
             <GridContainer>
-              <GridItem xs={10}>
+              <GridItem xs={12}>
                 <h1 className={classes.title}>Welcome to Wacode!</h1>
                 <TwitterTimelineEmbed
                   sourceType="profile"
@@ -77,6 +79,8 @@ class LivePage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           {/* @TODO Sections Go Here */}
           <SectionLocation />
+          <SectionMainSchedule />
+          <SectionWorkshopActivitySchedule />
         </div>
         <Footer
           content={
