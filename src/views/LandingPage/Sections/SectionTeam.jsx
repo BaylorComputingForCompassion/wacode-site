@@ -19,6 +19,7 @@ import miranda from "assets/img/miranda_profile.jpeg";
 import billicarole from "assets/img/billicarole_profile.jpeg";
 import scotty from "assets/img/scotty_profile.jpeg";
 import meghan from "assets/img/meghan_profile.jpeg";
+import neil from "assets/img/neil_profile.png";
 
 function SectionTeam({ ...props }) {
   const { classes, ...rest } = props;
@@ -307,6 +308,53 @@ function SectionTeam({ ...props }) {
                   </Button>
                   <Button
                     href="https://www.linkedin.com/in/meghanbibb/"
+                    justIcon
+                    simple
+                    color="linkedin"
+                    className={classes.btn}
+                  >
+                    <i className="fab fa-linkedin" />
+                  </Button>
+                </CardFooter>
+              </Card>
+            </GridItem>
+            <GridItem xs={12} sm={6} md={4}>
+              <Card profile plain>
+                <CardAvatar profile plain>
+                  <a
+                    href="https://www.linkedin.com/in/neilwilcoxson/"
+                    target={"_blank"}
+                  >
+                    <img
+                      src={neil}
+                      alt="Neil Profile"
+                      className={classes.img}
+                    />
+                  </a>
+                </CardAvatar>
+                <CardBody>
+                  <h4 className={classes.cardTitle}>Neil Wilcoxson</h4>
+                  <Muted>
+                    <h6 className={classes.cardCategory}>
+                      Event Scheduling Consultant
+                    </h6>
+                  </Muted>
+                  <p className={classes.description}>
+                    Baylor Computer Science Senior. Shows up way too early.
+                  </p>
+                </CardBody>
+                <CardFooter profile className={classes.justifyContent}>
+                  <Button
+                    href="mailto:Neil_Wilcoxson@Baylor.edu"
+                    justIcon
+                    simple
+                    color="github"
+                    className={classes.btn}
+                  >
+                    <i className="fas fa-envelope" />
+                  </Button>
+                  <Button
+                    href="https://www.linkedin.com/in/neilwilcoxson/"
                     justIcon
                     simple
                     color="linkedin"
