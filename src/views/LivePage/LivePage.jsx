@@ -19,6 +19,7 @@ import Button from "components/CustomButtons/Button.jsx";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 
 import { TwitterTimelineEmbed } from "react-twitter-embed";
+import ScrollableAnchor from "react-scrollable-anchor";
 import { configureAnchors } from "react-scrollable-anchor";
 
 // Sections
@@ -27,7 +28,7 @@ import SectionMainSchedule from "./Sections/SectionMainSchedule";
 import SectionWorkshopActivitySchedule from "./Sections/SectionWorkshopActivitySchedule";
 
 const dashboardRoutes = [];
-configureAnchors({ offset: -60, scrollDuration: 500 });
+configureAnchors({ scrollDuration: 500 });
 
 class LivePage extends React.Component {
   componentDidMount() {
@@ -78,7 +79,9 @@ class LivePage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           {/* @TODO Sections Go Here */}
-          <SectionLocation />
+          <ScrollableAnchor id={"location"}>
+            <SectionLocation />
+          </ScrollableAnchor>
           <SectionMainSchedule />
           <SectionWorkshopActivitySchedule />
         </div>

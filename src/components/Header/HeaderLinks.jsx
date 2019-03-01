@@ -24,9 +24,15 @@ function HeaderLinks({ ...props }) {
     <List className={classes.list + " " + classes.mlAuto}>
       {/* @TODO ONCE LivePage IS DONE RE-ENABLE THIS */}
       <ListItem className={classes.listItem}>
-        <Link to="/live" className={classes.dropdownLink}>
-          Live
-        </Link>
+        <Button
+          color={"transparent"}
+          className={classes.navButton}
+          round
+        >
+          <Link style={{ padding: "0px" }} to="/live" className={classes.dropdownLink}>
+            Live
+          </Link>
+        </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
