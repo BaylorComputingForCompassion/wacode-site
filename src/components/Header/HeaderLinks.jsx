@@ -2,6 +2,7 @@
 import React from "react";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
@@ -21,6 +22,11 @@ function HeaderLinks({ ...props }) {
   const { classes, dropdownHoverColor } = props;
   return (
     <List className={classes.list + " " + classes.mlAuto}>
+      {/*<ListItem className={classes.listItem}>*/}
+        {/*<Link to="/live" className={classes.dropdownLink}>*/}
+          {/*Live*/}
+        {/*</Link>*/}
+      {/*</ListItem>*/}
       <ListItem className={classes.listItem}>
         <Button
           href={"#about-us"}

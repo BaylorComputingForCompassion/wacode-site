@@ -1,286 +1,109 @@
 import React from "react";
-
+// nodejs library that concatenates classes
+import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
 // @material-ui/icons
+import Favorite from "@material-ui/icons/Favorite";
 // core components
 import Header from "components/Header/Header.jsx";
+import Footer from "components/Footer/Footer.jsx";
+import GridContainer from "components/Grid/GridContainer.jsx";
+import GridItem from "components/Grid/GridItem.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
-// sections of this Page
-import SectionHeaders from "./Sections/SectionHeaders.jsx";
-import SectionFeatures from "../LandingPage/Sections/SectionFAQ.jsx";
-import SectionBlogs from "./Sections/SectionBlogs.jsx";
-import SectionTeams from "./Sections/SectionTeams.jsx";
-import SectionProjects from "./Sections/SectionProjects.jsx";
-import SectionPricing from "./Sections/SectionPricing.jsx";
-import SectionTestimonials from "./Sections/SectionTestimonials.jsx";
-import SectionContacts from "./Sections/SectionContacts.jsx";
+import Parallax from "components/Parallax/Parallax.jsx";
+import Button from "components/CustomButtons/Button.jsx";
 
-import sectionsPageStyle from "assets/jss/material-kit-pro-react/views/sectionsPageStyle.jsx";
+import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
+
+import { TwitterTimelineEmbed } from "react-twitter-embed";
+import { configureAnchors } from "react-scrollable-anchor";
+
+// Sections
+import SectionLocation from "./Sections/SectionLocation";
+
+const dashboardRoutes = [];
+configureAnchors({ offset: -60, scrollDuration: 500 });
 
 class LivePage extends React.Component {
   componentDidMount() {
-    var href = window.location.href.substring(
-      window.location.href.lastIndexOf("#") + 1
-    );
-    if (window.location.href.lastIndexOf("#") > 0)
-      document.getElementById(href).scrollIntoView();
-    window.addEventListener("scroll", LivePage.updateView);
-    LivePage.updateView();
-  }
-  componentDidUpdate() {
-    var href = window.location.href.substring(
-      window.location.href.lastIndexOf("#") + 1
-    );
-    document.getElementById(href).scrollIntoView();
-  }
-  componentWillUnmount() {
-    window.removeEventListener("scroll", LivePage.updateView);
-  }
-  static easeInOutQuad(t, b, c, d) {
-    t /= d / 2;
-    if (t < 1) return (c / 2) * t * t + b;
-    t--;
-    return (-c / 2) * (t * (t - 2) - 1) + b;
-  }
-  static updateView() {
-    const contentSections = document.getElementsByClassName("cd-section");
-    const navigationItems = document
-      .getElementById("cd-vertical-nav")
-      .getElementsByTagName("a");
-
-    for (let i = 0; i < contentSections.length; i++) {
-      const activeSection =
-        parseInt(navigationItems[i].getAttribute("data-number"), 10) - 1;
-      if (
-        contentSections[i].offsetTop - window.innerHeight / 2 <
-          window.pageYOffset &&
-        contentSections[i].offsetTop +
-          contentSections[i].scrollHeight -
-          window.innerHeight / 2 >
-          window.pageYOffset
-      ) {
-        navigationItems[activeSection].classList.add("is-selected");
-      } else {
-        navigationItems[activeSection].classList.remove("is-selected");
-      }
-    }
-  }
-  smoothScroll(target) {
-    const targetScroll = document.getElementById(target);
-    this.scrollGo(document.documentElement, targetScroll.offsetTop, 1250);
-  }
-  scrollGo(element, to, duration) {
-    var start = element.scrollTop,
-      change = to - start,
-      currentTime = 0,
-      increment = 20;
-
-    var animateScroll = function() {
-      currentTime += increment;
-      var val = LivePage.easeInOutQuad(currentTime, start, change, duration);
-      element.scrollTop = val;
-      if (currentTime < duration) {
-        setTimeout(animateScroll, increment);
-      }
-    };
-    animateScroll();
+    window.scrollTo(0, 0);
+    document.body.scrollTop = 0;
   }
   render() {
-    const { classes } = this.props;
+    const { classes, ...rest } = this.props;
     return (
       <div>
         <Header
-          color="info"
-          brand="Material Kit PRO React"
+          color="transparent"
+          routes={dashboardRoutes}
+          brand="Wacode: A Community Hackathon"
           links={<HeaderLinks dropdownHoverColor="info" />}
           fixed
+          changeColorOnScroll={{
+            height: 300,
+            color: "primary"
+          }}
+          {...rest}
         />
-        <div className={classes.main}>
-          <SectionHeaders id="headers" />
-          <SectionFeatures id="features" />
-          <SectionBlogs id="blogs" />
-          <SectionTeams id="teams" />
-          <SectionProjects id="projects" />
-          <SectionPricing id="pricing" />
-          <SectionTestimonials id="testimonials" />
-          <SectionContacts id="contacts" />
+        <Parallax image={require("assets/img/tech_background.png")}>
+          <div className={classes.container}>
+            <GridContainer>
+              <GridItem xs={10}>
+                <h1 className={classes.title}>Welcome to Wacode!</h1>
+                <TwitterTimelineEmbed
+                  sourceType="profile"
+                  screenName="wacodeteam"
+                  options={{ height: 375 }}
+                />
+                <Button
+                  color="info"
+                  href="https://twitter.com/WacodeTeam"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i
+                    className="fab fa-twitter"
+                    style={{ marginRight: "10px" }}
+                  />
+                  Follow Us!
+                </Button>
+              </GridItem>
+            </GridContainer>
+          </div>
+        </Parallax>
+        <div className={classNames(classes.main, classes.mainRaised)}>
+          {/* @TODO Sections Go Here */}
+          <SectionLocation />
         </div>
-        <nav id="cd-vertical-nav">
-          <ul>
-            <li>
-              <a
-                href="#headers"
-                data-number="1"
-                className="is-selected"
-                onClick={e => {
-                  var isMobile = navigator.userAgent.match(
-                    /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
-                  );
-                  if (isMobile) {
-                    // if we are on mobile device the scroll into view will be managed by the browser
-                  } else {
-                    e.preventDefault();
-                    this.smoothScroll("headers");
-                  }
-                }}
-              >
-                <span className="cd-dot" />
-                <span className="cd-label">Headers</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#features"
-                data-number="2"
-                className=""
-                onClick={e => {
-                  var isMobile = navigator.userAgent.match(
-                    /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
-                  );
-                  if (isMobile) {
-                    // if we are on mobile device the scroll into view will be managed by the browser
-                  } else {
-                    e.preventDefault();
-                    this.smoothScroll("features");
-                  }
-                }}
-              >
-                <span className="cd-dot" />
-                <span className="cd-label">Features</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#blogs"
-                data-number="3"
-                className=""
-                onClick={e => {
-                  var isMobile = navigator.userAgent.match(
-                    /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
-                  );
-                  if (isMobile) {
-                    // if we are on mobile device the scroll into view will be managed by the browser
-                  } else {
-                    e.preventDefault();
-                    this.smoothScroll("blogs");
-                  }
-                }}
-              >
-                <span className="cd-dot" />
-                <span className="cd-label">Blogs</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#teams"
-                data-number="4"
-                className=""
-                onClick={e => {
-                  var isMobile = navigator.userAgent.match(
-                    /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
-                  );
-                  if (isMobile) {
-                    // if we are on mobile device the scroll into view will be managed by the browser
-                  } else {
-                    e.preventDefault();
-                    this.smoothScroll("teams");
-                  }
-                }}
-              >
-                <span className="cd-dot" />
-                <span className="cd-label">Teams</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#projects"
-                data-number="5"
-                className=""
-                onClick={e => {
-                  var isMobile = navigator.userAgent.match(
-                    /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
-                  );
-                  if (isMobile) {
-                    // if we are on mobile device the scroll into view will be managed by the browser
-                  } else {
-                    e.preventDefault();
-                    this.smoothScroll("projects");
-                  }
-                }}
-              >
-                <span className="cd-dot" />
-                <span className="cd-label">Projects</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#pricing"
-                data-number="6"
-                className=""
-                onClick={e => {
-                  var isMobile = navigator.userAgent.match(
-                    /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
-                  );
-                  if (isMobile) {
-                    // if we are on mobile device the scroll into view will be managed by the browser
-                  } else {
-                    e.preventDefault();
-                    this.smoothScroll("pricing");
-                  }
-                }}
-              >
-                <span className="cd-dot" />
-                <span className="cd-label">Pricing</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#testimonials"
-                data-number="7"
-                className=""
-                onClick={e => {
-                  var isMobile = navigator.userAgent.match(
-                    /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
-                  );
-                  if (isMobile) {
-                    // if we are on mobile device the scroll into view will be managed by the browser
-                  } else {
-                    e.preventDefault();
-                    this.smoothScroll("testimonials");
-                  }
-                }}
-              >
-                <span className="cd-dot" />
-                <span className="cd-label">Testimonials</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contacts"
-                data-number="8"
-                className=""
-                onClick={e => {
-                  var isMobile = navigator.userAgent.match(
-                    /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
-                  );
-                  if (isMobile) {
-                    // if we are on mobile device the scroll into view will be managed by the browser
-                  } else {
-                    e.preventDefault();
-                    this.smoothScroll("contacts");
-                  }
-                }}
-              >
-                <span className="cd-dot" />
-                <span className="cd-label">Contact Us</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <Footer
+          content={
+            <div>
+              <div className={classes.left}>
+                <List className={classes.list}>
+                  <ListItem className={classes.inlineBlock}>
+                    <a
+                      href="http://computingforcompassion.org"
+                      className={classes.block}
+                    >
+                      Baylor Computing for Compassion
+                    </a>
+                  </ListItem>
+                </List>
+              </div>
+              <div className={classes.right}>
+                &copy; {1900 + new Date().getYear()} , made with{" "}
+                <Favorite className={classes.icon} /> by{" "}
+                <a href="#about-us">The Wacode Team</a>
+              </div>
+            </div>
+          }
+        />
       </div>
     );
   }
 }
 
-export default withStyles(sectionsPageStyle)(LivePage);
+export default withStyles(landingPageStyle)(LivePage);
