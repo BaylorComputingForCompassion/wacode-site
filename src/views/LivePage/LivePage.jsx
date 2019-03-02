@@ -18,16 +18,16 @@ import Button from "components/CustomButtons/Button.jsx";
 
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 
-import { TwitterTimelineEmbed } from "react-twitter-embed";
 import ScrollableAnchor from "react-scrollable-anchor";
 import { configureAnchors } from "react-scrollable-anchor";
+import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 // Sections
 import SectionLocation from "./Sections/SectionLocation";
-import SectionWorkshopActivitySchedule from "./Sections/SectionWorkshopActivitySchedule";
-import SectionSchedule from "../LandingPage/Sections/SectionSchedule";
 import SectionPrompts from "./Sections/SectionPrompts";
 import SectionMainPrompt from "./Sections/SectionMainPrompt";
+import SectionMainSchedule from "./Sections/SectionMainSchedule";
+import SectionWorkshopActivitySchedule from "./Sections/SectionWorkshopActivitySchedule";
 
 const dashboardRoutes = [];
 configureAnchors({ scrollDuration: 500 });
@@ -84,7 +84,7 @@ class LivePage extends React.Component {
           <ScrollableAnchor id={"location"}>
             <SectionLocation />
           </ScrollableAnchor>
-          <SectionSchedule />
+          <SectionMainSchedule />
           <SectionWorkshopActivitySchedule />
           <ScrollableAnchor id={"prompts"}>
             <SectionPrompts />
