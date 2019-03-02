@@ -11,6 +11,8 @@ import ListItem from "@material-ui/core/ListItem";
 import PersonAdd from "@material-ui/icons/PersonAdd";
 import HowToReg from "@material-ui/icons/HowToReg";
 import SupervisorAccount from "@material-ui/icons/SupervisorAccount";
+import Grade from "@material-ui/icons/Grade";
+
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
 import Button from "components/CustomButtons/Button.jsx";
@@ -22,18 +24,6 @@ function HeaderLinks({ ...props }) {
   const { classes, dropdownHoverColor } = props;
   return (
     <List className={classes.list + " " + classes.mlAuto}>
-      {/* @TODO ONCE LivePage IS DONE RE-ENABLE THIS */}
-      <ListItem className={classes.listItem}>
-        <Button
-          color={"transparent"}
-          className={classes.navButton}
-          round
-        >
-          <Link style={{ padding: "0px" }} to="/live" className={classes.dropdownLink}>
-            Live
-          </Link>
-        </Button>
-      </ListItem>
       <ListItem className={classes.listItem}>
         <Button
           href={"#about-us"}
@@ -94,6 +84,16 @@ function HeaderLinks({ ...props }) {
             </a>
           ]}
         />
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="https://www.wacode.org/live"
+          color={window.innerWidth < 960 ? "info" : "white"}
+          className={classes.navButton}
+          round
+        >
+          <Grade className={classes.icons} /> LIVE!
+        </Button>
       </ListItem>
     </List>
   );

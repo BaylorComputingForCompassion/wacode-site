@@ -19,13 +19,8 @@ function SectionMainPrompt({ ...props }) {
       <div className={classes.blog}>
         <div className={classes.container}>
           <GridContainer>
-            <GridItem
-              xs={12}
-              className={`${classes.mlAuto} ${classes.mrAuto}`}
-            >
-              <h2 className={classes.title}>
-                American Airlines Challenge
-              </h2>
+            <GridItem className={`${classes.mlAuto} ${classes.mrAuto}`}>
+              <h2 className={classes.title}>American Airlines Challenge</h2>
               <br />
               <Card plain blog className={classes.card}>
                 <GridContainer>
@@ -69,15 +64,30 @@ function SectionMainPrompt({ ...props }) {
                     <p className={classes.author}>
                       <b>Max Team Size: </b> 5 Participants
                       <br />
-                      <b>Grand Prize:</b> 30,000 AAdvantage Miles Per Team Member (enough for a
-                      round trip economy ticket to any domestic city where
-                      American flies, including Hawaii and Alaska!)
+                      <b>Grand Prize:</b>
+                      &nbsp;
+                      <a
+                        style={{ color: "#3EAD7B" }}
+                        href="https://github.com/AmericanAirlines/AA-Mock-Engine/wiki/Wacode-2019#prizes"
+                        target={"_blank"}
+                      >
+                        30,000 AAdvantage Miles Per Team Member (enough for a
+                        Member (enough for a round trip economy ticket to any
+                        any domestic city where American flies, including Hawaii
+                        Alaska!)
+                      </a>
+                      ⁱ
                     </p>
                   </GridItem>
                 </GridContainer>
               </Card>
             </GridItem>
           </GridContainer>
+          <p className={classes.description}>
+            ⁱNominal service fee for booking travel is not included. Miles must
+            must be redeemed in the MileSAAver category of service to obtain
+            tickets to the regions mentioned above.
+          </p>
         </div>
       </div>
     </div>
