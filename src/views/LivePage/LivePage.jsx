@@ -24,8 +24,10 @@ import { configureAnchors } from "react-scrollable-anchor";
 
 // Sections
 import SectionLocation from "./Sections/SectionLocation";
-import SectionMainSchedule from "./Sections/SectionMainSchedule";
 import SectionWorkshopActivitySchedule from "./Sections/SectionWorkshopActivitySchedule";
+import SectionSchedule from "../LandingPage/Sections/SectionSchedule";
+import SectionPrompts from "./Sections/SectionPrompts";
+import SectionMainPrompt from "./Sections/SectionMainPrompt";
 
 const dashboardRoutes = [];
 configureAnchors({ scrollDuration: 500 });
@@ -82,8 +84,12 @@ class LivePage extends React.Component {
           <ScrollableAnchor id={"location"}>
             <SectionLocation />
           </ScrollableAnchor>
-          <SectionMainSchedule />
+          <SectionSchedule />
           <SectionWorkshopActivitySchedule />
+          <ScrollableAnchor id={"prompts"}>
+            <SectionMainPrompt />
+          </ScrollableAnchor>
+          <SectionPrompts />
         </div>
         <Footer
           content={

@@ -1,0 +1,109 @@
+import React from "react";
+// nodejs library that concatenates classes
+import classNames from "classnames";
+// @material-ui/core components
+import withStyles from "@material-ui/core/styles/withStyles";
+// @material-ui/icons
+import Gesture from "@material-ui/icons/Gesture";
+import FastFood from "@material-ui/icons/Fastfood";
+// core components
+import GridContainer from "components/Grid/GridContainer.jsx";
+import GridItem from "components/Grid/GridItem.jsx";
+import InfoArea from "components/InfoArea/InfoArea.jsx";
+
+import servicesStyle from "assets/jss/material-kit-pro-react/views/aboutUsSections/servicesStyle.jsx";
+
+function SectionPrompts(props) {
+  const { classes } = props;
+  return (
+    <div className={classes.services} style={{ marginTop: "-100px" }}>
+      <GridContainer>
+        <GridItem
+          md={8}
+          sm={8}
+          className={classNames(
+            classes.mlAuto,
+            classes.mrAuto,
+            classes.textCenter
+          )}
+        >
+          <h2 className={classes.title}>Optional Tracks</h2>
+          <h5 className={classes.description}>
+            These optional tracks are meant to give you an idea of where to get
+            started. See if you can create something that helps us with these
+            issues.
+            <br/>
+            <br/>
+            <b>First Place:</b> $50 Amazon Gift Card Per Member
+            <br/>
+            <b>Runner Up:</b> $20 Amazon Gift Card Per Member
+          </h5>
+        </GridItem>
+      </GridContainer>
+      <GridContainer style={{ paddingLeft: "4vw", paddingRight: "4vw" }}>
+        <GridItem md={4} sm={4}>
+          <InfoArea
+            title="1. Education"
+            description={
+              <span>
+                <p>
+                  In Waco TX, 70.1% of students are at risk of dropping out of
+                  school, leading to an eventual official drop rate reaching
+                  40%. Furthermore, 18.6% of students are bilingual and struggle
+                  with the English language.{" "}
+                </p>
+                Sources:{" "}
+                <a href="http://www.towncharts.com/Texas/Education/Waco-city-TX-Education-data.html">
+                  (1)
+                </a>
+                , <a href="https://datausa.io/profile/geo/waco-tx/ ">(2)</a>
+              </span>
+            }
+            icon="mode_edit"
+            iconColor="rose"
+          />
+        </GridItem>
+        <GridItem md={4} sm={4}>
+          <InfoArea
+            title="2. Food Insecurity"
+            description={
+              <span>
+                <p>
+                  One in four children in Waco do not have access to three
+                  healthy meals a day, and 19% of people overall experience food
+                  insecurity.{" "}
+                </p>
+                Sources:
+                <a
+                href="https://baylorlariat.com/2017/11/19/waco-children-struggle-with-homelessness-food-insecurity/">(1)</a>
+                ,<a href="https://www.wacotrib.com/news/education/texas-hunger-initiative-marks-years-of-fighting-food-insecurity/article_57fca5e4-aa81-5cc2-acf1-fbdb9f0552cc.html ">
+                (2)
+              </a>
+              </span>
+            }
+            icon={FastFood}
+            iconColor="rose"
+          />
+        </GridItem>
+        <GridItem md={4} sm={4}>
+          <InfoArea
+            title="3. At-risk-youth"
+            description={
+              <span>
+                <p>
+                  Overall, Waco has a higher crime rate than Texas and even the
+                  national average.{" "}
+                </p>
+                Source: <a href="https://www.areavibes.com/waco-tx/crime/ ">(1)</a>
+              </span>
+            }
+            icon={Gesture}
+            iconColor="rose"
+          />
+        </GridItem>
+      </GridContainer>
+    </div>
+  );
+}
+
+export default withStyles(servicesStyle)(SectionPrompts);

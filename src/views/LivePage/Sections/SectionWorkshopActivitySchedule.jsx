@@ -44,6 +44,14 @@ class SectionWorkshopActivitySchedule extends React.Component {
                 ]}
                 tableData={[
                   [
+                    "Kahoot Teambuilding Challenge!",
+                    "John Kahn, American Airlines",
+                    "9:30am",
+                    "10:30am",
+                    "Workshop Room (Cashion 501)",
+                    "Technology Trivia! Topics Covered: Tech. History, Tech. Businesses, Emerging Tech."
+                  ],
+                  [
                     "Intro to React Workshop",
                     "John Kahn, American Airlines",
                     "9:30am",
@@ -63,7 +71,7 @@ class SectionWorkshopActivitySchedule extends React.Component {
                     "Introduction to iOS",
                     "Scotty Shaw, Tech Tree Root",
                     "12:30pm",
-                    "1:20pm",
+                    "1:00pm",
                     "Workshop Room (Cashion 501)",
                     "A taste of mobile development! Come and learn a bit about developing apps for iPhones and iPads."
                   ],
