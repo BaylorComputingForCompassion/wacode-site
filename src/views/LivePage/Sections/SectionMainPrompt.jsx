@@ -20,7 +20,7 @@ function SectionMainPrompt({ ...props }) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem className={`${classes.mlAuto} ${classes.mrAuto}`}>
-              <h2 className={classes.title}>American Airlines Challenge</h2>
+              <h2 className={classes.title}>American Airlines Challenge⁽²⁾</h2>
               <br />
               <Card plain blog className={classes.card}>
                 <GridContainer>
@@ -56,10 +56,15 @@ function SectionMainPrompt({ ...props }) {
                       <a
                         href="https://github.com/AmericanAirlines/AA-Mock-Engine/wiki/Wacode-2019#wacode-challenge"
                         target={"_blank"}
+                        style={{ color: "#3EAD7B" }}
                       >
                         {" "}
                         click here!{" "}
                       </a>
+                      .{" "}
+                      <b>
+
+                      </b>
                     </p>
                     <p className={classes.author}>
                       <b>Max Team Size: </b> 5 Participants
@@ -87,6 +92,11 @@ function SectionMainPrompt({ ...props }) {
             ⁱNominal service fee for booking travel is not included. Miles must
             must be redeemed in the MileSAAver category of service to obtain
             tickets to the regions mentioned above.
+            <br />
+            ²Judging criteria and challenge requirements are solely up to
+            American Airlines representatives; this is separate from the Wacode
+            challenge stated above. You can only submit one project per
+            challenge.
           </p>
         </div>
       </div>
