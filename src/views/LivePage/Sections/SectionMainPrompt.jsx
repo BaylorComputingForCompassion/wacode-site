@@ -24,7 +24,7 @@ function SectionMainPrompt({ ...props }) {
               className={`${classes.mlAuto} ${classes.mrAuto}`}
             >
               <h2 className={classes.title}>
-                American Airlines Wacode Challenge
+                American Airlines Challenge
               </h2>
               <br />
               <Card plain blog className={classes.card}>

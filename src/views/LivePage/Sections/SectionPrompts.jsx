@@ -16,7 +16,7 @@ import servicesStyle from "assets/jss/material-kit-pro-react/views/aboutUsSectio
 function SectionPrompts(props) {
   const { classes } = props;
   return (
-    <div className={classes.services} style={{ marginTop: "-100px" }}>
+    <div className={classes.services}>
       <GridContainer>
         <GridItem
           md={8}
@@ -27,16 +27,16 @@ function SectionPrompts(props) {
             classes.textCenter
           )}
         >
-          <h2 className={classes.title}>Optional Tracks</h2>
+          <h3 className={classes.description}>
+            <b>First Place:</b> $50 Amazon Gift Card Per Team Member
+            <br />
+            <b>Runner Up:</b> $20 Amazon Gift Card Per Team Member
+          </h3>
+          <h2 className={classes.title}>Themes</h2>
           <h5 className={classes.description}>
-            These optional tracks are meant to give you an idea of where to get
-            started. See if you can create something that helps us with these
-            issues.
-            <br/>
-            <br/>
-            <b>First Place:</b> $50 Amazon Gift Card Per Member
-            <br/>
-            <b>Runner Up:</b> $20 Amazon Gift Card Per Member
+            These optional tracks are meant to highlight some issues in our
+            community C4C cares about. We have included some sources to provide
+            more information.
           </h5>
         </GridItem>
       </GridContainer>

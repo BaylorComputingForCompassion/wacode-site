@@ -87,9 +87,9 @@ class LivePage extends React.Component {
           <SectionSchedule />
           <SectionWorkshopActivitySchedule />
           <ScrollableAnchor id={"prompts"}>
-            <SectionMainPrompt />
+            <SectionPrompts />
           </ScrollableAnchor>
-          <SectionPrompts />
+          <SectionMainPrompt />
         </div>
         <Footer
           content={
