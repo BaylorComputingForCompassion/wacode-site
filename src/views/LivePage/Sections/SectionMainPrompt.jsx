@@ -15,7 +15,7 @@ import AmericanAirlines from "assets/img/SponsorLogos/AmericanAirlines.png";
 function SectionMainPrompt({ ...props }) {
   const { classes, ...rest } = props;
   return (
-    <div className="cd-section" {...rest}>
+    <div className="cd-section" {...rest} style={{ marginTop: "-100px" }}>
       <div className={classes.blog}>
         <div className={classes.container}>
           <GridContainer>
