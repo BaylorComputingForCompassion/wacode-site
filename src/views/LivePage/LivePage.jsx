@@ -27,7 +27,6 @@ import SectionLocation from "./Sections/SectionLocation";
 import SectionPrompts from "./Sections/SectionPrompts";
 import SectionMainPrompt from "./Sections/SectionMainPrompt";
 import SectionMainSchedule from "./Sections/SectionMainSchedule";
-import SectionWorkshopActivitySchedule from "./Sections/SectionWorkshopActivitySchedule";
 
 const dashboardRoutes = [];
 configureAnchors({ scrollDuration: 500 });
@@ -80,12 +79,10 @@ class LivePage extends React.Component {
           </div>
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
-          {/* @TODO Sections Go Here */}
           <ScrollableAnchor id={"location"}>
             <SectionLocation />
           </ScrollableAnchor>
           <SectionMainSchedule />
-          <SectionWorkshopActivitySchedule />
           <ScrollableAnchor id={"prompts"}>
             <SectionPrompts />
           </ScrollableAnchor>

@@ -24,7 +24,7 @@ class SectionAboutUs extends React.Component {
             <div style={{ whiteSpace: "nowrap", overflow: "hidden" }}>
               <h2 className={classes.title}>
                 What is{" "}
-                <img src={logo} alt="Wacode Logo" style={{ height: "4vh" }} />?
+                <img src={logo} alt="Wacode Logo" style={{ height: "4vh" }}/>?
               </h2>
             </div>
             <h5 className={classes.description}>
@@ -40,8 +40,9 @@ class SectionAboutUs extends React.Component {
             </h5>
             <br />
             <h5 className={classes.description}>
-              More information on categories, tracks, prizes and workshops
-              coming soon!
+              Go to the <a href="https://www.wacode.org/live">LIVE!</a> page for
+              more day-of information! (Veneue info, Parking, Prompts, Prizes,
+              etc.!)
             </h5>
           </GridItem>
         </GridContainer>

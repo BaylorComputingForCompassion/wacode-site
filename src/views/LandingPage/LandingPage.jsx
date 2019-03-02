@@ -20,13 +20,13 @@ import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPag
 
 // Sections for this page
 import SectionFAQ from "./Sections/SectionFAQ.jsx";
-import SectionSchedule from "./Sections/SectionSchedule";
 import SectionAboutUs from "./Sections/SectionAboutUs";
 import SectionTeam from "./Sections/SectionTeam";
 import SectionSponsors from "./Sections/SectionSponsors";
 
 import ScrollableAnchor from "react-scrollable-anchor";
 import { configureAnchors } from "react-scrollable-anchor";
+import SectionMainSchedule from "../LivePage/Sections/SectionMainSchedule";
 
 const dashboardRoutes = [];
 configureAnchors({ offset: -60, scrollDuration: 500 });
@@ -105,7 +105,7 @@ class LandingPage extends React.Component {
               <SectionFAQ />
             </ScrollableAnchor>
             <ScrollableAnchor id={"schedule"}>
-              <SectionSchedule />
+              <SectionMainSchedule />
             </ScrollableAnchor>
             <SectionSponsors />
           </div>

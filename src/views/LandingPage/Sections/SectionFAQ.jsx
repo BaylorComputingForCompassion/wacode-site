@@ -23,7 +23,7 @@ import bg from "assets/img/tech_background.png";
 function SectionFAQ({ ...props }) {
   const { classes, ...rest } = props;
   return (
-    <div className="cd-section" {...rest}>
+    <div className="cd-section" {...rest} style={{ paddingBottom: "20vh" }}>
       <div
         className={classes.features5}
         style={{ backgroundImage: `url(${bg})` }}
