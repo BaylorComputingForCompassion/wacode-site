@@ -9,6 +9,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
+import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
 // @material-ui/icons
@@ -71,20 +72,22 @@ class Header extends React.Component {
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>
-          <Link to="/">
-            <img
-              src={logo}
-              alt="Wacode Logo"
-              style={{ height: "4vh" }}
-              className={
-                classes.imgRaised +
-                " " +
-                classes.imgRounded +
-                " " +
-                classes.imgFluid
-              }
-            />
-          </Link>
+          <Button className={classes.title}>
+            <Link to="/">
+              <img
+                src={logo}
+                alt="Wacode Logo"
+                style={{ height: "4vh" }}
+                className={
+                  classes.imgRaised +
+                  " " +
+                  classes.imgRounded +
+                  " " +
+                  classes.imgFluid
+                }
+              />
+            </Link>
+          </Button>
           <Hidden smDown implementation="css" className={classes.hidden}>
             <div className={classes.collapse}>{links}</div>
           </Hidden>
@@ -147,7 +150,7 @@ Header.propTypes = {
   absolute: PropTypes.bool,
   // this will cause the sidebar to change the color from
   // this.props.color (see above) to changeColorOnScroll.color
-  // when the window.pageYOffset is higher or equal to
+  // when the window.pageYOffset is heigher or equal to
   // changeColorOnScroll.height and then when it is smaller than
   // changeColorOnScroll.height change it back to
   // this.props.color (see above)

@@ -21,6 +21,7 @@ function SectionPrompts(props) {
         <GridItem
           md={8}
           sm={8}
+          xs={10}
           className={classNames(
             classes.mlAuto,
             classes.mrAuto,
@@ -42,7 +43,7 @@ function SectionPrompts(props) {
         </GridItem>
       </GridContainer>
       <GridContainer style={{ paddingLeft: "4vw", paddingRight: "4vw" }}>
-        <GridItem md={4} sm={4}>
+        <GridItem sm={4} md={4}>
           <InfoArea
             title="1. Education"
             description={

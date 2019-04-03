@@ -5,7 +5,10 @@ import {
   mlAuto,
   title,
   description,
-  cardTitle
+  cardTitle,
+  blackColor,
+  whiteColor,
+  hexToRgb
 } from "assets/jss/material-kit-pro-react.jsx";
 
 import customCheckboxRadioSwitch from "assets/jss/material-kit-pro-react/customCheckboxRadioSwitchStyle.jsx";
@@ -34,35 +37,35 @@ const contactsSection = {
       left: "0",
       top: "0",
       content: "''",
-      backgroundColor: "rgba(0, 0, 0, 0.7)"
+      backgroundColor: "rgba(" + hexToRgb(blackColor) + ", 0.7)"
     },
     "& $title": {
-      color: "#FFFFFF"
+      color: whiteColor
     },
     "& $description": {
-      color: "rgba(255, 255, 255, 0.76)"
+      color: "rgba(" + hexToRgb(whiteColor) + ", 0.76)"
     },
     "& $infoArea": {}
   },
   contacts: {
-    padding: "80px 0",
+    padding: "80px 0"
   },
   infoArea: {
     padding: "0",
     margin: "0",
     "& svg,& .fab,& .fas,& .far,& .fal,& .material-icons": {
-      color: "#fff"
+      color: whiteColor
     },
     "& h4": {
       marginTop: "20px",
-      color: "#fff"
+      color: whiteColor
     }
   },
   card1: {
     marginTop: "30px",
     "& $cardTitle": {
       marginBottom: "0.75rem !important",
-      color: "#FFFFFF"
+      color: whiteColor
     }
   },
   textCenter: {
@@ -84,19 +87,18 @@ const contactsSection = {
     float: "left",
     "& $cardTitle": {
       marginBottom: "0.75rem !important",
-      color: "#FFFFFF"
-    },
-    position: "fixed"
+      color: whiteColor
+    }
   },
   map: {
     overflow: "hidden",
     width: "100%",
     height: "800px",
-    position: "fixed"
+    position: "absolute"
   },
   contacts2: {
     padding: "0",
-    height: "82%"
+    height: "800px"
   },
   infoArea2: {
     padding: "0",

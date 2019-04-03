@@ -19,7 +19,7 @@ function SectionMainPrompt({ ...props }) {
       <div className={classes.blog}>
         <div className={classes.container}>
           <GridContainer>
-            <GridItem className={`${classes.mlAuto} ${classes.mrAuto}`}>
+            <GridItem xs={10} className={`${classes.mlAuto} ${classes.mrAuto}`}>
               <h2 className={classes.title}>American Airlines Challenge⁽²⁾</h2>
               <br />
               <Card plain blog className={classes.card}>

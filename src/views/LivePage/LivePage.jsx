@@ -56,11 +56,11 @@ class LivePage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12}>
-                <h1 className={classes.title}>Welcome to Wacode!</h1>
+                <h2 className={classes.title}>Welcome to Wacode!</h2>
                 <TwitterTimelineEmbed
                   sourceType="profile"
                   screenName="wacodeteam"
-                  options={{ height: 375 }}
+                  options={{ height: 400 }}
                 />
                 <Button
                   color="info"
