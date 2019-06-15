@@ -1,17 +1,22 @@
 import React from "react";
+
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
+
 // @material-ui/icons
 import Code from "@material-ui/icons/Code";
 import Group from "@material-ui/icons/Group";
 import Favorite from "@material-ui/icons/Favorite";
-// core components
+
+// Core Components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import InfoArea from "components/InfoArea/InfoArea.jsx";
 
+// Styles
 import productStyle from "assets/jss/material-kit-pro-react/views/landingPageSections/productStyle.jsx";
 
+// Assets
 import logo from "assets/img/logo.png";
 
 class SectionAboutUs extends React.Component {
@@ -23,26 +28,17 @@ class SectionAboutUs extends React.Component {
           <GridItem sm={12} md={9}>
             <div style={{ whiteSpace: "nowrap", overflow: "hidden" }}>
               <h2 className={classes.title}>
-                What is{" "}
-                <img src={logo} alt="Wacode Logo" style={{ height: "4vh" }}/>?
+                What is&nbsp;
+                <img src={logo} alt="Wacode Logo" style={{ height: "4vh" }} />?
               </h2>
             </div>
             <h5 className={classes.description}>
               Wacode is an annual 12-hour hackathon, innovation fest, and
               start-up competition held at the Blume Conference Center on
-              University&apos;s campus. We plan on bringing in students,
-              students, professionals, hobbyists, and anyone else curious and
-              passionate about tech in the greater Waco together to build,
-              collaborate, and share their knowledge and projects with us. We
-              are here to provide a comfortable learning environment for all
-              makers to use their creativity and innovation at its full
-              potential.
-            </h5>
-            <br />
-            <h5 className={classes.description}>
-              Go to the <a href="https://www.wacode.org/live">LIVE!</a> page for
-              more day-of information! (Veneue info, Parking, Prompts, Prizes,
-              etc.!)
+              University&apos;s campus. We want to bringing in students,
+              professionals, hobbyists, and anyone else curious and passionate
+              about tech in the greater Waco area together to build,
+              collaborate, and share their knowledge and projects with us.
             </h5>
           </GridItem>
         </GridContainer>

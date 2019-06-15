@@ -42,57 +42,6 @@ function HeaderLinks({ ...props }) {
           F.A.Q.
         </Button>
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href={"#schedule"}
-          color={"transparent"}
-          className={classes.navButton}
-          round
-        >
-          Schedule
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <CustomDropdown
-          noLiPadding
-          navDropdown
-          hoverColor={dropdownHoverColor}
-          buttonText="Registration Links"
-          buttonProps={{
-            className: classes.navLink,
-            color: "transparent"
-          }}
-          buttonIcon={HowToReg}
-          dropdownList={[
-            <a
-              href="https://scottyshaw.typeform.com/to/WFEVuG"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              <PersonAdd className={classes.dropdownIcons} />
-              Participant
-            </a>,
-            <a
-              href="https://wacodeteam.typeform.com/to/mpK8Ns"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              <SupervisorAccount className={classes.dropdownIcons} />
-              Volunteer
-            </a>
-          ]}
-        />
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href="https://www.wacode.org/live"
-          color={window.innerWidth < 960 ? "info" : "white"}
-          className={classes.navButton}
-          round
-        >
-          <Grade className={classes.icons} /> LIVE!
-        </Button>
-      </ListItem>
     </List>
   );
 }

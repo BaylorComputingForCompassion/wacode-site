@@ -1,6 +1,8 @@
 import React from "react";
+
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
+
 // @material-ui/icons
 import Code from "@material-ui/icons/Code";
 import Dashboard from "@material-ui/icons/Dashboard";
@@ -10,20 +12,23 @@ import AttachMoney from "@material-ui/icons/AttachMoney";
 import Assignment from "@material-ui/icons/Assignment";
 import Face from "@material-ui/icons/Face";
 import Work from "@material-ui/icons/Work";
-import SuprvisedUserCircle from "@material-ui/icons/SupervisedUserCircle";
-// core components
+import SupervisedUserCircle from "@material-ui/icons/SupervisedUserCircle";
+
+// Core Components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import InfoArea from "components/InfoArea/InfoArea.jsx";
 
+// Styles
 import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx";
 
+// Assets
 import bg from "assets/img/tech_background.png";
 
 function SectionFAQ({ ...props }) {
   const { classes, ...rest } = props;
   return (
-    <div className="cd-section" {...rest} style={{ paddingBottom: "20vh" }}>
+    <div className="cd-section" {...rest}>
       <div
         className={classes.features5}
         style={{ backgroundImage: `url(${bg})` }}
@@ -65,7 +70,7 @@ function SectionFAQ({ ...props }) {
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
-                  icon={SuprvisedUserCircle}
+                  icon={SupervisedUserCircle}
                   title="Who can attend Wacode?"
                   description={
                     <p>
@@ -158,14 +163,12 @@ function SectionFAQ({ ...props }) {
                   title="When does registration close?"
                   description={
                     <p>
-                      If you are a non-Baylor student we ask that you register
-                      by Thursday, February 28th to get you access to our WiFi.
-                      For Baylor students, staff, and faculty there is no
-                      deadline. We strongly encourage you to register as early
-                      as possible to reserve your shirt and food. All food and
-                      swag these will be given out on a first-come-first-serve
-                      basis on the day of, prioritizing those who have already
-                      registered online.
+                      We strongly encourage you to register as early as possible
+                      to reserve your shirt and food. All food and swag these
+                      will be given out on a first-come-first-serve basis on the
+                      day of, prioritizing those who have already registered
+                      online. Registration for Wacode Spring 2020 has not opened
+                      yet!
                     </p>
                   }
                 />
@@ -195,12 +198,12 @@ function SectionFAQ({ ...props }) {
                   description={
                     <p>
                       Hey, we&apos;re here to help! Email us at
-                      <a href="mailto:Wacode.Team@Gmail.com">
+                      <a href="mailto:Wacode.Team@gmail.com">
                         <span style={{ color: "#3EAD7B" }}>
                           &nbsp;Wacode.Team@Gmail.com
                         </span>
-                      </a>{" "}
-                      or reach out to Computing for Compassion via{" "}
+                      </a>
+                      &nbsp;or reach out to Computing for Compassion via&nbsp;
                       <a href="https://www.instagram.com/baylorc4c/">
                         <span style={{ color: "#3EAD7B" }}>Instagram</span>
                       </a>
