@@ -1,9 +1,12 @@
 import React from "react";
+
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// core components
+
+// Core Components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
+
 // SponsorLogos
 import AmericanAirlines from "assets/img/SponsorLogos/AmericanAirlines.png";
 import TriStar from "assets/img/SponsorLogos/TriStar.jpeg";
@@ -15,7 +18,6 @@ import PMI from "assets/img/SponsorLogos/PMI.png";
 import WC from "assets/img/SponsorLogos/WC.png";
 import PremiumPoppers from "assets/img/SponsorLogos/PremiumPoppers.png";
 import GitHub from "assets/img/SponsorLogos/GitHub.png";
-import Placeholder from "assets/img/image_placeholder.png";
 
 import sectionInterestedStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionInterestedStyle.jsx";
 
@@ -24,7 +26,7 @@ function SectionSponsors({ ...props }) {
   return (
     <div className={classes.section}>
       <h2 className={classes.title + " " + classes.textCenter}>
-        A special thanks to our sponsors & partners!
+        A special thanks to our Spring 2019 sponsors & partners!
       </h2>
       <br />
       <GridContainer>
@@ -50,10 +52,7 @@ function SectionSponsors({ ...props }) {
           </a>
         </GridItem>
         <GridItem sm={12} md={4}>
-          <a
-            href={"https://github.com/about/careers"}
-            target={"_blank"}
-          >
+          <a href={"https://github.com/about/careers"} target={"_blank"}>
             <img
               style={{ width: "90%", height: "auto", margin: "20px" }}
               src={GitHub}
@@ -113,19 +112,6 @@ function SectionSponsors({ ...props }) {
               style={{ width: "90%", height: "auto", margin: "5px" }}
               src={PremiumPoppers}
               alt="Premium Poppers Logo"
-            />
-          </a>
-        </GridItem>
-        <GridItem sm={12} md={4}>
-          <a
-            href={
-              "mailto:Wacode.Team@gmail.com?subject=Sponsorship%20Inquiry&body=Howdy!"
-            }
-          >
-            <img
-              style={{ width: "90%", height: "auto", margin: "20px" }}
-              src={Placeholder}
-              alt="This could be your company!"
             />
           </a>
         </GridItem>
