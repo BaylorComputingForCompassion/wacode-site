@@ -6,7 +6,7 @@ import { Router, Route, Switch } from "react-router";
 import LandingPage from "views/LandingPage/LandingPage.jsx";
 import LivePage from "views/LivePage/LivePage.jsx";
 
-import "assets/scss/material-kit-pro-react.scss?v=1.3.0";
+import "assets/scss/material-kit-pro-react.scss";
 
 var hist = createBrowserHistory();
 
