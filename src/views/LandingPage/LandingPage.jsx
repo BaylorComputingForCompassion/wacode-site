@@ -103,7 +103,7 @@ class LandingPage extends React.Component {
                       href="http://computingforcompassion.org"
                       className={classes.block}
                     >
-                      Baylor Computing for Compassion
+                      Computing for Compassion
                     </a>
                   </ListItem>
                 </List>
