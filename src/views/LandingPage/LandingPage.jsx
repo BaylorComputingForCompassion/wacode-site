@@ -66,8 +66,8 @@ class LandingPage extends React.Component {
                     <span style={{ color: "#3EAD7B" }}>Baylor C4C&apos;s</span>
                   </a>
                   &nbsp;12-hour hackathon happening&nbsp;
-                  <strong>Spring 2020</strong> on Baylor University&apos;s
-                  Campus.
+                  <strong>Saturday, February 22nd, 2020</strong> on Baylor
+                  University&apos;s Campus.
                   <b>
                     &nbsp;Registration opens on Saturday, Februry 1st. Check
                     back soon for updates!
