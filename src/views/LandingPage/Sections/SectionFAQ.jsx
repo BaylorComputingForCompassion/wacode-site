@@ -38,11 +38,9 @@ function SectionFAQ({ ...props }) {
             xs={12}
             sm={12}
             md={8}
-            className={`${classes.mlAuto} ${classes.mrAuto} ${
-              classes.textCenter
-            }`}
+            className={`${classes.mlAuto} ${classes.mrAuto} ${classes.textCenter}`}
           >
-            <h2 className={classes.title}>Frequently Asked Questions</h2>
+            <h2 className={classes.title}>Rules &amp; FAQs</h2>
           </GridItem>
           <div className={classes.container}>
             <GridContainer className={classes.gridContainer}>
@@ -59,7 +57,7 @@ function SectionFAQ({ ...props }) {
                       that of a start-up competition. Anyone who has an interest
                       in innovation can attend to learn, build & share their
                       creations over the course of an entire day in a relaxed
-                      relaxed and welcoming atmosphere. You don&apos;t have to
+                      and welcoming atmosphere. You don&apos;t have to
                       be a great coder to do well at a hackathon.
                     </p>
                   }
@@ -83,7 +81,7 @@ function SectionFAQ({ ...props }) {
                         <span style={{ color: "#3EAD7B" }}>
                           MLH Code of Conduct.
                         </span>
-                      </a>
+                      </a> The venue does not allow pets of any kind.
                     </p>
                   }
                   iconColor="danger"
@@ -99,7 +97,7 @@ function SectionFAQ({ ...props }) {
                     <p>
                       Admission to Wacode is completely free for all attendees.
                       Food and drinks are provided by us through our generous
-                      sponsors & community partners. Shirts, swag, and any of
+                      sponsors & community partners (there will be vegan and vegetarian options available). Shirts, swag, and any of
                       the activities hosted at the event are also open to all at
                       no cost.
                     </p>
@@ -135,7 +133,7 @@ function SectionFAQ({ ...props }) {
                       hardware or software you plan on using. WiFi and outlets
                       will be provided but it doesn&apos;t hurt to bring an
                       extra power strip. Wouldn&apos;t be bad idea to bring a
-                      resume to show it off to recruiters during the event!
+                      resume to show off to recruiters during the event!
                     </p>
                   }
                 />
@@ -167,8 +165,8 @@ function SectionFAQ({ ...props }) {
                       to reserve your shirt and food. All food and swag these
                       will be given out on a first-come-first-serve basis on the
                       day of, prioritizing those who have already registered
-                      online. Registration for Wacode Spring 2020 has not opened
-                      yet!
+                      online. Registration for Wacode Spring 2020 will be open
+                      on February 1st at 9:00am.
                     </p>
                   }
                 />
@@ -183,8 +181,7 @@ function SectionFAQ({ ...props }) {
                     <p>
                       It is NOT required to stay at the venue all day. Come for
                       an hour! Come for 12! There is no time requirement for
-                      those wanting to participate and compete for prizes or
-                      those wanting to volunteer.
+                      those wanting to participate. To be eligible for prizes you must attend at least one workshop, and also be present at the kickoff ceremony and closing remarks, as well as for the judging period (8:00-9:00pm)
                     </p>
                   }
                 />
@@ -206,6 +203,10 @@ function SectionFAQ({ ...props }) {
                       &nbsp;or reach out to Computing for Compassion via&nbsp;
                       <a href="https://www.instagram.com/baylorc4c/">
                         <span style={{ color: "#3EAD7B" }}>Instagram</span>
+                      </a>
+                      &nbsp;or&nbsp;
+                      <a href="https://www.facebook.com/computingforcompassion">
+                        <span style={{ color: "#3EAD7B" }}>Facebook</span>
                       </a>
                     </p>
                   }

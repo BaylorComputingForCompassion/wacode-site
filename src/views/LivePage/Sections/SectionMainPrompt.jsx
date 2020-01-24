@@ -61,10 +61,7 @@ function SectionMainPrompt({ ...props }) {
                         {" "}
                         click here!{" "}
                       </a>
-                      .{" "}
-                      <b>
-
-                      </b>
+                      .
                     </p>
                     <p className={classes.author}>
                       <b>Max Team Size: </b> 5 Participants

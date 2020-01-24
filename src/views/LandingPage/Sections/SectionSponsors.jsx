@@ -26,7 +26,7 @@ function SectionSponsors({ ...props }) {
   return (
     <div className={classes.section}>
       <h2 className={classes.title + " " + classes.textCenter}>
-        A special thanks to our Spring 2019 sponsors & partners!
+        A special thanks to our Spring 2019 sponsors!
       </h2>
       <br />
       <GridContainer>

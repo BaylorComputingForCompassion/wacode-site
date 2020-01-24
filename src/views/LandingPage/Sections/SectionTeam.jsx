@@ -20,7 +20,7 @@ import brandon from "assets/img/brandon_profile.jpeg";
 import miranda from "assets/img/miranda_profile.jpeg";
 import billicarole from "assets/img/billicarole_profile.jpeg";
 import meghan from "assets/img/meghan_profile.jpeg";
-import neil from "assets/img/neil_profile.png";
+import citlally from "assets/img/citlally_profile.jpg";
 
 function SectionTeam({ ...props }) {
   const { classes, ...rest } = props;
@@ -33,9 +33,7 @@ function SectionTeam({ ...props }) {
               xs={12}
               sm={8}
               md={8}
-              className={`${classes.mlAuto} ${classes.mrAuto} ${
-                classes.textCenter
-              }`}
+              className={`${classes.mlAuto} ${classes.mrAuto} ${classes.textCenter}`}
             >
               <h2 className={classes.title}>Meet The Team</h2>
               <h5 className={classes.description}>
@@ -156,7 +154,7 @@ function SectionTeam({ ...props }) {
                   <h4 className={classes.cardTitle}>Meghan Bibb</h4>
                   <Muted>
                     <h6 className={classes.cardCategory}>
-                      Head of Marketing & Philanthropy
+                      Head of Philanthropy
                     </h6>
                   </Muted>
                   <p className={classes.description}>Computer Science Junior</p>
@@ -167,22 +165,24 @@ function SectionTeam({ ...props }) {
               <Card profile plain>
                 <CardAvatar profile plain>
                   <a
-                    href="https://www.linkedin.com/in/neilwilcoxson/"
+                    href="https://www.linkedin.com/in/citlally-ruiz-29429119a/"
                     target={"_blank"}
                   >
                     <img
-                      src={neil}
-                      alt="Neil Profile"
+                      src={citlally}
+                      alt="Citllaly Profile"
                       className={classes.img}
                     />
                   </a>
                 </CardAvatar>
                 <CardBody>
-                  <h4 className={classes.cardTitle}>Neil Wilcoxson</h4>
+                  <h4 className={classes.cardTitle}>Citlally Ruiz</h4>
                   <Muted>
-                    <h6 className={classes.cardCategory}>Secretary</h6>
+                    <h6 className={classes.cardCategory}>Head of Marketing</h6>
                   </Muted>
-                  <p className={classes.description}>Computer Science Senior</p>
+                  <p className={classes.description}>
+                    Computer Science Freshman
+                  </p>
                 </CardBody>
               </Card>
             </GridItem>
