@@ -59,7 +59,7 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={8} md={8}>
-                <h1 className={classes.title}>Community Oriented Hackathon</h1>
+                <h1 className={classes.title}>Welcome to Wacode</h1>
                 <h4>
                   More info coming soon on&nbsp;
                   <a href="http://computingforcompassion.org/">
