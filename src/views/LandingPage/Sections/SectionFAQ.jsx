@@ -38,9 +38,7 @@ function SectionFAQ({ ...props }) {
             xs={12}
             sm={12}
             md={8}
-            className={`${classes.mlAuto} ${classes.mrAuto} ${
-              classes.textCenter
-            }`}
+            className={`${classes.mlAuto} ${classes.mrAuto} ${classes.textCenter}`}
           >
             <h2 className={classes.title}>Rules &amp; FAQs</h2>
           </GridItem>

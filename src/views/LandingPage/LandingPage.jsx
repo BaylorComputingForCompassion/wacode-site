@@ -68,6 +68,10 @@ class LandingPage extends React.Component {
                   &nbsp;12-hour hackathon happening&nbsp;
                   <strong>Spring 2020</strong> on Baylor University&apos;s
                   Campus.
+                  <b>
+                    &nbsp;Registration opens on Saturday, Februry 1st. Check
+                    back soon for updates!
+                  </b>
                 </h4>
                 <br />
                 <Button disabled color="danger" size="lg">
