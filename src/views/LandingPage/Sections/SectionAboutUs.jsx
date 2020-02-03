@@ -35,7 +35,7 @@ class SectionAboutUs extends React.Component {
             <h5 className={classes.description}>
               Wacode is an annual 12-hour hackathon, innovation fest, and
               start-up competition held at the Blume Conference Center on
-              University&apos;s campus. We want to bringing in students,
+              University&apos;s campus. We want to bring in students,
               professionals, hobbyists, and anyone else curious and passionate
               about tech in the greater Waco area together to build,
               collaborate, and share their knowledge and projects with us.

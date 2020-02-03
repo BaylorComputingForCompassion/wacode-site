@@ -29,14 +29,17 @@ class Header extends React.Component {
     this.handleDrawerToggle = this.handleDrawerToggle.bind(this);
     this.headerColorChange = this.headerColorChange.bind(this);
   }
+
   handleDrawerToggle() {
     this.setState({ mobileOpen: !this.state.mobileOpen });
   }
+
   componentDidMount() {
     if (this.props.changeColorOnScroll) {
       window.addEventListener("scroll", this.headerColorChange);
     }
   }
+
   headerColorChange() {
     const { classes, color, changeColorOnScroll } = this.props;
     const windowsScrollTop = window.pageYOffset;
@@ -56,11 +59,13 @@ class Header extends React.Component {
         .classList.remove(classes[changeColorOnScroll.color]);
     }
   }
+
   componentWillUnmount() {
     if (this.props.changeColorOnScroll) {
       window.removeEventListener("scroll", this.headerColorChange);
     }
   }
+
   render() {
     const { classes, color, links, fixed, absolute } = this.props;
     const appBarClasses = classNames({
