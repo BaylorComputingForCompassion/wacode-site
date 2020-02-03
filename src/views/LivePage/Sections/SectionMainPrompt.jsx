@@ -32,6 +32,7 @@ function SectionMainPrompt({ ...props }) {
                       <a
                         href="https://github.com/AmericanAirlines/AA-Mock-Engine/wiki/Wacode-2019#wacode-challenge"
                         target={"_blank"}
+                        rel="noopener noreferrer"
                       >
                         <img src={AmericanAirlines} alt="..." />
                       </a>
@@ -45,6 +46,7 @@ function SectionMainPrompt({ ...props }) {
                       <a
                         href="https://github.com/AmericanAirlines/AA-Mock-Engine/wiki/Wacode-2019#wacode-challenge"
                         target={"_blank"}
+                        rel="noopener noreferrer"
                       >
                         American Airlines supports our heroes, our well-being,
                         and our social good.
@@ -59,6 +61,7 @@ function SectionMainPrompt({ ...props }) {
                       <a
                         href="https://github.com/AmericanAirlines/AA-Mock-Engine/wiki/Wacode-2019#wacode-challenge"
                         target={"_blank"}
+                        rel="noopener noreferrer"
                         style={{ color: "#3EAD7B" }}
                       >
                         {" "}
@@ -75,6 +78,7 @@ function SectionMainPrompt({ ...props }) {
                         style={{ color: "#3EAD7B" }}
                         href="https://github.com/AmericanAirlines/AA-Mock-Engine/wiki/Wacode-2019#prizes"
                         target={"_blank"}
+                        rel="noopener noreferrer"
                       >
                         30,000 AAdvantage Miles Per Team Member (enough for a
                         Member (enough for a round trip economy ticket to any
