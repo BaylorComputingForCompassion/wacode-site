@@ -1,6 +1,6 @@
 {
   "name": "wacode-site",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "main": "index.js",
   "repository": "https://github.com/MarioLopezBaylor/wacode-site",
   "private": false,
@@ -28,6 +28,7 @@
     "react-iframe": "^1.5.0",
     "react-image-gallery": "^0.9.1",
     "react-router-dom": "^5.1.2",
+    "react-router-hash-link": "^1.2.2",
     "react-scripts": "^3.2.0",
     "react-scrollable-anchor": "^0.6.1",
     "react-slick": "^0.25.2",
@@ -37,7 +38,7 @@
     "serve": "^11.2.0"
   },
   "scripts": {
-    "start": "serve -s build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",

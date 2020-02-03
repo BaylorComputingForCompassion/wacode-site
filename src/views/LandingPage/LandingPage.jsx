@@ -30,11 +30,6 @@ import SectionAboutUs from "./Sections/SectionAboutUs";
 import SectionTeam from "./Sections/SectionTeam";
 import SectionSponsors from "./Sections/SectionSponsors";
 
-import ScrollableAnchor from "react-scrollable-anchor";
-import { configureAnchors } from "react-scrollable-anchor";
-
-configureAnchors({ offset: -60, scrollDuration: 500 });
-
 class LandingPage extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -69,7 +64,7 @@ class LandingPage extends React.Component {
                   &nbsp;12-hour hackathon happening&nbsp;
                   <strong>Saturday, February 22nd, 2020</strong> on Baylor
                   University&apos;s Campus.
-                  <b>&nbsp;Registration opens on TODAY (02/03) at 7:00pm.</b>
+                  <b>&nbsp;Registration opens TODAY (02/03) at 7:00pm.</b>
                 </h4>
                 <br />
                 <Button disabled color="danger" size="lg">
@@ -85,14 +80,10 @@ class LandingPage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <ScrollableAnchor id={"about-us"}>
-              <SectionAboutUs />
-            </ScrollableAnchor>
-            <SectionTeam style={{ marginTop: "-150px" }} />
-            <ScrollableAnchor id={"faq"}>
-              <SectionFAQ />
-            </ScrollableAnchor>
-            <SectionSponsors />
+            <SectionAboutUs id="about" />
+            <SectionTeam style={{ marginTop: "-150px" }} id="team" />
+            <SectionFAQ id="faq" />
+            <SectionSponsors id="sponsors" />
           </div>
         </div>
         <Footer

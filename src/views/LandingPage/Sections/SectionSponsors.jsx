@@ -23,16 +23,20 @@ import GitHub from "assets/img/SponsorLogos/GitHub.png";
 import sectionInterestedStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionInterestedStyle.jsx";
 
 function SectionSponsors({ ...props }) {
-  const { classes } = props;
+  const { classes, ...rest } = props;
   return (
-    <div className={classes.section}>
+    <div className={classes.section} {...rest}>
       <h2 className={classes.title + " " + classes.textCenter}>
         A special thanks to our Spring 2019 sponsors!
       </h2>
       <br />
       <GridContainer>
         <GridItem sm={12} md={12} lg={12}>
-          <a href={"https://jobs.aa.com/"} target={"_blank"}>
+          <a
+            href={"https://jobs.aa.com/"}
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
             <img
               style={{ width: "100%", height: "auto", margin: "20px" }}
               src={AmericanAirlines}
@@ -44,6 +48,7 @@ function SectionSponsors({ ...props }) {
           <a
             href={"https://www.parivedasolutions.com/privacy/careers-overview"}
             target={"_blank"}
+            rel="noopener noreferrer"
           >
             <img
               style={{ width: "90%", height: "auto", margin: "20px" }}
@@ -53,7 +58,11 @@ function SectionSponsors({ ...props }) {
           </a>
         </GridItem>
         <GridItem sm={12} md={4}>
-          <a href={"https://github.com/about/careers"} target={"_blank"}>
+          <a
+            href={"https://github.com/about/careers"}
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
             <img
               style={{ width: "90%", height: "auto", margin: "20px" }}
               src={GitHub}
@@ -62,7 +71,11 @@ function SectionSponsors({ ...props }) {
           </a>
         </GridItem>
         <GridItem sm={12} md={4}>
-          <a href={"https://www.credera.com/jobs/"} target={"_blank"}>
+          <a
+            href={"https://www.credera.com/jobs/"}
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
             <img
               style={{ width: "90%", height: "auto", margin: "20px" }}
               src={Credera}
@@ -99,7 +112,11 @@ function SectionSponsors({ ...props }) {
           />
         </GridItem>
         <GridItem sm={12} md={4}>
-          <a href={"https://www.blumaniaenergy.com/"} target={"_blank"}>
+          <a
+            href={"https://www.blumaniaenergy.com/"}
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
             <img
               style={{ width: "90%", height: "auto", margin: "20px" }}
               src={Blumania}
@@ -108,7 +125,11 @@ function SectionSponsors({ ...props }) {
           </a>
         </GridItem>
         <GridItem sm={12} md={4}>
-          <a href={"https://www.premiumpopperspopcorn.com/"} target={"_blank"}>
+          <a
+            href={"https://www.premiumpopperspopcorn.com/"}
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
             <img
               style={{ width: "90%", height: "auto", margin: "5px" }}
               src={PremiumPoppers}

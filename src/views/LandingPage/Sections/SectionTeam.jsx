@@ -50,6 +50,7 @@ function SectionTeam({ ...props }) {
                   <a
                     href="https://www.linkedin.com/in/mariolopezarturo/"
                     target={"_blank"}
+                    rel="noopener noreferrer"
                   >
                     <img
                       src={mario}
@@ -73,6 +74,7 @@ function SectionTeam({ ...props }) {
                   <a
                     href="https://www.linkedin.com/in/brandonmmork/"
                     target={"_blank"}
+                    rel="noopener noreferrer"
                   >
                     <img
                       src={brandon}
@@ -116,6 +118,7 @@ function SectionTeam({ ...props }) {
                   <a
                     href="https://www.linkedin.com/in/miranda-montroy-78107117b/"
                     target={"_blank"}
+                    rel="noopener noreferrer"
                   >
                     <img
                       src={miranda}
@@ -143,6 +146,7 @@ function SectionTeam({ ...props }) {
                   <a
                     href="https://www.linkedin.com/in/meghanbibb/"
                     target={"_blank"}
+                    rel="noopener noreferrer"
                   >
                     <img
                       src={meghan}
@@ -168,6 +172,7 @@ function SectionTeam({ ...props }) {
                   <a
                     href="https://www.linkedin.com/in/citlally-ruiz-29429119a/"
                     target={"_blank"}
+                    rel="noopener noreferrer"
                   >
                     <img
                       src={citlally}

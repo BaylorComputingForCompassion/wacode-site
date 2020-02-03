@@ -22,9 +22,9 @@ import logo from "assets/img/logo.png";
 
 class SectionAboutUs extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes, ...rest } = this.props;
     return (
-      <div className={classes.section}>
+      <div className={classes.section} {...rest}>
         <GridContainer justify="center">
           <GridItem sm={12} md={9}>
             <div style={{ whiteSpace: "nowrap", overflow: "hidden" }}>
