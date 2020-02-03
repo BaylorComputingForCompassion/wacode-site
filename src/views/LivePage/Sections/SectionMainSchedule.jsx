@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
@@ -58,10 +60,7 @@ class SectionMainSchedule extends React.Component {
                 <Paper>
                   <Scheduler data={data}>
                     <ViewState currentDate="2019-03-02" />
-                    <DayView
-                      startDayHour={8}
-                      endDayHour={22}
-                    />
+                    <DayView startDayHour={8} endDayHour={22} />
                     <Appointments />
                   </Scheduler>
                 </Paper>
@@ -73,5 +72,9 @@ class SectionMainSchedule extends React.Component {
     );
   }
 }
+
+SectionMainSchedule.propTypes = {
+  classes: PropTypes.object.isRequired
+};
 
 export default withStyles(style)(SectionMainSchedule);

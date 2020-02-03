@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -77,5 +78,9 @@ class SectionAboutUs extends React.Component {
     );
   }
 }
+
+SectionAboutUs.propTypes = {
+  classes: PropTypes.object.isRequired
+};
 
 export default withStyles(productStyle)(SectionAboutUs);

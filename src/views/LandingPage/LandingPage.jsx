@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 // nodejs library that concatenates classes
 import classNames from "classnames";
@@ -121,5 +122,9 @@ class LandingPage extends React.Component {
     );
   }
 }
+
+LandingPage.propTypes = {
+  classes: PropTypes.object.isRequired
+};
 
 export default withStyles(landingPageStyle)(LandingPage);

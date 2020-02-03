@@ -1,11 +1,16 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 // nodejs library that concatenates classes
 import classNames from "classnames";
+
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
+
 // @material-ui/icons
 import Gesture from "@material-ui/icons/Gesture";
 import FastFood from "@material-ui/icons/Fastfood";
+
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -98,7 +103,8 @@ function SectionPrompts(props) {
                   Overall, Waco has a higher crime rate than Texas and even the
                   national average.{" "}
                 </p>
-                Source: <a href="https://www.areavibes.com/waco-tx/crime/ ">(1)</a>
+                Source:{" "}
+                <a href="https://www.areavibes.com/waco-tx/crime/ ">(1)</a>
               </span>
             }
             icon={Gesture}
@@ -144,8 +150,8 @@ function SectionPrompts(props) {
           <p className={classes.description}>
             Impact: How well does the solution address the challenge or problem?
             <br />
-            Innovation & Creativity: How creative is the solution? Does it bring
-            new ideas and approaches to solving the problem?
+            Innovation &amp; Creativity: How creative is the solution? Does it
+            bring new ideas and approaches to solving the problem?
             <br />
             Sustainability: Is the solution sustainable within the context of
             the Waco community it’s aiming to impact?
@@ -160,5 +166,9 @@ function SectionPrompts(props) {
     </div>
   );
 }
+
+SectionPrompts.propTypes = {
+  classes: PropTypes.object.isRequired
+};
 
 export default withStyles(servicesStyle)(SectionPrompts);
