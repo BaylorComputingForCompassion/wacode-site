@@ -20,7 +20,7 @@ class Accordion extends React.Component {
     };
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     // am facut array din numar ca metoda .find sa functioneze indiferent de ce se intampla.
     if (this.state.active.length === undefined) {
       this.setState({
@@ -30,7 +30,7 @@ class Accordion extends React.Component {
     }
   }
 
-  handleChange = panel => (event, expanded) => {
+  handleChange = panel => () => {
     let newArray;
 
     if (this.state.single) {
