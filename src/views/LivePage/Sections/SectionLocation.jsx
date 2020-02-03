@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
@@ -16,7 +18,7 @@ import Iframe from "react-iframe";
 import productStyle from "assets/jss/material-kit-pro-react/views/landingPageSections/productStyle.jsx";
 
 const CustomSkinMap = withScriptjs(
-  withGoogleMap(props => (
+  withGoogleMap(() => (
     <GoogleMap
       defaultZoom={17}
       defaultCenter={{ lat: 31.54645, lng: -97.11815 }}
@@ -113,4 +115,7 @@ class SectionLocation extends React.Component {
   }
 }
 
+SectionLocation.propTypes = {
+  classes: PropTypes.object.isRequired
+};
 export default withStyles(productStyle)(SectionLocation);

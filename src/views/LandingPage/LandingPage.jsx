@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 // nodejs library that concatenates classes
 import classNames from "classnames";
@@ -59,19 +60,16 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={8} md={8}>
-                <h1 className={classes.title}>Community Oriented Hackathon</h1>
+                <h1 className={classes.title}>Welcome to Wacode</h1>
                 <h4>
                   More info coming soon on&nbsp;
                   <a href="http://computingforcompassion.org/">
                     <span style={{ color: "#3EAD7B" }}>Baylor C4C&apos;s</span>
                   </a>
                   &nbsp;12-hour hackathon happening&nbsp;
-                  <strong>Spring 2020</strong> on Baylor University&apos;s
-                  Campus.
-                  <b>
-                    &nbsp;Registration opens on Saturday, Februry 1st. Check
-                    back soon for updates!
-                  </b>
+                  <strong>Saturday, February 22nd, 2020</strong> on Baylor
+                  University&apos;s Campus.
+                  <b>&nbsp;Registration opens on TODAY (02/03) at 7:00pm.</b>
                 </h4>
                 <br />
                 <Button disabled color="danger" size="lg">
@@ -124,5 +122,9 @@ class LandingPage extends React.Component {
     );
   }
 }
+
+LandingPage.propTypes = {
+  classes: PropTypes.object.isRequired
+};
 
 export default withStyles(landingPageStyle)(LandingPage);

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -55,10 +56,10 @@ function SectionFAQ({ ...props }) {
                       A hackathon is best described as an &quot;invention
                       marathon.&quot; A more well-known concept that is similar
                       that of a start-up competition. Anyone who has an interest
-                      in innovation can attend to learn, build & share their
+                      in innovation can attend to learn, build &amp; share their
                       creations over the course of an entire day in a relaxed
-                      and welcoming atmosphere. You don&apos;t have to
-                      be a great coder to do well at a hackathon.
+                      and welcoming atmosphere. You don&apos;t have to be a
+                      great coder to do well at a hackathon.
                     </p>
                   }
                   iconColor="info"
@@ -81,7 +82,8 @@ function SectionFAQ({ ...props }) {
                         <span style={{ color: "#3EAD7B" }}>
                           MLH Code of Conduct.
                         </span>
-                      </a> The venue does not allow pets of any kind.
+                      </a>{" "}
+                      The venue does not allow pets of any kind.
                     </p>
                   }
                   iconColor="danger"
@@ -97,7 +99,8 @@ function SectionFAQ({ ...props }) {
                     <p>
                       Admission to Wacode is completely free for all attendees.
                       Food and drinks are provided by us through our generous
-                      sponsors & community partners (there will be vegan and vegetarian options available). Shirts, swag, and any of
+                      sponsors &amp; community partners (there will be vegan and
+                      vegetarian options available). Shirts, swag, and any of
                       the activities hosted at the event are also open to all at
                       no cost.
                     </p>
@@ -181,7 +184,10 @@ function SectionFAQ({ ...props }) {
                     <p>
                       It is NOT required to stay at the venue all day. Come for
                       an hour! Come for 12! There is no time requirement for
-                      those wanting to participate. To be eligible for prizes you must attend at least one workshop, and also be present at the kickoff ceremony and closing remarks, as well as for the judging period (8:00-9:00pm)
+                      those wanting to participate. To be eligible for prizes
+                      you must attend at least one workshop, and also be present
+                      at the kickoff ceremony and closing remarks, as well as
+                      for the judging period (8:00-9:00pm)
                     </p>
                   }
                 />
@@ -219,5 +225,9 @@ function SectionFAQ({ ...props }) {
     </div>
   );
 }
+
+SectionFAQ.propTypes = {
+  classes: PropTypes.object.isRequired
+};
 
 export default withStyles(featuresStyle)(SectionFAQ);

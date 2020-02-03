@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
@@ -14,6 +16,7 @@ import AmericanAirlines from "assets/img/SponsorLogos/AmericanAirlines.png";
 
 function SectionMainPrompt({ ...props }) {
   const { classes, ...rest } = props;
+
   return (
     <div className="cd-section" {...rest} style={{ marginTop: "-100px" }}>
       <div className={classes.blog}>
@@ -100,5 +103,9 @@ function SectionMainPrompt({ ...props }) {
     </div>
   );
 }
+
+SectionMainPrompt.propTypes = {
+  classes: PropTypes.object.isRequired
+};
 
 export default withStyles(blogsStyle)(SectionMainPrompt);
