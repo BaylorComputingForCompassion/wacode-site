@@ -19,9 +19,9 @@ import InfoArea from "components/InfoArea/InfoArea.jsx";
 import servicesStyle from "assets/jss/material-kit-pro-react/views/aboutUsSections/servicesStyle.jsx";
 
 function SectionPrompts(props) {
-  const { classes } = props;
+  const { classes, ...rest } = props;
   return (
-    <div className={classes.services}>
+    <div className={classes.services} {...rest}>
       <GridContainer>
         <GridItem
           md={8}

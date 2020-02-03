@@ -15,71 +15,49 @@ import Button from "components/CustomButtons/Button.jsx";
 
 import headerLinksStyle from "assets/jss/material-kit-pro-react/components/headerLinksStyle.jsx";
 
-function HeaderLinks({ ...props }) {
+function HeaderLinksLive({ ...props }) {
   const { classes } = props;
   return (
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
         <Button
-          href={"#about"}
+          href={"#venue"}
           color={"transparent"}
           className={classes.navButton}
           round
         >
-          About Us
+          Venue
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href={"#team"}
+          href={"#schedule"}
           color={"transparent"}
           className={classes.navButton}
           round
         >
-          Team
+          Schedule
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href={"#faq"}
+          href={"#prompts"}
           color={"transparent"}
           className={classes.navButton}
           round
         >
-          F.A.Q.
+          Prompts
         </Button>
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href={"#sponsors"}
-          color={"transparent"}
-          className={classes.navButton}
-          round
-        >
-          Sponsors
-        </Button>
-      </ListItem>
-      {/* @TODO Unhide when registration is ready */}
-      {/* <ListItem className={classes.listItem}>
-          < Button
-          color={"white"}
-          className={classes.navButton}
-          round
-          >
-            <Link to="/live">
-              <b style={{ color: "#3EAD7B" }}>Live!</b>
-            </Link>
-          </Button>
-      </ListItem> */}
     </List>
   );
 }
 
-HeaderLinks.defaultProps = {
+HeaderLinksLive.defaultProps = {
   hoverColor: "primary"
 };
 
-HeaderLinks.propTypes = {
+HeaderLinksLive.propTypes = {
   dropdownHoverColor: PropTypes.oneOf([
     "dark",
     "primary",
@@ -91,4 +69,4 @@ HeaderLinks.propTypes = {
   ])
 };
 
-export default withStyles(headerLinksStyle)(HeaderLinks);
+export default withStyles(headerLinksStyle)(HeaderLinksLive);

@@ -17,14 +17,12 @@ import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import HeaderLinks from "components/Header/HeaderLinks.jsx";
+import HeaderLinksLive from "components/Header/HeaderLinksLive.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 
-import ScrollableAnchor from "react-scrollable-anchor";
-import { configureAnchors } from "react-scrollable-anchor";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 // Sections
@@ -32,9 +30,6 @@ import SectionLocation from "./Sections/SectionLocation";
 import SectionPrompts from "./Sections/SectionPrompts";
 import SectionMainPrompt from "./Sections/SectionMainPrompt";
 import SectionMainSchedule from "./Sections/SectionMainSchedule";
-
-const dashboardRoutes = [];
-configureAnchors({ scrollDuration: 500 });
 
 class LivePage extends React.Component {
   componentDidMount() {
@@ -47,9 +42,8 @@ class LivePage extends React.Component {
       <div>
         <Header
           color="transparent"
-          routes={dashboardRoutes}
           brand="Wacode: A Community Hackathon"
-          links={<HeaderLinks dropdownHoverColor="info" />}
+          links={<HeaderLinksLive dropdownHoverColor="info" />}
           fixed
           changeColorOnScroll={{
             height: 300,
@@ -84,13 +78,9 @@ class LivePage extends React.Component {
           </div>
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
-          <ScrollableAnchor id={"location"}>
-            <SectionLocation />
-          </ScrollableAnchor>
-          <SectionMainSchedule />
-          <ScrollableAnchor id={"prompts"}>
-            <SectionPrompts />
-          </ScrollableAnchor>
+          <SectionLocation id="venue" />
+          <SectionMainSchedule id="schedule" />
+          <SectionPrompts id="prompts" />
           <SectionMainPrompt />
         </div>
         <Footer

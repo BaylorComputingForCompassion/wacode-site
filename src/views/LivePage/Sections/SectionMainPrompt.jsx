@@ -18,7 +18,7 @@ function SectionMainPrompt({ ...props }) {
   const { classes, ...rest } = props;
 
   return (
-    <div className="cd-section" {...rest} style={{ marginTop: "-100px" }}>
+    <div className="cd-section" style={{ marginTop: "-100px" }} {...rest}>
       <div className={classes.blog}>
         <div className={classes.container}>
           <GridContainer>

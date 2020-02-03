@@ -31,16 +31,17 @@ class SectionMainSchedule extends React.Component {
       data: appointments
     };
   }
+
   render() {
     const { classes, ...rest } = this.props;
     const { data } = this.state;
 
     return (
       <div
-        {...rest}
         className="cd-section"
         id="contentAreas"
         style={{ marginTop: "-50px", paddingBottom: "4vh" }}
+        {...rest}
       >
         <div id="tables">
           <GridContainer>
