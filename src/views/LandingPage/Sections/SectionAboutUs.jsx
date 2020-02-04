@@ -34,12 +34,19 @@ class SectionAboutUs extends React.Component {
               </h2>
             </div>
             <h5 className={classes.description}>
-              Wacode is an annual 12-hour hackathon, innovation fest, and
-              start-up competition held at the Blume Conference Center on
+              Wacode is an annual 12-hour&nbsp;
+              <a
+                style={{ color: "#3EAD7B" }}
+                href="https://www.hackreactor.com/blog/what-is-a-hackathon-your-complete-guide"
+                target={"_blank"}
+                rel="noopener noreferrer"
+              >
+                hackathon
+              </a>
+              &nbsp;held at the Blume Conference Center on Baylor
               University&apos;s campus. We want to bring in students,
-              professionals, hobbyists, and anyone else curious and passionate
-              about tech in the greater Waco area together to build,
-              collaborate, and share their knowledge and projects with us.
+              professionals, hobbyists together to build, collaborate, and share
+              their knowledge.
             </h5>
           </GridItem>
         </GridContainer>
@@ -48,7 +55,7 @@ class SectionAboutUs extends React.Component {
             <GridItem xs={12} sm={4} md={4}>
               <InfoArea
                 title="Learn Modern Development Techniques"
-                description="Guest lectures and workshops hosted by industry professionals with decades of experience. We hope this provides individuals a unique opportunity to interact with some of the brightest minds around."
+                description="Guest lectures and workshops hosted by industry professionals with decades of experience."
                 icon={Code}
                 iconColor="info"
                 vertical
@@ -56,8 +63,8 @@ class SectionAboutUs extends React.Component {
             </GridItem>
             <GridItem xs={12} sm={4} md={4}>
               <InfoArea
-                title="Code For Good"
-                description="Our programming prompts are centered around solving certain issues in our community; we want to help combat issues like low literacy rates, providing rehabilitation for victims of drug abuse, and fending against human trafficking. Specific prompts will be posted a few days before our event begins."
+                title="Code For Social Good"
+                description="Our programming prompts are focused on solving important issues in our local Waco community."
                 icon={Favorite}
                 iconColor="success"
                 vertical
@@ -66,7 +73,7 @@ class SectionAboutUs extends React.Component {
             <GridItem xs={12} sm={4} md={4}>
               <InfoArea
                 title="Built Your Professional Network"
-                description="We want to provide an opportunity for you to meet with students and professionals in the area to build and learn something new. Our goal is to provide an environment that allows curious minds to work together to create something truly innovative."
+                description="Professionals on-site looking to hire on new talent for internship and full-time opportunities."
                 icon={Group}
                 iconColor="danger"
                 vertical
