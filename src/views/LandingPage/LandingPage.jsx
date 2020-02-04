@@ -66,19 +66,34 @@ class LandingPage extends React.Component {
                   Baylor University! Schedule, prompt, and prize announcements
                   coming soon!
                 </h4>
-                <br />
+              </GridItem>
+              <GridItem xs={12} sm={8} md={8}>
                 <Button
                   href="https://marioarturolopez.typeform.com/to/PL4xbs"
                   target={"_blank"}
                   rel="noopener noreferrer"
                   color="danger"
-                  size="lg"
+                  size="md"
                 >
                   <i
                     className="fa fa-id-badge"
                     style={{ marginRight: "10px" }}
                   />
                   Register Now!
+                </Button>
+                &nbsp;
+                <Button
+                  href="https://twitter.com/WacodeTeam"
+                  target={"_blank"}
+                  rel="noopener noreferrer"
+                  color="info"
+                  size="md"
+                >
+                  <i
+                    className="fab fa-twitter"
+                    style={{ marginRight: "10px" }}
+                  />
+                  Stay in the loop!
                 </Button>
               </GridItem>
             </GridContainer>
