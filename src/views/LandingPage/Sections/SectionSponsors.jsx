@@ -24,7 +24,7 @@ function SectionSponsors({ ...props }) {
       </h2>
       <br />
       <GridContainer>
-        <GridItem xs={6}>
+        <GridItem sm={6}>
           <a
             href={"https://www.credera.com/jobs/"}
             target={"_blank"}
