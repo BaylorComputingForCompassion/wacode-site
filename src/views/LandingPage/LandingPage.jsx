@@ -125,7 +125,7 @@ class LandingPage extends React.Component {
               <div className={classes.right}>
                 &copy; {1900 + new Date().getYear()} , made with&nbsp;
                 <Favorite className={classes.icon} /> by&nbsp;
-                <a href="mailto:Wacode.Team@gmail.com">The Wacode Team</a>
+                <a href="mailto:team@wacode.org">The Wacode Team</a>
               </div>
             </div>
           }

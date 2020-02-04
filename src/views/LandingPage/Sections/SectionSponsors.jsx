@@ -36,6 +36,14 @@ function SectionSponsors({ ...props }) {
         <GridItem sm={6}>
           <img style={logoStyle} src={PMI} alt="PMI Logo" />
         </GridItem>
+        <GridItem xs={12}>
+          <h4 className={classes.title + " " + classes.textCenter}>
+            <a style={{ color: "#3EAD7B" }} href="mailto:team@wacode.org">
+              Interested in helping out? Click here to reach out to
+              team@wacode.org!
+            </a>
+          </h4>
+        </GridItem>
       </GridContainer>
     </div>
   );
