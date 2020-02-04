@@ -13,6 +13,7 @@ import Credera from "assets/img/SponsorLogos/Credera.png";
 import PMI from "assets/img/SponsorLogos/PMI.png";
 
 import sectionInterestedStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionInterestedStyle.jsx";
+const logoStyle = { width: "90%", height: "auto", margin: "20px" };
 
 function SectionSponsors({ ...props }) {
   const { classes, ...rest } = props;
@@ -29,19 +30,11 @@ function SectionSponsors({ ...props }) {
             target={"_blank"}
             rel="noopener noreferrer"
           >
-            <img
-              style={{ width: "90%", height: "auto", margin: "20px" }}
-              src={Credera}
-              alt="Credera Logo"
-            />
+            <img style={logoStyle} src={Credera} alt="Credera Logo" />
           </a>
         </GridItem>
         <GridItem sm={6}>
-          <img
-            style={{ width: "90%", height: "auto", margin: "20px" }}
-            src={PMI}
-            alt="PMI Logo"
-          />
+          <img style={logoStyle} src={PMI} alt="PMI Logo" />
         </GridItem>
       </GridContainer>
     </div>

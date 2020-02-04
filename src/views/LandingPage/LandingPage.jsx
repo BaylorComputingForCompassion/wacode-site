@@ -67,12 +67,18 @@ class LandingPage extends React.Component {
                   <b>&nbsp;Registration opens TODAY (02/03) at 7:00pm.</b>
                 </h4>
                 <br />
-                <Button disabled color="danger" size="lg">
+                <Button
+                  href="https://marioarturolopez.typeform.com/to/PL4xbs"
+                  target={"_blank"}
+                  rel="noopener noreferrer"
+                  color="danger"
+                  size="lg"
+                >
                   <i
                     className="fa fa-id-badge"
                     style={{ marginRight: "10px" }}
                   />
-                  Coming Soon!
+                  Register Now!
                 </Button>
               </GridItem>
             </GridContainer>
