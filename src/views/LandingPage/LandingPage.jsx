@@ -57,14 +57,14 @@ class LandingPage extends React.Component {
               <GridItem xs={12} sm={8} md={8}>
                 <h1 className={classes.title}>Welcome to Wacode</h1>
                 <h4>
-                  More info coming soon on&nbsp;
+                  Registration is now open for&nbsp;
                   <a href="http://computingforcompassion.org/">
                     <span style={{ color: "#3EAD7B" }}>Baylor C4C&apos;s</span>
                   </a>
                   &nbsp;12-hour hackathon happening&nbsp;
-                  <strong>Saturday, February 22nd, 2020</strong> on Baylor
-                  University&apos;s Campus.
-                  <b>&nbsp;Registration opens TODAY (02/03) at 7:00pm.</b>
+                  <strong>8am - 9pm on Saturday, February 22nd, 2020</strong> at
+                  Baylor University! Schedule, prompt, and prize announcements
+                  coming soon!
                 </h4>
                 <br />
                 <Button
