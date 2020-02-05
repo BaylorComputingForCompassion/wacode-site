@@ -72,7 +72,7 @@ class SectionAboutUs extends React.Component {
             </GridItem>
             <GridItem xs={12} sm={4} md={4}>
               <InfoArea
-                title="Built Your Professional Network"
+                title="Build Your Professional Network"
                 description="Professionals on-site looking to hire on new talent for internship and full-time opportunities."
                 icon={Group}
                 iconColor="danger"
