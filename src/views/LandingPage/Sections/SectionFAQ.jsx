@@ -201,18 +201,22 @@ function SectionFAQ({ ...props }) {
                   description={
                     <p>
                       Hey, we&apos;re here to help! Email us at
-                      <a href="mailto:Wacode.Team@gmail.com">
+                      <a href="mailto:team@wacode.org">
                         <span style={{ color: "#3EAD7B" }}>
                           &nbsp;Wacode.Team@Gmail.com
                         </span>
                       </a>
-                      &nbsp;or reach out to Computing for Compassion via&nbsp;
+                      &nbsp;or reach out to us via&nbsp;
                       <a href="https://www.instagram.com/baylorc4c/">
                         <span style={{ color: "#3EAD7B" }}>Instagram</span>
                       </a>
-                      &nbsp;or&nbsp;
+                      &nbsp;,&nbsp;
                       <a href="https://www.facebook.com/computingforcompassion">
                         <span style={{ color: "#3EAD7B" }}>Facebook</span>
+                      </a>
+                      &nbsp;,or&nbsp;
+                      <a href="https://twitter.com/WacodeTeam">
+                        <span style={{ color: "#3EAD7B" }}>Twitter</span>
                       </a>
                     </p>
                   }
