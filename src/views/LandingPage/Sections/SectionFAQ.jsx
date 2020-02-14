@@ -78,7 +78,11 @@ function SectionFAQ({ ...props }) {
                       background, or skill level. While this event is not an
                       official MLH sponsored event, we will be requiring all
                       attendants to abide by the{" "}
-                      <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">
+                      <a
+                        href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                        target={"_blank"}
+                        rel="noopener noreferrer"
+                      >
                         <span style={{ color: "#3EAD7B" }}>
                           MLH Code of Conduct.
                         </span>
@@ -201,18 +205,38 @@ function SectionFAQ({ ...props }) {
                   description={
                     <p>
                       Hey, we&apos;re here to help! Email us at
-                      <a href="mailto:Wacode.Team@gmail.com">
+                      <a
+                        href="mailto:team@wacode.org"
+                        target={"_blank"}
+                        rel="noopener noreferrer"
+                      >
                         <span style={{ color: "#3EAD7B" }}>
-                          &nbsp;Wacode.Team@Gmail.com
+                          &nbsp;Team@Wacode.org
                         </span>
                       </a>
-                      &nbsp;or reach out to Computing for Compassion via&nbsp;
-                      <a href="https://www.instagram.com/baylorc4c/">
+                      &nbsp;or reach out to us via&nbsp;
+                      <a
+                        href="https://www.instagram.com/baylorc4c/"
+                        target={"_blank"}
+                        rel="noopener noreferrer"
+                      >
                         <span style={{ color: "#3EAD7B" }}>Instagram</span>
                       </a>
-                      &nbsp;or&nbsp;
-                      <a href="https://www.facebook.com/computingforcompassion">
+                      ,&nbsp;
+                      <a
+                        href="https://www.facebook.com/computingforcompassion"
+                        target={"_blank"}
+                        rel="noopener noreferrer"
+                      >
                         <span style={{ color: "#3EAD7B" }}>Facebook</span>
+                      </a>
+                      ,&nbsp;or&nbsp;
+                      <a
+                        href="https://twitter.com/WacodeTeam"
+                        target={"_blank"}
+                        rel="noopener noreferrer"
+                      >
+                        <span style={{ color: "#3EAD7B" }}>Twitter</span>
                       </a>
                     </p>
                   }
