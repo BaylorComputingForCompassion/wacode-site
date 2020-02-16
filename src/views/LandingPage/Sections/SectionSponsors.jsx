@@ -11,9 +11,17 @@ import GridItem from "components/Grid/GridItem.jsx";
 // SponsorLogos
 import Credera from "assets/img/SponsorLogos/Credera.png";
 import PMI from "assets/img/SponsorLogos/PMI.png";
+import FiveHour from "assets/img/SponsorLogos/5Hour.svg";
+import Torch from "assets/img/Torch.png";
 
 import sectionInterestedStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionInterestedStyle.jsx";
 const logoStyle = { width: "90%", height: "auto", margin: "20px" };
+const torchStyle = {
+  width: "90%",
+  maxWidth: "450px",
+  height: "auto",
+  margin: "20px"
+};
 
 function SectionSponsors({ ...props }) {
   const { classes, ...rest } = props;
@@ -24,7 +32,7 @@ function SectionSponsors({ ...props }) {
       </h2>
       <br />
       <GridContainer>
-        <GridItem sm={6}>
+        <GridItem sm={4}>
           <a
             href={"https://www.credera.com/jobs/"}
             target={"_blank"}
@@ -33,14 +41,29 @@ function SectionSponsors({ ...props }) {
             <img style={logoStyle} src={Credera} alt="Credera Logo" />
           </a>
         </GridItem>
-        <GridItem sm={6}>
+        <GridItem sm={4}>
           <img style={logoStyle} src={PMI} alt="PMI Logo" />
+        </GridItem>
+        <GridItem xs={4}>
+          <img style={logoStyle} src={FiveHour} alt="5 Hour Evergy Logo" />
+        </GridItem>
+        <GridItem xs={12}>
+          <h4 className={classes.title + " " + classes.textCenter}>
+            <a
+              style={{ color: "#3EAD7B" }}
+              href="https://baylor.scalefunder.com/cfund/project/19596"
+              target={"_blank"}
+              rel="noopener noreferrer"
+            >
+              <img style={torchStyle} src={Torch} alt="Torch Fundraising" />
+            </a>
+          </h4>
         </GridItem>
         <GridItem xs={12}>
           <h4 className={classes.title + " " + classes.textCenter}>
             <a style={{ color: "#3EAD7B" }} href="mailto:team@wacode.org">
-              Interested in helping out? Click here to reach out to
-              team@wacode.org!
+              Corporate sponsor interestsed in helping out? Click here to reach
+              out to team@wacode.org!
             </a>
           </h4>
         </GridItem>
