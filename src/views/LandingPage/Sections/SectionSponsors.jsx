@@ -16,7 +16,12 @@ import Torch from "assets/img/Torch.png";
 
 import sectionInterestedStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionInterestedStyle.jsx";
 const logoStyle = { width: "90%", height: "auto", margin: "20px" };
-const torchStyle = { width: "25%", height: "auto", margin: "20px" };
+const torchStyle = {
+  width: "90%",
+  maxWidth: "450px",
+  height: "auto",
+  margin: "20px"
+};
 
 function SectionSponsors({ ...props }) {
   const { classes, ...rest } = props;
