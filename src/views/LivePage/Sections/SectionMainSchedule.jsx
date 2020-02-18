@@ -26,7 +26,6 @@ const theme = createMuiTheme({ palette: { type: "light", primary: blue } });
 class SectionMainSchedule extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       data: appointments
     };
@@ -47,7 +46,7 @@ class SectionMainSchedule extends React.Component {
           <GridContainer>
             <GridItem
               xs={11}
-              sm={10}
+              lg={6}
               className={`${classes.mrAuto} ${classes.mlAuto}`}
             >
               <h2
@@ -60,8 +59,8 @@ class SectionMainSchedule extends React.Component {
               <MuiThemeProvider theme={theme}>
                 <Paper>
                   <Scheduler data={data}>
-                    <ViewState currentDate="2019-03-02" />
-                    <DayView startDayHour={8} endDayHour={22} />
+                    <ViewState currentDate="2020-02-22" />
+                    <DayView startDayHour={7.5} endDayHour={22} />
                     <Appointments />
                   </Scheduler>
                 </Paper>
