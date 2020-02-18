@@ -82,7 +82,6 @@ class LandingPage extends React.Component {
                   target={"_blank"}
                   rel="noopener noreferrer"
                   color="danger"
-                  size="md"
                 >
                   <i className="fa fa-id-badge" style={IconStyle} />
                   Register Now!
@@ -93,7 +92,6 @@ class LandingPage extends React.Component {
                   target={"_blank"}
                   rel="noopener noreferrer"
                   color="info"
-                  size="md"
                 >
                   <i className="fab fa-twitter" style={IconStyle} />
                   Stay in the loop!
