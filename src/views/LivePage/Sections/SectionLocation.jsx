@@ -34,17 +34,26 @@ class SectionLocation extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <h4>Baylor University</h4>
-                    <h4>Cashion Academic Center (5th Floor)</h4>
-                    <h5>1420 S 5th St, Waco, TX 76706</h5>
+                    <h5>Baylor University</h5>
+                    <h5>Cashion Academic Center (5th Floor)</h5>
+                    <h6>1420 S 5th St, Waco, TX 76706</h6>
                   </a>
                 </div>
                 <hr />
                 <h3 className={classes.title}>Parking:</h3>
                 <div>
-                  <h4>Speight Parking Garage</h4>
-                  <h4>Lot near Sid Richardson Building</h4>
-                  <h4>Lot near Fountain Mall</h4>
+                  <h5>Speight Parking Garage</h5>
+                  <h5>Lot near Sid Richardson Building</h5>
+                  <h5>Lot near Fountain Mall</h5>
+                </div>
+                <hr />
+                <h3 className={classes.title}>Guest WiFi:</h3>
+                <div>
+                  <h5>Network Name: BU-GUEST</h5>
+                  <h5>
+                    Usernames &amp; passwords will be given to you during
+                    sign-in!
+                  </h5>
                 </div>
               </CardBody>
             </Card>
@@ -53,7 +62,7 @@ class SectionLocation extends React.Component {
           <GridItem xs={11} md={6}>
             <Iframe
               url="https://www.google.com/maps/d/u/0/embed?mid=1BVtIapKArz0fjrDgcrBWlIpEyE0EOcz0"
-              height="500px"
+              height="675px"
               width="95%"
               id="wacodeParkingMap"
               display="initial"
