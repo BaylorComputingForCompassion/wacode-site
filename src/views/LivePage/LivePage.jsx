@@ -28,7 +28,6 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 // Sections
 import SectionLocation from "./Sections/SectionLocation";
 import SectionPrompts from "./Sections/SectionPrompts";
-import SectionMainPrompt from "./Sections/SectionMainPrompt";
 import SectionMainSchedule from "./Sections/SectionMainSchedule";
 
 class LivePage extends React.Component {
@@ -59,7 +58,11 @@ class LivePage extends React.Component {
                 <TwitterTimelineEmbed
                   sourceType="profile"
                   screenName="wacodeteam"
-                  options={{ height: 400 }}
+                  options={{
+                    width: "100%",
+                    height: "50vh"
+                  }}
+                  theme="light"
                 />
                 <Button
                   color="info"
@@ -81,7 +84,7 @@ class LivePage extends React.Component {
           <SectionLocation id="venue" />
           <SectionMainSchedule id="schedule" />
           <SectionPrompts id="prompts" />
-          <SectionMainPrompt />
+          {/* <SectioinJudging id="judging" /> */}
         </div>
         <Footer
           content={
@@ -101,7 +104,7 @@ class LivePage extends React.Component {
               <div className={classes.right}>
                 &copy; {1900 + new Date().getYear()} , made with{" "}
                 <Favorite className={classes.icon} /> by{" "}
-                <a href="#about-us">The Wacode Team</a>
+                <a href="/#about-us">The Wacode Team</a>
               </div>
             </div>
           }

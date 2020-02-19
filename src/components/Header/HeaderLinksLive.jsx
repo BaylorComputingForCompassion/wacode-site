@@ -26,7 +26,7 @@ function HeaderLinksLive({ ...props }) {
           className={classes.navButton}
           round
         >
-          Venue
+          Venue Info
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -36,7 +36,7 @@ function HeaderLinksLive({ ...props }) {
           className={classes.navButton}
           round
         >
-          Schedule
+          Main Schedule
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
