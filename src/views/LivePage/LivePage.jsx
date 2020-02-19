@@ -29,7 +29,6 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 import SectionLocation from "./Sections/SectionLocation";
 import SectionPrompts from "./Sections/SectionPrompts";
 import SectionMainSchedule from "./Sections/SectionMainSchedule";
-import SectioinJudging from "./Sections/SectionJudging";
 
 class LivePage extends React.Component {
   componentDidMount() {
@@ -85,7 +84,7 @@ class LivePage extends React.Component {
           <SectionLocation id="venue" />
           <SectionMainSchedule id="schedule" />
           <SectionPrompts id="prompts" />
-          <SectioinJudging id="judging" />
+          {/* <SectioinJudging id="judging" /> */}
         </div>
         <Footer
           content={
