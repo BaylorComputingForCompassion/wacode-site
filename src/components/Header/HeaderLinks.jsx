@@ -61,11 +61,17 @@ function HeaderLinks({ ...props }) {
       </ListItem>
       {/* @TODO Hide when Wacode is over */}
       <ListItem className={classes.listItem}>
-        <Button color={"white"} className={classes.navButton} round>
-          <Link to="/live">
+        <Link to="/live">
+          <Button
+            color={"white"}
+            tag={Link}
+            to={"/live"}
+            className={classes.navButton}
+            round
+          >
             <b style={{ color: "#3EAD7B" }}>Live!</b>
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </ListItem>
     </List>
   );
