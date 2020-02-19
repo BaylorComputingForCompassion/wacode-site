@@ -1,6 +1,13 @@
-import { title, grayColor } from "assets/jss/material-kit-pro-react.jsx";
+import {
+  title,
+  mrAuto,
+  mlAuto,
+  grayColor
+} from "assets/jss/material-kit-pro-react.jsx";
 
 const productStyle = {
+  mrAuto,
+  mlAuto,
   section: {
     padding: "70px 0",
     textAlign: "center"
