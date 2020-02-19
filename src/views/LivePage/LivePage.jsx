@@ -7,9 +7,6 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import withStyles from "@material-ui/core/styles/withStyles";
 
-// @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
-
 // core components
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
@@ -29,6 +26,8 @@ import { C4CWebsiteLink, TwitterLink } from "constants.js";
 
 // Styles
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
+const LinkStyle = { color: "#3EAD7B" };
+const IconStyle = { marginRight: "10px" };
 
 class LivePage extends React.Component {
   componentDidMount() {
@@ -70,10 +69,7 @@ class LivePage extends React.Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i
-                    className="fab fa-twitter"
-                    style={{ marginRight: "10px" }}
-                  />
+                  <i className="fab fa-twitter" style={IconStyle} />
                   Follow Us!
                 </Button>
               </GridItem>
@@ -84,7 +80,6 @@ class LivePage extends React.Component {
           <SectionLocation id="venue" />
           <SectionMainSchedule id="schedule" />
           <SectionPrompts id="prompts" />
-          {/* <SectioinJudging id="judging" /> */}
         </div>
         <Footer
           content={
@@ -93,15 +88,16 @@ class LivePage extends React.Component {
                 <List className={classes.list}>
                   <ListItem className={classes.inlineBlock}>
                     <a href={C4CWebsiteLink} className={classes.block}>
-                      Baylor Computing for Compassion
+                      Computing for Compassion
                     </a>
                   </ListItem>
                 </List>
               </div>
               <div className={classes.right}>
-                &copy; {1900 + new Date().getYear()} , made with{" "}
-                <Favorite className={classes.icon} /> by{" "}
-                <a href="/#about-us">The Wacode Team</a>
+                &copy; {1900 + new Date().getYear()} , made with ❤️ by&nbsp;
+                <a href="/#about-us" style={LinkStyle}>
+                  The Wacode Team
+                </a>
               </div>
             </div>
           }
