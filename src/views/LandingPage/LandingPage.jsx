@@ -6,9 +6,6 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import withStyles from "@material-ui/core/styles/withStyles";
 
-// @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
-
 // Core Components
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
@@ -118,9 +115,10 @@ class LandingPage extends React.Component {
                 </List>
               </div>
               <div className={classes.right}>
-                &copy; {1900 + new Date().getYear()} , made with&nbsp;
-                <Favorite className={classes.icon} /> by&nbsp;
-                <a href={MailToLink}>The Wacode Team</a>
+                &copy; {1900 + new Date().getYear()} , made with ❤️ by&nbsp;
+                <a href={MailToLink} style={LinkStyle}>
+                  The Wacode Team
+                </a>
               </div>
             </div>
           }
