@@ -29,8 +29,8 @@ function SectionPrompts(props) {
           )}
         >
           <h3 className={`${classes.title} ${classes.description}`}>
-            Promps, Judging Criteria, and Prize Announcements Dropping on
-            Wednesday @ 7:00pm CST!
+            Prompts, Judging Criteria, and Prize Announcements Dropping on
+            Friday @ 7:00pm CST!
           </h3>
         </GridItem>
       </GridContainer>
