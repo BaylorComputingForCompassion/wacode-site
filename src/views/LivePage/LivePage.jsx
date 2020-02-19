@@ -26,8 +26,8 @@ import { C4CWebsiteLink, TwitterLink } from "constants.js";
 
 // Styles
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
-const LinkStyle = { color: "#3EAD7B" };
 const IconStyle = { marginRight: "10px" };
+const LinkStyle = { color: "#3EAD7B" };
 
 class LivePage extends React.Component {
   componentDidMount() {
