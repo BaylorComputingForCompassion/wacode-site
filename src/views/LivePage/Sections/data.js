@@ -74,7 +74,7 @@ export const appointments = [
     id: 7
   },
   {
-    title: "🥪 Afternoon Yoga w/ Billicarole!",
+    title: "🧘 Afternoon Yoga w/ Billicarole!",
     location: "Fountain Mall (Outside in front of Moody Library)",
     description:
       "Unwind your body and mind with a relaxing afternoon yoga session led by our very own Billicarole!",
