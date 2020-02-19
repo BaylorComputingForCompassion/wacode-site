@@ -5,26 +5,36 @@ import PropTypes from "prop-types";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 // @material-ui/icons
-import Code from "@material-ui/icons/Code";
-import Dashboard from "@material-ui/icons/Dashboard";
-import ViewCarousel from "@material-ui/icons/ViewCarousel";
-import AccessTime from "@material-ui/icons/AccessTime";
-import AttachMoney from "@material-ui/icons/AttachMoney";
-import Assignment from "@material-ui/icons/Assignment";
 import Face from "@material-ui/icons/Face";
+import Code from "@material-ui/icons/Code";
 import Work from "@material-ui/icons/Work";
+import Dashboard from "@material-ui/icons/Dashboard";
+import AccessTime from "@material-ui/icons/AccessTime";
+import Assignment from "@material-ui/icons/Assignment";
+import AttachMoney from "@material-ui/icons/AttachMoney";
+import ViewCarousel from "@material-ui/icons/ViewCarousel";
 import SupervisedUserCircle from "@material-ui/icons/SupervisedUserCircle";
 
 // Core Components
-import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import InfoArea from "components/InfoArea/InfoArea.jsx";
+import GridContainer from "components/Grid/GridContainer.jsx";
+
+// Assets
+import Background from "assets/img/tech_background.png";
+
+// Links
+import {
+  CodeOfConductLink,
+  InstagramLink,
+  FacebookLink,
+  TwitterLink,
+  MailToLink
+} from "constants.js";
 
 // Styles
 import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx";
-
-// Assets
-import bg from "assets/img/tech_background.png";
+const LinkStyle = { color: "#3EAD7B" };
 
 function SectionFAQ({ ...props }) {
   const { classes, ...rest } = props;
@@ -32,7 +42,7 @@ function SectionFAQ({ ...props }) {
     <div className="cd-section" {...rest}>
       <div
         className={classes.features5}
-        style={{ backgroundImage: `url(${bg})` }}
+        style={{ backgroundImage: `url(${Background})` }}
       >
         <GridContainer>
           <GridItem
@@ -79,13 +89,11 @@ function SectionFAQ({ ...props }) {
                       official MLH sponsored event, we will be requiring all
                       attendants to abide by the{" "}
                       <a
-                        href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                        href={CodeOfConductLink}
                         target={"_blank"}
                         rel="noopener noreferrer"
                       >
-                        <span style={{ color: "#3EAD7B" }}>
-                          MLH Code of Conduct.
-                        </span>
+                        <span style={LinkStyle}>MLH Code of Conduct.</span>
                       </a>{" "}
                       The venue does not allow pets of any kind.
                     </p>
@@ -206,37 +214,35 @@ function SectionFAQ({ ...props }) {
                     <p>
                       Hey, we&apos;re here to help! Email us at
                       <a
-                        href="mailto:team@wacode.org"
+                        href={MailToLink}
                         target={"_blank"}
                         rel="noopener noreferrer"
                       >
-                        <span style={{ color: "#3EAD7B" }}>
-                          &nbsp;Team@Wacode.org
-                        </span>
+                        <span style={LinkStyle}>&nbsp;Team@Wacode.org</span>
                       </a>
                       &nbsp;or reach out to us via&nbsp;
                       <a
-                        href="https://www.instagram.com/baylorc4c/"
+                        href={InstagramLink}
                         target={"_blank"}
                         rel="noopener noreferrer"
                       >
-                        <span style={{ color: "#3EAD7B" }}>Instagram</span>
+                        <span style={LinkStyle}>Instagram</span>
                       </a>
                       ,&nbsp;
                       <a
-                        href="https://www.facebook.com/computingforcompassion"
+                        href={FacebookLink}
                         target={"_blank"}
                         rel="noopener noreferrer"
                       >
-                        <span style={{ color: "#3EAD7B" }}>Facebook</span>
+                        <span style={LinkStyle}>Facebook</span>
                       </a>
                       ,&nbsp;or&nbsp;
                       <a
-                        href="https://twitter.com/WacodeTeam"
+                        href={TwitterLink}
                         target={"_blank"}
                         rel="noopener noreferrer"
                       >
-                        <span style={{ color: "#3EAD7B" }}>Twitter</span>
+                        <span style={LinkStyle}>Twitter</span>
                       </a>
                     </p>
                   }

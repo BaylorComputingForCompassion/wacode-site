@@ -1,18 +1,22 @@
 import React from "react";
+import Iframe from "react-iframe";
 import PropTypes from "prop-types";
 
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
+
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
+import GridItem from "components/Grid/GridItem.jsx";
 import CardBody from "components/Card/CardBody.jsx";
+import GridContainer from "components/Grid/GridContainer.jsx";
 
-import Iframe from "react-iframe";
+// Links
+import { ParkingLotMapLink, CashionMapLink } from "constants.js";
 
+// Styles
 import productStyle from "assets/jss/material-kit-pro-react/views/landingPageSections/productStyle.jsx";
-
+const VenueInfoCardStyle = { width: "100%", height: "auto" };
 const LinkStyle = { color: "#3EAD7B" };
 
 class SectionLocation extends React.Component {
@@ -20,17 +24,17 @@ class SectionLocation extends React.Component {
     const { classes, ...rest } = this.props;
 
     return (
-      <div className={classes.section} {...rest}>
+      <div className={`${classes.section} cd-section`} {...rest}>
         <h2 className={classes.title}>Venue Information</h2>
         <GridContainer justify="center">
           <GridItem xs={10} md={4}>
-            <Card style={{ width: "100%", height: "auto" }}>
+            <Card style={VenueInfoCardStyle}>
               <CardBody>
                 <h3 className={classes.title}>Address:</h3>
                 <div className={classes.description}>
                   <a
                     style={LinkStyle}
-                    href="https://goo.gl/maps/qGh1REBFaTLeWhcG9"
+                    href={CashionMapLink}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -61,7 +65,7 @@ class SectionLocation extends React.Component {
           </GridItem>
           <GridItem xs={11} md={6}>
             <Iframe
-              url="https://www.google.com/maps/d/u/0/embed?mid=1BVtIapKArz0fjrDgcrBWlIpEyE0EOcz0"
+              url={ParkingLotMapLink}
               height="675px"
               width="95%"
               id="wacodeParkingMap"

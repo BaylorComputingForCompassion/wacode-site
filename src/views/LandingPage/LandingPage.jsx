@@ -1,13 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-// nodejs library that concatenates classes
-import classNames from "classnames";
-
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
+import withStyles from "@material-ui/core/styles/withStyles";
 
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
@@ -15,14 +12,11 @@ import Favorite from "@material-ui/icons/Favorite";
 // Core Components
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
-import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-
-// Styles
-import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
+import HeaderLinks from "components/Header/HeaderLinks.jsx";
+import GridContainer from "components/Grid/GridContainer.jsx";
 
 // Sections for this page
 import SectionFAQ from "./Sections/SectionFAQ.jsx";
@@ -30,14 +24,17 @@ import SectionAboutUs from "./Sections/SectionAboutUs";
 import SectionTeam from "./Sections/SectionTeam";
 import SectionSponsors from "./Sections/SectionSponsors";
 
+// Links
 import {
   MailToLink,
   TwitterLink,
   C4CWebsiteLink,
   RegistrationLink,
   LandingBackground
-} from "../../constants";
+} from "constants.js";
 
+// Styles
+import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 const LinkStyle = { color: "#3EAD7B" };
 const IconStyle = { marginRight: "10px" };
 const TeamMargin = { marginTop: "-150px" };
@@ -63,7 +60,7 @@ class LandingPage extends React.Component {
         <Parallax image={LandingBackground} filter={"dark"}>
           <div className={classes.container}>
             <GridContainer>
-              <GridItem xs={12} sm={8} md={8}>
+              <GridItem xs={12} sm={8}>
                 <h1 className={classes.title}>Welcome to Wacode</h1>
                 <h4>
                   Registration is now open for&nbsp;
@@ -76,7 +73,7 @@ class LandingPage extends React.Component {
                   coming soon!
                 </h4>
               </GridItem>
-              <GridItem xs={12} sm={8} md={8}>
+              <GridItem xs={12} sm={8}>
                 <Button
                   href={RegistrationLink}
                   target={"_blank"}
@@ -100,7 +97,7 @@ class LandingPage extends React.Component {
             </GridContainer>
           </div>
         </Parallax>
-        <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className={`${classes.main} ${classes.mainRaised}`}>
           <div className={classes.container}>
             <SectionAboutUs id="about" />
             <SectionTeam style={TeamMargin} id="team" />

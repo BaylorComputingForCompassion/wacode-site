@@ -10,15 +10,21 @@ import Group from "@material-ui/icons/Group";
 import Favorite from "@material-ui/icons/Favorite";
 
 // Core Components
-import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import InfoArea from "components/InfoArea/InfoArea.jsx";
+import GridContainer from "components/Grid/GridContainer.jsx";
+
+// Assets
+import WacodeLogo from "assets/img/logo.png";
+
+// Links
+import { WhatIsAHackathonLink } from "constants.js";
 
 // Styles
 import productStyle from "assets/jss/material-kit-pro-react/views/landingPageSections/productStyle.jsx";
-
-// Assets
-import logo from "assets/img/logo.png";
+const LinkStyle = { color: "#3EAD7B" };
+const TitleStyle = { whiteSpace: "nowrap", overflow: "hidden" };
+const LogoStyle = { height: "4vh" };
 
 class SectionAboutUs extends React.Component {
   render() {
@@ -27,17 +33,17 @@ class SectionAboutUs extends React.Component {
       <div className={classes.section} {...rest}>
         <GridContainer justify="center">
           <GridItem sm={12} md={9}>
-            <div style={{ whiteSpace: "nowrap", overflow: "hidden" }}>
+            <div style={TitleStyle}>
               <h2 className={classes.title}>
                 What is&nbsp;
-                <img src={logo} alt="Wacode Logo" style={{ height: "4vh" }} />?
+                <img src={WacodeLogo} alt="Wacode Logo" style={LogoStyle} />?
               </h2>
             </div>
             <h5 className={classes.description}>
               Wacode is an annual 12-hour&nbsp;
               <a
-                style={{ color: "#3EAD7B" }}
-                href="https://www.hackreactor.com/blog/what-is-a-hackathon-your-complete-guide"
+                style={LinkStyle}
+                href={WhatIsAHackathonLink}
                 target={"_blank"}
                 rel="noopener noreferrer"
               >

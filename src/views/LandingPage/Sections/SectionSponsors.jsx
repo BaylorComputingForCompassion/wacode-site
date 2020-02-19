@@ -5,17 +5,22 @@ import PropTypes from "prop-types";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 // Core Components
-import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
+import GridContainer from "components/Grid/GridContainer.jsx";
 
-// SponsorLogos
-import Credera from "assets/img/SponsorLogos/Credera.png";
-import PMI from "assets/img/SponsorLogos/PMI.png";
-import FiveHour from "assets/img/SponsorLogos/5Hour.svg";
+// Assets
 import Torch from "assets/img/Torch.png";
+import PMI from "assets/img/SponsorLogos/PMI.png";
+import Credera from "assets/img/SponsorLogos/Credera.png";
+import FiveHour from "assets/img/SponsorLogos/5Hour.svg";
 
+// Links
+import { FundraiserLink, MailToLink } from "constants.js";
+
+// Styles
 import sectionInterestedStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionInterestedStyle.jsx";
 const logoStyle = { width: "90%", height: "auto", margin: "20px" };
+const LinkStyle = { color: "#3EAD7B" };
 const torchStyle = {
   width: "90%",
   maxWidth: "450px",
@@ -23,21 +28,20 @@ const torchStyle = {
   margin: "20px"
 };
 
+// Sponsor Links
+const CrederaJobsLink = "https://www.credera.com/jobs/";
+
 function SectionSponsors({ ...props }) {
   const { classes, ...rest } = props;
   return (
     <div className={classes.section} {...rest}>
-      <h2 className={classes.title + " " + classes.textCenter}>
+      <h2 className={`${classes.title} ${classes.textCenter}`}>
         A special thanks to our Spring 2020 sponsors!
       </h2>
       <br />
       <GridContainer>
         <GridItem sm={4}>
-          <a
-            href={"https://www.credera.com/jobs/"}
-            target={"_blank"}
-            rel="noopener noreferrer"
-          >
+          <a href={CrederaJobsLink} target={"_blank"} rel="noopener noreferrer">
             <img style={logoStyle} src={Credera} alt="Credera Logo" />
           </a>
         </GridItem>
@@ -48,10 +52,10 @@ function SectionSponsors({ ...props }) {
           <img style={logoStyle} src={FiveHour} alt="5 Hour Evergy Logo" />
         </GridItem>
         <GridItem xs={12}>
-          <h4 className={classes.title + " " + classes.textCenter}>
+          <h4 className={`${classes.title} ${classes.textCenter}`}>
             <a
-              style={{ color: "#3EAD7B" }}
-              href="https://baylor.scalefunder.com/cfund/project/19596"
+              style={LinkStyle}
+              href={FundraiserLink}
               target={"_blank"}
               rel="noopener noreferrer"
             >
@@ -60,10 +64,10 @@ function SectionSponsors({ ...props }) {
           </h4>
         </GridItem>
         <GridItem xs={12}>
-          <h4 className={classes.title + " " + classes.textCenter}>
-            <a style={{ color: "#3EAD7B" }} href="mailto:team@wacode.org">
+          <h4 className={`${classes.title} ${classes.textCenter}`}>
+            <a style={LinkStyle} href={MailToLink}>
               Corporate sponsor interestsed in helping out? Click here to reach
-              out to team@wacode.org!
+              out to team!
             </a>
           </h4>
         </GridItem>
