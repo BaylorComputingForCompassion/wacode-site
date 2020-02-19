@@ -5,23 +5,33 @@ import PropTypes from "prop-types";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 // Core Components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
-import CardAvatar from "components/Card/CardAvatar.jsx";
-import CardBody from "components/Card/CardBody.jsx";
 import Muted from "components/Typography/Muted.jsx";
+import GridItem from "components/Grid/GridItem.jsx";
+import CardBody from "components/Card/CardBody.jsx";
+import CardAvatar from "components/Card/CardAvatar.jsx";
+import GridContainer from "components/Grid/GridContainer.jsx";
+
+// Assets
+import mario from "assets/img/mario_profile.jpeg";
+import meghan from "assets/img/meghan_profile.jpeg";
+import brandon from "assets/img/brandon_profile.jpeg";
+import miranda from "assets/img/miranda_profile.jpeg";
+import citlally from "assets/img/citlally_profile.jpg";
+import billicarole from "assets/img/billicarole_profile.jpeg";
 
 // Styles
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.jsx";
 
-// Assets
-import mario from "assets/img/mario_profile.jpeg";
-import brandon from "assets/img/brandon_profile.jpeg";
-import miranda from "assets/img/miranda_profile.jpeg";
-import billicarole from "assets/img/billicarole_profile.jpeg";
-import meghan from "assets/img/meghan_profile.jpeg";
-import citlally from "assets/img/citlally_profile.jpg";
+// LinkedIn Links
+const MarioLinkedInLink = "https://www.linkedin.com/in/mariolopezarturo/";
+const MeghanLinkedInLink = "https://www.linkedin.com/in/meghanbibb/";
+const BrandonLinkedInLink = "https://www.linkedin.com/in/brandonmmork/";
+const MirandaLinkedInLink = "https://www.linkedin.com/in/brandonmmork/";
+const CitlallyLinkedInLink =
+  "https://www.linkedin.com/in/citlally-ruiz-29429119a/";
+const BillicaroleLinkedInLink =
+  "https://www.linkedin.com/in/billicarole-evans/";
 
 function SectionTeam({ ...props }) {
   const { classes, ...rest } = props;
@@ -48,7 +58,7 @@ function SectionTeam({ ...props }) {
               <Card profile plain>
                 <CardAvatar profile plain>
                   <a
-                    href="https://www.linkedin.com/in/mariolopezarturo/"
+                    href={MarioLinkedInLink}
                     target={"_blank"}
                     rel="noopener noreferrer"
                   >
@@ -72,7 +82,7 @@ function SectionTeam({ ...props }) {
               <Card profile plain>
                 <CardAvatar profile plain>
                   <a
-                    href="https://www.linkedin.com/in/brandonmmork/"
+                    href={BrandonLinkedInLink}
                     target={"_blank"}
                     rel="noopener noreferrer"
                   >
@@ -95,11 +105,17 @@ function SectionTeam({ ...props }) {
             <GridItem xs={12} sm={6} md={4}>
               <Card profile plain>
                 <CardAvatar profile plain>
-                  <img
-                    src={billicarole}
-                    alt="Billicarole Profile"
-                    className={classes.img}
-                  />
+                  <a
+                    href={BillicaroleLinkedInLink}
+                    target={"_blank"}
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={billicarole}
+                      alt="Billicarole Profile"
+                      className={classes.img}
+                    />
+                  </a>
                 </CardAvatar>
                 <CardBody>
                   <h4 className={classes.cardTitle}>Billicarole Evans</h4>
@@ -116,7 +132,7 @@ function SectionTeam({ ...props }) {
               <Card profile plain>
                 <CardAvatar profile plain>
                   <a
-                    href="https://www.linkedin.com/in/miranda-montroy-78107117b/"
+                    href={MirandaLinkedInLink}
                     target={"_blank"}
                     rel="noopener noreferrer"
                   >
@@ -144,7 +160,7 @@ function SectionTeam({ ...props }) {
               <Card profile plain>
                 <CardAvatar profile plain>
                   <a
-                    href="https://www.linkedin.com/in/meghanbibb/"
+                    href={MeghanLinkedInLink}
                     target={"_blank"}
                     rel="noopener noreferrer"
                   >
@@ -170,7 +186,7 @@ function SectionTeam({ ...props }) {
               <Card profile plain>
                 <CardAvatar profile plain>
                   <a
-                    href="https://www.linkedin.com/in/citlally-ruiz-29429119a/"
+                    href={CitlallyLinkedInLink}
                     target={"_blank"}
                     rel="noopener noreferrer"
                   >

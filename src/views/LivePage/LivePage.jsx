@@ -1,13 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-
-// nodejs library that concatenates classes
-import classNames from "classnames";
+import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
+import withStyles from "@material-ui/core/styles/withStyles";
 
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
@@ -15,20 +13,22 @@ import Favorite from "@material-ui/icons/Favorite";
 // core components
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
-import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import HeaderLinksLive from "components/Header/HeaderLinksLive.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-
-import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
-
-import { TwitterTimelineEmbed } from "react-twitter-embed";
+import GridContainer from "components/Grid/GridContainer.jsx";
+import HeaderLinksLive from "components/Header/HeaderLinksLive.jsx";
 
 // Sections
-import SectionLocation from "./Sections/SectionLocation";
 import SectionPrompts from "./Sections/SectionPrompts";
+import SectionLocation from "./Sections/SectionLocation";
 import SectionMainSchedule from "./Sections/SectionMainSchedule";
+
+// Links
+import { C4CWebsiteLink, TwitterLink } from "constants.js";
+
+// Styles
+import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 
 class LivePage extends React.Component {
   componentDidMount() {
@@ -66,7 +66,7 @@ class LivePage extends React.Component {
                 />
                 <Button
                   color="info"
-                  href="https://twitter.com/WacodeTeam"
+                  href={TwitterLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -80,7 +80,7 @@ class LivePage extends React.Component {
             </GridContainer>
           </div>
         </Parallax>
-        <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className={`${classes.main} ${classes.mainRaised}`}>
           <SectionLocation id="venue" />
           <SectionMainSchedule id="schedule" />
           <SectionPrompts id="prompts" />
@@ -92,10 +92,7 @@ class LivePage extends React.Component {
               <div className={classes.left}>
                 <List className={classes.list}>
                   <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="http://computingforcompassion.org"
-                      className={classes.block}
-                    >
+                    <a href={C4CWebsiteLink} className={classes.block}>
                       Baylor Computing for Compassion
                     </a>
                   </ListItem>

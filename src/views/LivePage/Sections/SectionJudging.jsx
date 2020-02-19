@@ -1,32 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-// nodejs library that concatenates classes
-import classNames from "classnames";
-
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
+import GridContainer from "components/Grid/GridContainer.jsx";
 
 import servicesStyle from "assets/jss/material-kit-pro-react/views/aboutUsSections/servicesStyle.jsx";
 
 function SectionJudging(props) {
   const { classes, ...rest } = props;
   return (
-    <div className={classes.services} {...rest}>
+    <div className={`${classes.services} cd-section`} {...rest}>
       <GridContainer>
         <GridItem
-          md={8}
-          sm={8}
           xs={10}
-          className={classNames(
-            classes.mlAuto,
-            classes.mrAuto,
-            classes.textCenter
-          )}
+          sm={8}
+          className={`${classes.mlAuto} ${classes.mrAuto} ${classes.textCenter}`}
         >
           <h2 className={classes.title}>Judging Criteria</h2>
         </GridItem>
@@ -35,11 +27,7 @@ function SectionJudging(props) {
         <GridItem
           md={8}
           sm={8}
-          className={classNames(
-            classes.mlAuto,
-            classes.mrAuto,
-            classes.textCenter
-          )}
+          className={`${classes.mlAuto} ${classes.mrAuto} ${classes.textCenter}`}
         >
           <h3 className={classes.title}>What is an acceptable project?</h3>
           <p className={classes.description}>
@@ -59,13 +47,8 @@ function SectionJudging(props) {
           </p>
         </GridItem>
         <GridItem
-          md={8}
           sm={8}
-          className={classNames(
-            classes.mlAuto,
-            classes.mrAuto,
-            classes.textCenter
-          )}
+          className={`${classes.mlAuto} ${classes.mrAuto} ${classes.textCenter}`}
         >
           <h3 className={classes.title}>Judging Criteria</h3>
           <p className={classes.description}>

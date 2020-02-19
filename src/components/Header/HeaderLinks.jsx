@@ -1,19 +1,19 @@
 /* eslint-disable */
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-// nodejs library to set properties for components
-import PropTypes from "prop-types";
-
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
+import withStyles from "@material-ui/core/styles/withStyles";
 
 // core components
 import Button from "components/CustomButtons/Button.jsx";
 
+// Styles
 import headerLinksStyle from "assets/jss/material-kit-pro-react/components/headerLinksStyle.jsx";
+const LinkStyle = { color: "#3EAD7B" };
 
 function HeaderLinks({ ...props }) {
   const { classes } = props;
@@ -69,7 +69,7 @@ function HeaderLinks({ ...props }) {
             className={classes.navButton}
             round
           >
-            <b style={{ color: "#3EAD7B" }}>Live!</b>
+            <b style={LinkStyle}>Live!</b>
           </Button>
         </Link>
       </ListItem>
