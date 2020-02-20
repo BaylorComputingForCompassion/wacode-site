@@ -61,7 +61,7 @@ class SectionLocation extends React.Component {
                 </div>
               </CardBody>
             </Card>
-            <p>Open lots are highlighted on map.</p>
+            <p>Open lots are highlighted in green on the map.</p>
           </GridItem>
           <GridItem xs={11} md={6}>
             <Iframe
