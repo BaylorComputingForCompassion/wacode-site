@@ -43,7 +43,6 @@ function SectionTeam({ ...props }) {
             <GridItem
               xs={12}
               sm={8}
-              md={8}
               className={`${classes.mlAuto} ${classes.mrAuto} ${classes.textCenter}`}
             >
               <h2 className={classes.title}>Meet The Team</h2>
@@ -59,7 +58,7 @@ function SectionTeam({ ...props }) {
                 <CardAvatar profile plain>
                   <a
                     href={MarioLinkedInLink}
-                    target={"_blank"}
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     <img
@@ -83,7 +82,7 @@ function SectionTeam({ ...props }) {
                 <CardAvatar profile plain>
                   <a
                     href={BrandonLinkedInLink}
-                    target={"_blank"}
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     <img
@@ -107,7 +106,7 @@ function SectionTeam({ ...props }) {
                 <CardAvatar profile plain>
                   <a
                     href={BillicaroleLinkedInLink}
-                    target={"_blank"}
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     <img
@@ -133,7 +132,7 @@ function SectionTeam({ ...props }) {
                 <CardAvatar profile plain>
                   <a
                     href={MirandaLinkedInLink}
-                    target={"_blank"}
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     <img
@@ -161,7 +160,7 @@ function SectionTeam({ ...props }) {
                 <CardAvatar profile plain>
                   <a
                     href={MeghanLinkedInLink}
-                    target={"_blank"}
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     <img
@@ -187,7 +186,7 @@ function SectionTeam({ ...props }) {
                 <CardAvatar profile plain>
                   <a
                     href={CitlallyLinkedInLink}
-                    target={"_blank"}
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     <img

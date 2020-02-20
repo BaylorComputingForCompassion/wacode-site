@@ -54,7 +54,7 @@ class LandingPage extends React.Component {
           changeColorOnScroll={{ height: 300, color: "primary" }}
           {...rest}
         />
-        <Parallax image={LandingBackground} filter={"dark"}>
+        <Parallax image={LandingBackground} filter="dark">
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={8}>
@@ -73,7 +73,7 @@ class LandingPage extends React.Component {
               <GridItem xs={12} sm={8}>
                 <Button
                   href={RegistrationLink}
-                  target={"_blank"}
+                  target="_blank"
                   rel="noopener noreferrer"
                   color="danger"
                 >
@@ -83,7 +83,7 @@ class LandingPage extends React.Component {
                 &nbsp;
                 <Button
                   href={TwitterLink}
-                  target={"_blank"}
+                  target="_blank"
                   rel="noopener noreferrer"
                   color="info"
                 >
