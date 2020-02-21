@@ -2,13 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 
 // @material-ui/core components
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 // Core Components
-import Header from "components/Header/Header.jsx";
-import Footer from "components/Footer/Footer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import Button from "components/CustomButtons/Button.jsx";
@@ -16,14 +12,13 @@ import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 
 // Sections for this page
+import SectionTeam from "./Sections/SectionTeam";
 import SectionFAQ from "./Sections/SectionFAQ.jsx";
 import SectionAboutUs from "./Sections/SectionAboutUs";
-import SectionTeam from "./Sections/SectionTeam";
 import SectionSponsors from "./Sections/SectionSponsors";
 
 // Links
 import {
-  MailToLink,
   TwitterLink,
   C4CWebsiteLink,
   RegistrationLink,
@@ -32,9 +27,11 @@ import {
 
 // Styles
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
-const LinkStyle = { color: "#3EAD7B" };
-const IconStyle = { marginRight: "10px" };
+import MainFooter from "components/Footer/MainFooter";
+import MainHeader from "components/Header/MainHeader";
 const TeamMargin = { marginTop: "-150px" };
+const IconStyle = { marginRight: "10px" };
+const LinkStyle = { color: "#3EAD7B" };
 
 class LandingPage extends React.Component {
   componentDidMount() {
@@ -46,14 +43,9 @@ class LandingPage extends React.Component {
     const { classes, ...rest } = this.props;
     return (
       <div>
-        <Header
-          color="transparent"
-          brand="Wacode: A Community Hackathon"
-          links={<HeaderLinks dropdownHoverColor="info" />}
-          fixed
-          changeColorOnScroll={{ height: 300, color: "primary" }}
-          {...rest}
-        />
+        <MainHeader {...rest}>
+          <HeaderLinks />
+        </MainHeader>
         <Parallax image={LandingBackground} filter="dark">
           <div className={classes.container}>
             <GridContainer>
@@ -102,27 +94,7 @@ class LandingPage extends React.Component {
             <SectionSponsors id="sponsors" />
           </div>
         </div>
-        <Footer
-          content={
-            <div>
-              <div className={classes.left}>
-                <List className={classes.list}>
-                  <ListItem className={classes.inlineBlock}>
-                    <a href={C4CWebsiteLink} className={classes.block}>
-                      Computing for Compassion
-                    </a>
-                  </ListItem>
-                </List>
-              </div>
-              <div className={classes.right}>
-                &copy; {1900 + new Date().getYear()} , made with ❤️ by&nbsp;
-                <a href={MailToLink} style={LinkStyle}>
-                  The Wacode Team
-                </a>
-              </div>
-            </div>
-          }
-        />
+        <MainFooter />
       </div>
     );
   }

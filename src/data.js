@@ -171,6 +171,15 @@ export const appointments = [
     startDate: new Date(2020, 1, 22, 21, 15),
     endDate: new Date(2020, 1, 22, 21, 45),
     id: 18
+  },
+  {
+    title: "🐋 Deployments using Kubernetes feat. Credera",
+    location: "Cashion 501",
+    description:
+      "Containerization is cool! Scaling your apps with Kubernetes is even cooler! Come learn the way of the whale with this amazing workshop led by our friends at Credera!",
+    startDate: new Date(2020, 1, 22, 16, 0),
+    endDate: new Date(2020, 1, 22, 17, 0),
+    id: 19
   }
 ];
 

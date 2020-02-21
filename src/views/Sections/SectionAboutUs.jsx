@@ -44,7 +44,7 @@ class SectionAboutUs extends React.Component {
               <a
                 style={LinkStyle}
                 href={WhatIsAHackathonLink}
-                target={"_blank"}
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 hackathon

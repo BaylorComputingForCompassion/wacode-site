@@ -87,15 +87,15 @@ function SectionFAQ({ ...props }) {
                       of 18 can participate, regardless of area of study,
                       background, or skill level. While this event is not an
                       official MLH sponsored event, we will be requiring all
-                      attendants to abide by the{" "}
+                      attendants to abide by the&nbsp;
                       <a
                         href={CodeOfConductLink}
-                        target={"_blank"}
+                        target="_blank"
                         rel="noopener noreferrer"
                       >
                         <span style={LinkStyle}>MLH Code of Conduct.</span>
-                      </a>{" "}
-                      The venue does not allow pets of any kind.
+                      </a>
+                      &nbsp;The venue does not allow pets of any kind.
                     </p>
                   }
                   iconColor="danger"
@@ -215,7 +215,7 @@ function SectionFAQ({ ...props }) {
                       Hey, we&apos;re here to help! Email us at
                       <a
                         href={MailToLink}
-                        target={"_blank"}
+                        target="_blank"
                         rel="noopener noreferrer"
                       >
                         <span style={LinkStyle}>&nbsp;Team@Wacode.org</span>
@@ -223,7 +223,7 @@ function SectionFAQ({ ...props }) {
                       &nbsp;or reach out to us via&nbsp;
                       <a
                         href={InstagramLink}
-                        target={"_blank"}
+                        target="_blank"
                         rel="noopener noreferrer"
                       >
                         <span style={LinkStyle}>Instagram</span>
@@ -231,7 +231,7 @@ function SectionFAQ({ ...props }) {
                       ,&nbsp;
                       <a
                         href={FacebookLink}
-                        target={"_blank"}
+                        target="_blank"
                         rel="noopener noreferrer"
                       >
                         <span style={LinkStyle}>Facebook</span>
@@ -239,7 +239,7 @@ function SectionFAQ({ ...props }) {
                       ,&nbsp;or&nbsp;
                       <a
                         href={TwitterLink}
-                        target={"_blank"}
+                        target="_blank"
                         rel="noopener noreferrer"
                       >
                         <span style={LinkStyle}>Twitter</span>

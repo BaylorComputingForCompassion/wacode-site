@@ -21,10 +21,10 @@ function SectionPrompts(props) {
           sm={8}
           className={`${classes.mlAuto} ${classes.mrAuto} ${classes.textCenter}`}
         >
-          <h3 className={classes.title}>
+          <h2 className={classes.title}>
             Prompts, Judging Criteria, and Prize Announcements Dropping on
             Friday @ 7:00pm CST!
-          </h3>
+          </h2>
         </GridItem>
       </GridContainer>
     </div>
