@@ -49,6 +49,16 @@ function HeaderLinksLive({ ...props }) {
           Prompts
         </Button>
       </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href={"#sponsors"}
+          color={"transparent"}
+          className={classes.navButton}
+          round
+        >
+          Sponsors
+        </Button>
+      </ListItem>
     </List>
   );
 }

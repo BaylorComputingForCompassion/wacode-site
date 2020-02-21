@@ -22,12 +22,11 @@ const LinkStyle = { color: "#3EAD7B" };
 class SectionLocation extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
-
     return (
       <div className={`${classes.section} cd-section`} {...rest}>
         <h2 className={classes.title}>Venue Information</h2>
         <GridContainer justify="center">
-          <GridItem xs={10} md={4}>
+          <GridItem xs={11} md={5}>
             <Card style={VenueInfoCardStyle}>
               <CardBody>
                 <h3 className={classes.title}>Address:</h3>
@@ -63,7 +62,7 @@ class SectionLocation extends React.Component {
             </Card>
             <p>Open lots are highlighted in green on the map.</p>
           </GridItem>
-          <GridItem xs={11} md={6}>
+          <GridItem xs={12} md={7}>
             <Iframe
               url={ParkingLotMapLink}
               height="675px"

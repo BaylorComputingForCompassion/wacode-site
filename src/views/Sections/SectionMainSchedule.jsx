@@ -23,11 +23,12 @@ import GridItem from "components/Grid/GridItem.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 
 // Links & Data
-import { appointments } from "./data";
+import { appointments } from "data.js";
 
 // Styles
 import productStyle from "assets/jss/material-kit-pro-react/views/landingPageSections/productStyle.jsx";
 const Theme = createMuiTheme({ palette: { type: "light", primary: green } });
+const PaddingZeroStyle = { paddingLeft: "0" };
 
 const Content = withStyles(productStyle, { name: "Content" })(
   ({ classes, appointmentData, ...restProps }) => (
@@ -39,7 +40,7 @@ const Content = withStyles(productStyle, { name: "Content" })(
         <GridItem xs={2} className={classes.textCenter}>
           <Room className={classes.icon} />
         </GridItem>
-        <GridItem xs={10} style={{ paddingLeft: "0" }}>
+        <GridItem xs={10} style={PaddingZeroStyle}>
           <span>{appointmentData.location}</span>
         </GridItem>
       </GridContainer>
@@ -47,7 +48,7 @@ const Content = withStyles(productStyle, { name: "Content" })(
         <GridItem xs={2} className={classes.textCenter}>
           <SubjectIcon className={classes.icon} />
         </GridItem>
-        <GridItem xs={10} style={{ paddingLeft: "0" }}>
+        <GridItem xs={10} style={PaddingZeroStyle}>
           <span>{appointmentData.description}</span>
         </GridItem>
       </GridContainer>

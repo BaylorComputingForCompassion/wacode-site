@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch } from "react-router";
 
-import LandingPage from "views/LandingPage/LandingPage.jsx";
-import LivePage from "views/LivePage/LivePage.jsx";
+import LivePage from "views/LivePage.jsx";
+import LandingPage from "views/LandingPage.jsx";
 
 import "assets/scss/material-kit-pro-react.scss";
 

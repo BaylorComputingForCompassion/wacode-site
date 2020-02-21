@@ -12,7 +12,7 @@ export const CodeOfConductLink =
 export const FundraiserLink =
   "https://baylor.scalefunder.com/cfund/project/19596";
 
-// Social Link
+// Social Links
 export const TwitterLink = "https://twitter.com/WacodeTeam";
 export const InstagramLink = "https://www.instagram.com/baylorc4c/";
 export const FacebookLink = "https://www.facebook.com/computingforcompassion";
