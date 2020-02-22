@@ -25,6 +25,8 @@ import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPag
 import MainFooter from "components/Footer/MainFooter";
 import MainHeader from "components/Header/MainHeader";
 import HeaderLinksLive from "components/Header/HeaderLinksLive";
+import SectionJudging from "./Sections/SectionJudging";
+import SectionPrizes from "./Sections/SectionPrizes";
 
 const IconStyle = { marginRight: "10px" };
 
@@ -72,6 +74,8 @@ class LivePage extends React.Component {
             <SectionLocation id="venue" />
             <SectionMainSchedule id="schedule" />
             <SectionPrompts id="prompts" />
+            <SectionJudging id="judging" />
+            <SectionPrizes />
             <SectionSponsors id="sponsors" />
           </div>
         </div>
