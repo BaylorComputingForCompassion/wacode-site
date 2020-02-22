@@ -43,13 +43,15 @@ function SectionPrizes(props) {
           <h2 className={classes.title}>Experienced Bracket</h2>
           <h4 className={classes.title}>
             1st Place: $100 Amazon Gift Card (to each member of the winning
-            team)
+            team) + Swag
           </h4>
           <h4 className={classes.title}>
             2nd Place: $50 Amazon Gift Card (to each member of the winning team)
+            + Swag
           </h4>
           <h4 className={classes.title}>
             3rd Place: $30 Amazon Gift Card (to each member of the winning team)
+            + Swag
           </h4>
         </GridItem>
       </GridContainer>
