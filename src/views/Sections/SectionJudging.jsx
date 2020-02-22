@@ -23,9 +23,8 @@ function SectionJudging(props) {
           <h2 className={classes.title}>Judging Criteria</h2>
         </GridItem>
       </GridContainer>
-      <GridContainer style={{ paddingLeft: "4vw", paddingRight: "4vw" }}>
+      <GridContainer>
         <GridItem
-          md={8}
           sm={8}
           className={`${classes.mlAuto} ${classes.mrAuto} ${classes.textCenter}`}
         >
@@ -41,9 +40,7 @@ function SectionJudging(props) {
             documents (it doesn’t need to be finished and/or working). We don’t
             need ALL of these, we simply ask that you show us at least one
             during our judging. Essentially, you should have something to show
-            12-hours worth of work. It is not required to make a submission as a
-            team though if you do chose to do so, teams will be limited to 5
-            individuals.
+            12-hours worth of work.
           </p>
         </GridItem>
         <GridItem

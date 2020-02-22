@@ -87,6 +87,11 @@ class CustomTabs extends React.Component {
                   // icon={<prop.tabIcon className={tabIcon} />}
                   {...icon}
                   label={prop.tabName}
+                  // @TODO Fix this for phone screens
+                  style={{
+                    marginLeft: "auto",
+                    marginRight: "auto"
+                  }}
                 />
               );
             })}
