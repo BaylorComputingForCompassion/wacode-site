@@ -11,7 +11,7 @@ export const appointments = [
     id: 0
   },
   {
-    title: "☕ Breakfast",
+    title: "☕ Light Breakfast",
     location: "Cashion 5th Floor Corridor",
     description:
       "Light breakfast refreshments provided! Fresh fruit, donuts, hot coffee, and more!",
