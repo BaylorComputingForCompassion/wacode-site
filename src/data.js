@@ -30,7 +30,7 @@ export const appointments = [
   },
   {
     title: "🤝 Team Matching Activities",
-    location: "Cashion 502",
+    location: "Cashion 501",
     description:
       "Want to be on a team but don't have one? We'll help to match you with teammates of a similar skill-level!",
     startDate: new Date(2020, 1, 22, 8, 30),
@@ -39,7 +39,7 @@ export const appointments = [
   },
   {
     title: "📖 Web Dev Resource Sharing",
-    location: "Cashion 501",
+    location: "Cashion 502",
     description:
       "New to programming and don't know where to start? We'll help you and your team out.",
     startDate: new Date(2020, 1, 22, 8, 45),
@@ -48,7 +48,7 @@ export const appointments = [
   },
   {
     title: "🧠 Intro to Design Thinking feat. Credera",
-    location: "Cashion 501",
+    location: "Cashion 502",
     description:
       "In an immersive workshop presented by Credera, participants will learn how to build products that solve the RIGHT problems! Highly encouraged for all skill-levels!",
     startDate: new Date(2020, 1, 22, 9, 15),
@@ -84,7 +84,7 @@ export const appointments = [
   },
   {
     title: "🎲 Rubik's Cube Competition",
-    location: "Cashion 502",
+    location: "Cashion 501",
     description:
       "How fast can you solve a Rubik's Cube? It's just an algorithm! Prize available for the winner!",
     startDate: new Date(2020, 1, 22, 13, 0),
@@ -93,7 +93,7 @@ export const appointments = [
   },
   {
     title: "🤓 Computer Science Trivia!",
-    location: "Cashion 502",
+    location: "Cashion 501",
     description:
       "So you think you know computer science and its rich history? Let's put that to the test! Prize available for the winner!",
     startDate: new Date(2020, 1, 22, 13, 25),
@@ -102,7 +102,7 @@ export const appointments = [
   },
   {
     title: "⏳ Leetcode Challenge!",
-    location: "Cashion 502",
+    location: "Cashion 501",
     description:
       "Let's test your knowledge of Data Structures & Algorithms with a coding challenge! Prize available for the winner!",
     startDate: new Date(2020, 1, 22, 14, 0),
@@ -111,7 +111,7 @@ export const appointments = [
   },
   {
     title: "🏀 #1 Baylor vs. #3 Kansas Watch Party!",
-    location: "Cashion 501",
+    location: "Cashion 502",
     description:
       "Cheer on our Baylor Bears as they fend to keep their #1 spot agains the Kansas Jayhawks! Game will be live-streamed on the projector for anyone who wants to take a break and watch.",
     startDate: new Date(2020, 1, 22, 11, 0),
@@ -138,7 +138,7 @@ export const appointments = [
   },
   {
     title: "🥤 Cup Stacking Competition",
-    location: "Cashion 502",
+    location: "Cashion 501",
     description:
       "How high can you stack your tower? Team up with a partner and face off with others to see who can build the tallest cup tower in 60 seconds! Prizes available for the winners!",
     startDate: new Date(2020, 1, 22, 15, 30),
@@ -174,7 +174,7 @@ export const appointments = [
   },
   {
     title: "🐋 Deployments using Kubernetes feat. Credera",
-    location: "Cashion 501",
+    location: "Cashion 502",
     description:
       "Containerization is cool! Scaling your apps with Kubernetes is even cooler! Come learn the way of the whale with this amazing workshop led by our friends at Credera!",
     startDate: new Date(2020, 1, 22, 16, 0),
