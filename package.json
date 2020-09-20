@@ -6,6 +6,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+<<<<<<< HEAD
     "@devexpress/dx-react-core": "~2.7.1",
     "@devexpress/dx-react-scheduler": "~2.7.1",
     "@devexpress/dx-react-scheduler-material-ui": "~2.7.1",
@@ -35,6 +36,37 @@
     "react-tagsinput": "~3.19.0",
     "react-twitter-embed": "~3.0.3",
     "serve": "~11.3.0"
+=======
+    "@devexpress/dx-react-core": "2.7.1",
+    "@devexpress/dx-react-scheduler": "2.7.1",
+    "@devexpress/dx-react-scheduler-material-ui": "2.7.1",
+    "@material-ui/core": "4.11.0",
+    "@material-ui/icons": "4.9.1",
+    "@types/markerclustererplus": "2.1.33",
+    "ajv": "6.12.4",
+    "animate.css": "4.1.0",
+    "classnames": "2.2.6",
+    "history": "5.0.0",
+    "moment": "2.27.0",
+    "node-sass": "4.14.1",
+    "nouislider": "14.6.1",
+    "prop-types": "15.7.2",
+    "react": "16.13.1",
+    "react-animate-on-scroll": "2.1.5",
+    "react-datetime": "2.16.3",
+    "react-dom": "16.13.1",
+    "react-iframe": "1.8.0",
+    "react-image-gallery": "1.0.8",
+    "react-router-dom": "5.2.0",
+    "react-router-hash-link": "2.0.0",
+    "react-scripts": "3.4.3",
+    "react-scrollable-anchor": "0.6.1",
+    "react-slick": "0.27.10",
+    "react-swipeable-views": "0.13.9",
+    "react-tagsinput": "3.19.0",
+    "react-twitter-embed": "3.0.3",
+    "serve": "11.3.2"
+>>>>>>> 33dc0940bfe3d43deff69f514c06dafe0dd912c5
   },
   "scripts": {
     "start": "react-scripts start",
@@ -52,7 +84,11 @@
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.20.6",
+<<<<<<< HEAD
     "prettier": "2.1.2"
+=======
+    "prettier": "2.1.1"
+>>>>>>> 33dc0940bfe3d43deff69f514c06dafe0dd912c5
   },
   "browserslist": [
     ">0.2%",
