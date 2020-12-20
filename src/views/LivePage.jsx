@@ -52,7 +52,7 @@ class LivePage extends React.Component {
                   screenName="wacodeteam"
                   options={{
                     width: "100%",
-                    height: "50vh"
+                    height: "50vh",
                   }}
                   theme="light"
                 />
@@ -86,7 +86,7 @@ class LivePage extends React.Component {
 }
 
 LivePage.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(landingPageStyle)(LivePage);

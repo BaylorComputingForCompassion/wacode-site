@@ -29,7 +29,7 @@ import {
   InstagramLink,
   FacebookLink,
   TwitterLink,
-  MailToLink
+  MailToLink,
 } from "constants.js";
 
 // Styles
@@ -180,7 +180,7 @@ function SectionFAQ({ ...props }) {
                       to reserve your shirt and food. All food and swag these
                       will be given out on a first-come-first-serve basis on the
                       day of, prioritizing those who have already registered
-                      online. Registration for Wacode Spring 2020 will be open
+                      online. Registration for Wacode Spring 2021 will be open
                       on February 1st at 9:00am.
                     </p>
                   }
@@ -218,7 +218,9 @@ function SectionFAQ({ ...props }) {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <span style={LinkStyle}>&nbsp;Team@Wacode.org</span>
+                        <span style={LinkStyle}>
+                          &nbsp;Wacode.Team@gmail.com
+                        </span>
                       </a>
                       &nbsp;or reach out to us via&nbsp;
                       <a
@@ -257,7 +259,7 @@ function SectionFAQ({ ...props }) {
 }
 
 SectionFAQ.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(featuresStyle)(SectionFAQ);

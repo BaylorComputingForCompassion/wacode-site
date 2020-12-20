@@ -69,7 +69,7 @@ function SectionJudging(props) {
 }
 
 SectionJudging.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(servicesStyle)(SectionJudging);

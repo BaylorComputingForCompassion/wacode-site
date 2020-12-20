@@ -3,8 +3,7 @@ export const C4CWebsiteLink = "https://c4c-website.herokuapp.com/index";
 export const MailToLink = "mailto:team@wacode.org";
 
 // Forms
-export const RegistrationLink =
-  "https://marioarturolopez.typeform.com/to/PL4xbs";
+export const RegistrationLink = "https://forms.gle/MmGudUQVk4rQQS7R7";
 export const WhatIsAHackathonLink =
   "https://www.hackreactor.com/blog/what-is-a-hackathon-your-complete-guide";
 export const CodeOfConductLink =

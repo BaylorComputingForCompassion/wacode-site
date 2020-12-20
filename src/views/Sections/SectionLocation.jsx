@@ -80,6 +80,6 @@ class SectionLocation extends React.Component {
 }
 
 SectionLocation.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 export default withStyles(productStyle)(SectionLocation);

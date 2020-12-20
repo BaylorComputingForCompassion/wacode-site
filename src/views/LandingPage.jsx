@@ -22,7 +22,7 @@ import {
   TwitterLink,
   C4CWebsiteLink,
   RegistrationLink,
-  LandingBackground
+  LandingBackground,
 } from "constants.js";
 
 // Styles
@@ -70,7 +70,7 @@ class LandingPage extends React.Component {
                   color="danger"
                 >
                   <i className="fa fa-id-badge" style={IconStyle} />
-                  Register Now!
+                  Pre-register Now!
                 </Button>
                 &nbsp;
                 <Button
@@ -101,7 +101,7 @@ class LandingPage extends React.Component {
 }
 
 LandingPage.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(landingPageStyle)(LandingPage);

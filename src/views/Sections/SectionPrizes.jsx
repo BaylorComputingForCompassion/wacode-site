@@ -60,7 +60,7 @@ function SectionPrizes(props) {
 }
 
 SectionPrizes.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(servicesStyle)(SectionPrizes);

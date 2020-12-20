@@ -4,7 +4,7 @@ import {
   Scheduler,
   DayView,
   Appointments,
-  AppointmentTooltip
+  AppointmentTooltip,
 } from "@devexpress/dx-react-scheduler-material-ui";
 import { ViewState } from "@devexpress/dx-react-scheduler";
 
@@ -60,7 +60,7 @@ class SectionMainSchedule extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: appointments
+      data: appointments,
     };
   }
 
@@ -104,7 +104,7 @@ class SectionMainSchedule extends React.Component {
 }
 
 SectionMainSchedule.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(productStyle)(SectionMainSchedule);

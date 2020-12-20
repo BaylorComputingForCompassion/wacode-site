@@ -27,7 +27,7 @@ class SectionPrompts extends React.Component {
               color="primary"
               horizontal={{
                 tabsGrid: { xs: 12, sm: 3, md: 4 },
-                contentGrid: { xs: 12, sm: 9, md: 8 }
+                contentGrid: { xs: 12, sm: 9, md: 8 },
               }}
               tabs={[
                 {
@@ -49,7 +49,7 @@ class SectionPrompts extends React.Component {
                         the roads a safer place for drivers around the world.
                       </p>
                     </span>
-                  )
+                  ),
                 },
                 {
                   tabButton: "Sustainability",
@@ -72,7 +72,7 @@ class SectionPrompts extends React.Component {
                         environmentally sustainable society.
                       </p>
                     </span>
-                  )
+                  ),
                 },
                 {
                   tabButton: "Violence Prevention",
@@ -100,8 +100,8 @@ class SectionPrompts extends React.Component {
                         community.
                       </p>
                     </span>
-                  )
-                }
+                  ),
+                },
               ]}
             />
           </GridItem>
@@ -112,6 +112,6 @@ class SectionPrompts extends React.Component {
 }
 
 SectionPrompts.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 export default withStyles(productStyle)(SectionPrompts);

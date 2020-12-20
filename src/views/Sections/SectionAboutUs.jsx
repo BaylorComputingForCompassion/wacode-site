@@ -40,7 +40,7 @@ class SectionAboutUs extends React.Component {
               </h2>
             </div>
             <h5 className={classes.description}>
-              Wacode is an annual 12-hour&nbsp;
+              Wacode is an annual 24-hour&nbsp;
               <a
                 style={LinkStyle}
                 href={WhatIsAHackathonLink}
@@ -93,7 +93,7 @@ class SectionAboutUs extends React.Component {
 }
 
 SectionAboutUs.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(productStyle)(SectionAboutUs);

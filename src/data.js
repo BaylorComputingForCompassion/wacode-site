@@ -8,7 +8,7 @@ export const appointments = [
       "Table will be set up in the lobby where you can retreive your WiFi access key and free shirt!",
     startDate: new Date(2020, 1, 22, 7, 45),
     endDate: new Date(2020, 1, 22, 8, 15),
-    id: 0
+    id: 0,
   },
   {
     title: "☕ Light Breakfast",
@@ -17,7 +17,7 @@ export const appointments = [
       "Light breakfast refreshments provided! Fresh fruit, donuts, hot coffee, and more!",
     startDate: new Date(2020, 1, 22, 7, 45),
     endDate: new Date(2020, 1, 22, 8, 45),
-    id: 1
+    id: 1,
   },
   {
     title: "🎆 Kick-Off Ceremony",
@@ -26,7 +26,7 @@ export const appointments = [
       "Starting the day off with a quick run-down of what to expect, and giving credit where credit is due.",
     startDate: new Date(2020, 1, 22, 8, 15),
     endDate: new Date(2020, 1, 22, 8, 30),
-    id: 2
+    id: 2,
   },
   {
     title: "🤝 Team Matching Activities",
@@ -35,7 +35,7 @@ export const appointments = [
       "Want to be on a team but don't have one? We'll help to match you with teammates of a similar skill-level!",
     startDate: new Date(2020, 1, 22, 8, 30),
     endDate: new Date(2020, 1, 22, 9, 0),
-    id: 3
+    id: 3,
   },
   {
     title: "📖 Web Dev Resource Sharing",
@@ -44,7 +44,7 @@ export const appointments = [
       "New to programming and don't know where to start? We'll help you and your team out.",
     startDate: new Date(2020, 1, 22, 8, 45),
     endDate: new Date(2020, 1, 22, 9, 10),
-    id: 4
+    id: 4,
   },
   {
     title: "🧠 Intro to Design Thinking feat. Credera",
@@ -53,7 +53,7 @@ export const appointments = [
       "In an immersive workshop presented by Credera, participants will learn how to build products that solve the RIGHT problems! Highly encouraged for all skill-levels!",
     startDate: new Date(2020, 1, 22, 9, 15),
     endDate: new Date(2020, 1, 22, 10, 45),
-    id: 5
+    id: 5,
   },
   {
     title: "🥪 Lunch",
@@ -62,7 +62,7 @@ export const appointments = [
       "Grab some grub to re-fule your brain! Tons of options for you to chose from!",
     startDate: new Date(2020, 1, 22, 11, 0),
     endDate: new Date(2020, 1, 22, 12, 0),
-    id: 6
+    id: 6,
   },
   {
     title: "💻 Hacking Period",
@@ -71,7 +71,7 @@ export const appointments = [
       "Grab a table for your team and hack away at your project. Mentors will be going around the room to provide insights and advice. Let us know if you need anything!",
     startDate: new Date(2020, 1, 22, 8, 30),
     endDate: new Date(2020, 1, 22, 20, 0),
-    id: 7
+    id: 7,
   },
   {
     title: "🧘 Afternoon Yoga w/ Billicarole!",
@@ -80,7 +80,7 @@ export const appointments = [
       "Unwind your body and mind with a relaxing afternoon yoga session led by our very own Billicarole!",
     startDate: new Date(2020, 1, 22, 12, 15),
     endDate: new Date(2020, 1, 22, 12, 45),
-    id: 8
+    id: 8,
   },
   {
     title: "🎲 Rubik's Cube Competition",
@@ -89,7 +89,7 @@ export const appointments = [
       "How fast can you solve a Rubik's Cube? It's just an algorithm! Prize available for the winner!",
     startDate: new Date(2020, 1, 22, 13, 0),
     endDate: new Date(2020, 1, 22, 13, 20),
-    id: 9
+    id: 9,
   },
   {
     title: "🤓 Computer Science Trivia!",
@@ -98,7 +98,7 @@ export const appointments = [
       "So you think you know computer science and its rich history? Let's put that to the test! Prize available for the winner!",
     startDate: new Date(2020, 1, 22, 13, 25),
     endDate: new Date(2020, 1, 22, 13, 45),
-    id: 10
+    id: 10,
   },
   {
     title: "⏳ Leetcode Challenge!",
@@ -107,7 +107,7 @@ export const appointments = [
       "Let's test your knowledge of Data Structures & Algorithms with a coding challenge! Prize available for the winner!",
     startDate: new Date(2020, 1, 22, 14, 0),
     endDate: new Date(2020, 1, 22, 14, 30),
-    id: 11
+    id: 11,
   },
   {
     title: "🏀 #1 Baylor vs. #3 Kansas Watch Party!",
@@ -116,7 +116,7 @@ export const appointments = [
       "Cheer on our Baylor Bears as they fend to keep their #1 spot agains the Kansas Jayhawks! Game will be live-streamed on the projector for anyone who wants to take a break and watch.",
     startDate: new Date(2020, 1, 22, 11, 0),
     endDate: new Date(2020, 1, 22, 14, 45),
-    id: 12
+    id: 12,
   },
   {
     title: "🍲 Dinner",
@@ -125,7 +125,7 @@ export const appointments = [
       "Last meal of the day! Get some great food to make that final push as we start to wrap up the day.",
     startDate: new Date(2020, 1, 22, 17, 0),
     endDate: new Date(2020, 1, 22, 18, 0),
-    id: 13
+    id: 13,
   },
   {
     title: "✈️ Paper Airplane Competition",
@@ -134,7 +134,7 @@ export const appointments = [
       "Computer Scientists are Engineers, too! Let's put those skills to the test and see who can design the best paper airplane! Prize available for the winner!",
     startDate: new Date(2020, 1, 22, 18, 30),
     endDate: new Date(2020, 1, 22, 19, 0),
-    id: 14
+    id: 14,
   },
   {
     title: "🥤 Cup Stacking Competition",
@@ -143,7 +143,7 @@ export const appointments = [
       "How high can you stack your tower? Team up with a partner and face off with others to see who can build the tallest cup tower in 60 seconds! Prizes available for the winners!",
     startDate: new Date(2020, 1, 22, 15, 30),
     endDate: new Date(2020, 1, 22, 16, 0),
-    id: 15
+    id: 15,
   },
   {
     title: "💾 Submit to DevPost & Finalize Presentations",
@@ -152,7 +152,7 @@ export const appointments = [
       'We and many other hackathons use DevPost to better sort and document the wonderful projects our teams come up with throughout the day. You will simply create an account and create a project under our "Wacode 2020" hackathon page! Also take a chance to polish any slides or rehearse a demo before judges go around and make their final observations!',
     startDate: new Date(2020, 1, 22, 20, 0),
     endDate: new Date(2020, 1, 22, 20, 30),
-    id: 16
+    id: 16,
   },
   {
     title: "🕵️ Judging Period",
@@ -161,7 +161,7 @@ export const appointments = [
       "Judges will go around the room to evaluate the projects you guys have come up with. We will be sure to keep in mind which bracket everyone is competing in.",
     startDate: new Date(2020, 1, 22, 20, 30),
     endDate: new Date(2020, 1, 22, 21, 15),
-    id: 17
+    id: 17,
   },
   {
     title: "🏆 Prize Presentations & Closing Remarks",
@@ -170,7 +170,7 @@ export const appointments = [
       "We say our final words, present our hackathon winners, and say a massive thank you to our participants and sponsors! Thanks for making Wacode 2020 the best one yet! Everyone have a safe trip home!",
     startDate: new Date(2020, 1, 22, 21, 15),
     endDate: new Date(2020, 1, 22, 21, 45),
-    id: 18
+    id: 18,
   },
   {
     title: "🐋 Deployments using Kubernetes feat. Credera",
@@ -179,8 +179,8 @@ export const appointments = [
       "Containerization is cool! Scaling your apps with Kubernetes is even cooler! Come learn the way of the whale with this amazing workshop led by our friends at Credera!",
     startDate: new Date(2020, 1, 22, 16, 0),
     endDate: new Date(2020, 1, 22, 17, 0),
-    id: 19
-  }
+    id: 19,
+  },
 ];
 
 // Wacode 2019 Schedule Data!

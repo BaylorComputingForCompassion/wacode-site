@@ -27,7 +27,7 @@ const torchStyle = {
   width: "90%",
   maxWidth: "400px",
   height: "auto",
-  margin: "20px"
+  margin: "20px",
 };
 
 // Sponsor Links
@@ -95,7 +95,7 @@ function SectionSponsors({ ...props }) {
 }
 
 SectionSponsors.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(sectionInterestedStyle)(SectionSponsors);
