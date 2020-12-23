@@ -42,7 +42,7 @@ function SectionFAQ({ ...props }) {
     <div className="cd-section" {...rest}>
       <div
         className={classes.features5}
-        style={{ backgroundImage: `url(${Background})` }}
+        style={{ backgroundImage: `url(${Background})`, padding: "20px" }}
       >
         <GridContainer>
           <GridItem
@@ -53,10 +53,11 @@ function SectionFAQ({ ...props }) {
           >
             <h2 className={classes.title}>Rules &amp; FAQs</h2>
           </GridItem>
-          <div className={classes.container}>
+          <div className={`${classes.container}`} style={{ padding: 0 }}>
             <GridContainer className={classes.gridContainer}>
               <GridItem sm={12} md={6} lg={4} className={classes.gridItem}>
                 <InfoArea
+                  style={{ padding: 0 }}
                   vertical
                   className={classes.infoArea5}
                   icon={Code}
@@ -64,12 +65,11 @@ function SectionFAQ({ ...props }) {
                   description={
                     <p>
                       A hackathon is best described as an &quot;invention
-                      marathon.&quot; A more well-known concept that is similar
-                      that of a start-up competition. Anyone who has an interest
-                      in innovation can attend to learn, build &amp; share their
-                      creations over the course of an entire day in a relaxed
-                      and welcoming atmosphere. You don&apos;t have to be a
-                      great coder to do well at a hackathon.
+                      marathon.&quot; Anyone who has an interest in innovation
+                      can attend to learn, build &amp; share their creations
+                      over the course of an entire day in a relaxed welcoming
+                      atmosphere. You don&apos;t have to be a great great coder
+                      to do well at a hackathon and have fun!
                     </p>
                   }
                   iconColor="info"
@@ -77,25 +77,25 @@ function SectionFAQ({ ...props }) {
               </GridItem>
               <GridItem sm={12} md={6} lg={4} className={classes.gridItem}>
                 <InfoArea
+                  style={{ padding: 0 }}
                   vertical
                   className={classes.infoArea5}
                   icon={SupervisedUserCircle}
                   title="Who can attend Wacode?"
                   description={
                     <p>
-                      Any community resident or university student over the age
-                      of 18 can participate, regardless of area of study,
-                      background, or skill level. While this event is not an
-                      official MLH sponsored event, we will be requiring all
-                      attendants to abide by the&nbsp;
+                      Any student can participate, regardless of area of study,
+                      background, or skill level. Participants can refer to the
+                      &nbsp;
                       <a
                         href={CodeOfConductLink}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <span style={LinkStyle}>MLH Code of Conduct.</span>
+                        <span style={LinkStyle}>MLH Code of Conduct</span>
                       </a>
-                      &nbsp;The venue does not allow pets of any kind.
+                      for more information. &nbsp;The venue does not allow pets
+                      of any kind.
                     </p>
                   }
                   iconColor="danger"
@@ -103,18 +103,16 @@ function SectionFAQ({ ...props }) {
               </GridItem>
               <GridItem sm={12} md={6} lg={4} className={classes.gridItem}>
                 <InfoArea
+                  style={{ padding: 0 }}
                   vertical
                   className={classes.infoArea5}
                   icon={AttachMoney}
                   title="Will Wacode cost me anything?"
                   description={
                     <p>
-                      Admission to Wacode is completely free for all attendees.
-                      Food and drinks are provided by us through our generous
-                      sponsors &amp; community partners (there will be vegan and
-                      vegetarian options available). Shirts, swag, and any of
-                      the activities hosted at the event are also open to all at
-                      no cost.
+                      Wacode is completely free for all participants! This
+                      includes the event itself as well as any activities and
+                      workshops that are part of it!
                     </p>
                   }
                   iconColor="primary"
@@ -122,6 +120,7 @@ function SectionFAQ({ ...props }) {
               </GridItem>
               <GridItem sm={12} md={6} lg={4} className={classes.gridItem}>
                 <InfoArea
+                  style={{ padding: 0 }}
                   vertical
                   className={classes.infoArea5}
                   icon={ViewCarousel}
@@ -129,83 +128,86 @@ function SectionFAQ({ ...props }) {
                   description={
                     <p>
                       We encourage everyone to work with a team! Teams may
-                      contain up to 5 people. If you don&apos;t have one before
-                      coming to Wacode, no worries! We will have a team-building
-                      session at the beginning of the hacking period.
+                      contain up to 5 people. Don&apos;t worry if you don&apos;t
+                      have one before coming to Wacode! We will have a
+                      team-building session at the beginning of the hacking
+                      period.
                     </p>
                   }
                 />
               </GridItem>
               <GridItem sm={12} md={6} lg={4} className={classes.gridItem}>
                 <InfoArea
+                  style={{ padding: 0 }}
                   vertical
                   className={classes.infoArea5}
                   icon={Work}
-                  title="What should I plan on bringing?"
+                  title="What do I need to participate?"
                   description={
                     <p>
-                      You should bring your computer, chargers, and any other
-                      hardware or software you plan on using. WiFi and outlets
-                      will be provided but it doesn&apos;t hurt to bring an
-                      extra power strip. Wouldn&apos;t be bad idea to bring a
-                      resume to show off to recruiters during the event!
+                      All you need is your computer, a WiFi connection, and any
+                      other hardware or software you plan on using. Please also
+                      have a microphone and optionally a camera prepared in
+                      order talk to your teammates and the event staff. It also
+                      wouldn&apos;t be bad idea to have a resume prepared to
+                      show off to recruiters during the event!
                     </p>
                   }
                 />
               </GridItem>
               <GridItem sm={12} md={6} lg={4} className={classes.gridItem}>
                 <InfoArea
+                  style={{ padding: 0 }}
                   vertical
                   className={classes.infoArea5}
                   icon={Face}
                   title="What if I don’t have a team?"
                   description={
                     <p>
-                      Register anyway! If you want to compete by yourself that’s
-                      fine, or you want a team but don’t have one, we can help
-                      match you with some people the day of the event!
+                      Register anyway! You can choose to compete by yourself or
+                      you can attend the team-building session at the beginning
+                      of the event to find some teammates!
                     </p>
                   }
                 />
               </GridItem>
               <GridItem sm={12} md={6} lg={4} className={classes.gridItem}>
                 <InfoArea
+                  style={{ padding: 0 }}
                   vertical
                   className={classes.infoArea5}
                   icon={Assignment}
-                  title="When does registration close?"
+                  title="When does registration open?"
                   description={
                     <p>
                       We strongly encourage you to register as early as possible
-                      to reserve your shirt and food. All food and swag these
-                      will be given out on a first-come-first-serve basis on the
-                      day of, prioritizing those who have already registered
-                      online. Registration for Wacode Spring 2021 will be open
-                      on February 1st at 9:00am.
+                      to reserve your spot! Registration for Wacode Spring 2021
+                      will open on February 1st at 9:00am.
                     </p>
                   }
                 />
               </GridItem>
               <GridItem sm={12} md={6} lg={4} className={classes.gridItem}>
                 <InfoArea
+                  style={{ padding: 0 }}
                   vertical
                   className={classes.infoArea5}
                   icon={AccessTime}
                   title="What if I can't stay the whole day?"
                   description={
                     <p>
-                      It is NOT required to stay at the venue all day. Come for
-                      an hour! Come for 12! There is no time requirement for
-                      those wanting to participate. To be eligible for prizes
-                      you must attend at least one workshop, and also be present
-                      at the kickoff ceremony and closing remarks, as well as
-                      for the judging period (8:00-9:00pm)
+                      It is NOT required to stay in the Discord all day. Come
+                      for an hour! Come for 12! However, to be eligible for
+                      prizes, you must be present at the kickoff ceremony, the
+                      judging period, and closing ceremony (see the schedule for
+                      more details).
                     </p>
                   }
                 />
               </GridItem>
               <GridItem sm={12} md={6} lg={4} className={classes.gridItem}>
                 <InfoArea
+                  style={{ padding: 0 }}
                   vertical
                   className={classes.infoArea5}
                   icon={Dashboard}
@@ -262,4 +264,6 @@ SectionFAQ.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(featuresStyle)(SectionFAQ);
+export default withStyles({
+  ...featuresStyle,
+})(SectionFAQ);

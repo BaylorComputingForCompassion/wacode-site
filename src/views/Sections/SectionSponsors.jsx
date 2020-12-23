@@ -73,11 +73,11 @@ function SectionSponsors({ ...props }) {
           <h4 className={`${classes.title} ${classes.textCenter}`}>
             <a style={LinkStyle} href={MailToLink}>
               Corporate sponsor interestsed in helping out? Click here to reach
-              out to team!
+              out to the team!
             </a>
           </h4>
         </GridItem>
-        <GridItem xs={12}>
+        {/* <GridItem xs={12}>
           <h4 className={`${classes.title} ${classes.textCenter}`}>
             <a
               style={LinkStyle}
@@ -88,7 +88,7 @@ function SectionSponsors({ ...props }) {
               <img style={torchStyle} src={Torch} alt="Torch Fundraising" />
             </a>
           </h4>
-        </GridItem>
+        </GridItem> */}
       </GridContainer>
     </div>
   );

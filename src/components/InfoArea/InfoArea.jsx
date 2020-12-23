@@ -34,7 +34,7 @@ function InfoArea({ ...props }) {
       break;
   }
   return (
-    <div className={infoAreaClasses}>
+    <div className={infoAreaClasses} style={props.style}>
       <div className={iconWrapper}>{icon}</div>
       <div className={classes.descriptionWrapper}>
         <h4 className={classes.title}>{title}</h4>

@@ -49,10 +49,14 @@ class SectionAboutUs extends React.Component {
               >
                 hackathon
               </a>
-              &nbsp;held at the Blume Conference Center on Baylor
-              University&apos;s campus. We want to bring in students,
+              &nbsp;held at Baylor University. We want to bring in students,
               professionals, hobbyists together to build, collaborate, and share
               their knowledge.
+            </h5>
+            <h5 className={classes.description}>
+              In light of the current situation of our world, Wacode will be{" "}
+              <strong>virtual</strong> this year. The main event will be held in
+              our Discord server!
             </h5>
           </GridItem>
         </GridContainer>

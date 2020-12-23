@@ -60,7 +60,7 @@ function HeaderLinks({ ...props }) {
         </Button>
       </ListItem>
       {/* @TODO Hide when Wacode is over */}
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <Link to="/live">
           <Button
             color={"white"}
@@ -72,7 +72,7 @@ function HeaderLinks({ ...props }) {
             <b style={LinkStyle}>Live!</b>
           </Button>
         </Link>
-      </ListItem>
+      </ListItem> */}
     </List>
   );
 }

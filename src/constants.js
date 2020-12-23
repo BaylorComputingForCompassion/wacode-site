@@ -15,6 +15,7 @@ export const FundraiserLink =
 export const TwitterLink = "https://twitter.com/WacodeTeam";
 export const InstagramLink = "https://www.instagram.com/baylorc4c/";
 export const FacebookLink = "https://www.facebook.com/computingforcompassion";
+export const DiscordLink = "https://discord.gg/fB5TcCSrcM";
 
 // Map Links
 export const ParkingLotMapLink =
