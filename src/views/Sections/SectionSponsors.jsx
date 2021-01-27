@@ -38,25 +38,31 @@ function SectionSponsors({ ...props }) {
   return (
     <div className={classes.section} {...rest}>
       <h2 className={`${classes.title} ${classes.textCenter}`}>
-        A special thanks to our Spring 2020 sponsors!
+        A special thanks to our Spring 2021 sponsors!
       </h2>
       <br />
       <GridContainer>
-        <GridItem xs={12} sm={4}>
+        <GridItem xs={12} sm={6}>
           <a href={CrederaJobsLink} target="_blank" rel="noopener noreferrer">
             <img style={logoStyle} src={Credera} alt="Credera Logo" />
           </a>
         </GridItem>
-        <GridItem xs={12} sm={8}>
-          <a
-            href="https://www.fbfk.law/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img style={logoStyle} src={FBFKLogo} alt="FBFK Logo" />
-          </a>
+        <GridItem
+          xs={12}
+          sm={6}
+          style={{
+            ...LinkStyle,
+            fontFamily: "sans-serif",
+            fontSize: "50px",
+            textAlign: "center",
+            fontWeight: "bold",
+            margin: "auto 0",
+            lineHeight: "100%",
+          }}
+        >
+          NTSI Energy Solutions
         </GridItem>
-        <GridItem xs={12} sm={4}>
+        {/* <GridItem xs={12} sm={4}>
           <img style={logoStyle} src={PMI} alt="PMI Logo" />
         </GridItem>
         <GridItem xs={12} sm={4}>
@@ -68,7 +74,7 @@ function SectionSponsors({ ...props }) {
             src={SweetnessDesertsLogo}
             alt="Sweetness Deserts Logo"
           />
-        </GridItem>
+        </GridItem> */}
         <GridItem xs={12}>
           <h4 className={`${classes.title} ${classes.textCenter}`}>
             <a style={LinkStyle} href={MailToLink}>

@@ -60,7 +60,7 @@ class LandingPage extends React.Component {
                     </span>
                   </a>{" "}
                   <strong>virtual</strong> 24-hour hackathon happening beginning
-                  at <strong>11am CST on Saturday, February 22nd, 2020</strong>{" "}
+                  at <strong>11am CST on Saturday, February 27th, 2021</strong>{" "}
                   at Baylor University! Schedule, prompt, and prize
                   announcements coming soon!
                 </h4>
