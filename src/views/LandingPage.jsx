@@ -36,19 +36,47 @@ const IconStyle = { marginRight: "10px" };
 const LinkStyle = { color: "#3EAD7B" };
 
 class LandingPage extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.changeBannerPos = this.changeBannerPos.bind(this);
+  }
+
   componentDidMount() {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
+
+    window.addEventListener("scroll", this.changeBannerPos);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.changeBannerPos);
+  }
+
+  changeBannerPos() {
+    const { classes } = this.props;
+
+    if (window.pageYOffset > 300) {
+      document
+        .getElementsByClassName("banner")[0]
+        .classList.remove(classes.bannerNotScrolled);
+      document
+        .getElementsByClassName("banner")[0]
+        .classList.add(classes.bannerScrolled);
+    } else {
+      document
+        .getElementsByClassName("banner")[0]
+        .classList.add(classes.bannerNotScrolled);
+      document
+        .getElementsByClassName("banner")[0]
+        .classList.remove(classes.bannerScrolled);
+    }
   }
 
   render() {
     const { classes, ...rest } = this.props;
     return (
-      <div style={{ position: "relative" }}>
-        {/* <div className={classes.banner}>
-          Registration is now open for Wacode 2021! Click{" "}
-          <a href={RegistrationLink}>here</a> to register!
-        </div> */}
+      <div>
         <MainHeader {...rest}>
           <HeaderLinks />
         </MainHeader>
@@ -115,6 +143,12 @@ class LandingPage extends React.Component {
           </div>
         </div>
         <MainFooter />
+        <div
+          className={`${classes.banner} ${classes.bannerNotScrolled} banner`}
+        >
+          Registration is now open for Wacode 2021! Click{" "}
+          <a href={RegistrationLink}>here</a> to register!
+        </div>
       </div>
     );
   }
@@ -142,6 +176,14 @@ export default withStyles({
     color: "white",
     textAlign: "center",
     left: 0,
-    top: 0,
+    position: "fixed",
+    zIndex: 100,
+    transition: "0.5s all",
+  },
+  bannerNotScrolled: {
+    top: "80px",
+  },
+  bannerScrolled: {
+    top: "70px",
   },
 })(LandingPage);

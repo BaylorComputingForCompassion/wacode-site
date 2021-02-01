@@ -93,7 +93,7 @@ function SectionFAQ({ ...props }) {
                         rel="noopener noreferrer"
                       >
                         <span style={LinkStyle}>MLH Code of Conduct</span>
-                      </a>
+                      </a>{" "}
                       for more information. &nbsp;The venue does not allow pets
                       of any kind.
                     </p>

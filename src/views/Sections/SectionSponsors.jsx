@@ -9,12 +9,7 @@ import GridItem from "components/Grid/GridItem.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 
 // Assets
-import Torch from "assets/img/Torch.png";
-import PMI from "assets/img/SponsorLogos/PMI.png";
-import FiveHour from "assets/img/SponsorLogos/5Hour.svg";
 import Credera from "assets/img/SponsorLogos/Credera.png";
-import FBFKLogo from "assets/img/SponsorLogos/FBFKLogo.png";
-import SweetnessDesertsLogo from "assets/img/SponsorLogos/SweetnessDesertsLogo.png";
 
 // Links
 import { FundraiserLink, MailToLink } from "constants.js";
