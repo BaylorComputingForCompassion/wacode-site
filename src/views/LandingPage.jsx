@@ -30,6 +30,7 @@ import {
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 import MainFooter from "components/Footer/MainFooter";
 import MainHeader from "components/Header/MainHeader";
+import { green } from "@material-ui/core/colors";
 const TeamMargin = { marginTop: "-150px" };
 const IconStyle = { marginRight: "10px" };
 const LinkStyle = { color: "#3EAD7B" };
@@ -43,7 +44,11 @@ class LandingPage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
     return (
-      <div>
+      <div style={{ position: "relative" }}>
+        {/* <div className={classes.banner}>
+          Registration is now open for Wacode 2021! Click{" "}
+          <a href={RegistrationLink}>here</a> to register!
+        </div> */}
         <MainHeader {...rest}>
           <HeaderLinks />
         </MainHeader>
@@ -73,7 +78,7 @@ class LandingPage extends React.Component {
                   color="danger"
                 >
                   <i className="fa fa-id-badge" style={IconStyle} />
-                  Pre-register Now!
+                  Register Now!
                 </Button>
                 &nbsp;
                 <Button
@@ -128,5 +133,15 @@ export default withStyles({
       boxShadow:
         "0 14px 26px 0 rgb(114 137 218 / 14%), 0 4px 23px 0px rgb(114 137 218 / 20%), 0 8px 10px 5px rgb(114 137 218 / 12%)",
     },
+  },
+  banner: {
+    width: "100%",
+    height: "50px",
+    lineHeight: "50px",
+    backgroundColor: green["700"],
+    color: "white",
+    textAlign: "center",
+    left: 0,
+    top: 0,
   },
 })(LandingPage);
