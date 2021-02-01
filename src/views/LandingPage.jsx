@@ -181,7 +181,7 @@ export default withStyles({
     transition: "0.5s all",
   },
   bannerNotScrolled: {
-    top: "80px",
+    top: "100px",
   },
   bannerScrolled: {
     top: "70px",
