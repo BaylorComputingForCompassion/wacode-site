@@ -173,6 +173,15 @@ export const appointments = [
     id: 18,
   },
   {
+    title: "🏆 Prize Presentations & Closing Remarks",
+    location: "Blume Conference Center",
+    description:
+      "We say our final words, present our hackathon winners, and say a massive thank you to our participants and sponsors! Thanks for making Wacode 2020 the best one yet! Everyone have a safe trip home!",
+    startDate: new Date(2020, 1, 22, 21, 15),
+    endDate: new Date(2020, 1, 22, 21, 30),
+    id: 18,
+  },
+  {
     title: "🐋 Deployments using Kubernetes feat. Credera",
     location: "Cashion 502",
     description:

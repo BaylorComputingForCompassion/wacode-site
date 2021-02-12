@@ -86,7 +86,7 @@ class LandingPage extends React.Component {
               <GridItem xs={12} sm={8}>
                 <h1 className={classes.title}>Welcome to Wacode!</h1>
                 <h4>
-                  Pre-registration is now open for&nbsp;
+                  Registration is now open for&nbsp;
                   <a href={C4CWebsiteLink}>
                     <span style={LinkStyle}>
                       Computing For Compassion&apos;s
