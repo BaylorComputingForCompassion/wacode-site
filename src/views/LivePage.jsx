@@ -71,7 +71,7 @@ class LivePage extends React.Component {
         </Parallax>
         <div className={`${classes.main} ${classes.mainRaised}`}>
           <div className={classes.container}>
-            <SectionLocation id="venue" />
+            {/* <SectionLocation id="venue" /> */}
             <SectionMainSchedule id="schedule" />
             <SectionPrompts id="prompts" />
             <SectionJudging id="judging" />

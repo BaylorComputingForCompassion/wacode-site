@@ -5,6 +5,7 @@ import {
   DayView,
   Appointments,
   AppointmentTooltip,
+  WeekView
 } from "@devexpress/dx-react-scheduler-material-ui";
 import { ViewState } from "@devexpress/dx-react-scheduler";
 
@@ -71,22 +72,23 @@ class SectionMainSchedule extends React.Component {
       <div className={`${classes.section} cd-section`} {...rest}>
         <h2 className={classes.title}>Main Schedule</h2>
         <GridContainer justify="center">
-          <GridItem xs={10}>
+          <GridItem xs={12}>
             <h5 className={classes.title}>
               Click an event for more info! If you have any questions, ask our
               volunteers!
             </h5>
             <br />
           </GridItem>
-          <GridItem xs={10} className={`${classes.mrAuto} ${classes.mlAuto}`}>
+          <GridItem xs={12} className={`${classes.mrAuto} ${classes.mlAuto}`}>
             <MuiThemeProvider theme={Theme}>
-              <Paper>
+              <Paper style={{ textAlign: "left" }}>
                 <Scheduler data={data}>
-                  <ViewState currentDate="2020-02-22" />
+                  <ViewState currentDate="2021-02-27" />
                   <DayView
-                    startDayHour={7.5}
-                    endDayHour={22}
+                    // startDayHour={7.5}
+                    // endDayHour={25}
                     cellDuration={30}
+                    intervalCount={2}
                   />
                   <Appointments />
                   <AppointmentTooltip
