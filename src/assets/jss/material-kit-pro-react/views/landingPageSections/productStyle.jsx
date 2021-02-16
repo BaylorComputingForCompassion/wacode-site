@@ -21,6 +21,13 @@ const productStyle = {
   },
   description: {
     color: grayColor[0]
+  },
+  apptContentIcon: {
+    display: "flex",
+    color: "rgba(0, 0, 0, 0.54)"
+  },
+  apptRow: {
+    marginBottom: "12px",
   }
 };
 

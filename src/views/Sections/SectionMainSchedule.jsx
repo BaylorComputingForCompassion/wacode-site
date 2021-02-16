@@ -5,7 +5,6 @@ import {
   DayView,
   Appointments,
   AppointmentTooltip,
-  WeekView
 } from "@devexpress/dx-react-scheduler-material-ui";
 import { ViewState } from "@devexpress/dx-react-scheduler";
 
@@ -13,7 +12,7 @@ import { ViewState } from "@devexpress/dx-react-scheduler";
 import Paper from "@material-ui/core/Paper";
 import withStyles from "@material-ui/core/styles/withStyles";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import { green } from "@material-ui/core/colors";
+import { green, orange, red, blue, purple } from "@material-ui/core/colors";
 
 // @material-ui/icons
 import Room from "@material-ui/icons/Room";
@@ -31,14 +30,57 @@ import productStyle from "assets/jss/material-kit-pro-react/views/landingPageSec
 const Theme = createMuiTheme({ palette: { type: "light", primary: green } });
 const PaddingZeroStyle = { paddingLeft: "0" };
 
+// Event Colors
+const GROUP_COLORS = {
+  "Main Events": purple[300],
+  Activities: blue[400],
+  Workshops: green[300],
+  Events: red[300],
+  "Sponsor Workshops": orange[400],
+};
+const GROUP_COLORS_SELECTED = {
+  "Main Events": purple[400],
+  Activities: blue[500],
+  Workshops: green[400],
+  Events: red[400],
+  "Sponsor Workshops": orange[500],
+};
+
+const groupColors = {
+  eventThing: {
+    backgroundColor: ({ data }) => GROUP_COLORS[data.group],
+    "&:hover": {
+      backgroundColor: ({ data }) => GROUP_COLORS_SELECTED[data.group],
+    },
+  },
+};
+
+const Appointment = withStyles(groupColors)(
+  ({ children, data, classes, ...restProps }) => (
+    <Appointments.Appointment
+      {...restProps}
+      data={data}
+      className={classes?.eventThing}
+    >
+      {children}
+    </Appointments.Appointment>
+  )
+);
+
 const Content = withStyles(productStyle, { name: "Content" })(
   ({ classes, appointmentData, ...restProps }) => (
     <AppointmentTooltip.Content
       {...restProps}
       appointmentData={appointmentData}
     >
-      <GridContainer className={`${classes.mrAuto} ${classes.mlAuto}`}>
-        <GridItem xs={2} className={classes.textCenter}>
+      <GridContainer
+        className={`${classes.mrAuto} ${classes.mlAuto} ${classes.apptRow}`}
+      >
+        <GridItem
+          xs={2}
+          className={`${classes.textCenter} ${classes.apptContentIcon}`}
+          justify="center"
+        >
           <Room className={classes.icon} />
         </GridItem>
         <GridItem xs={10} style={PaddingZeroStyle}>
@@ -46,7 +88,11 @@ const Content = withStyles(productStyle, { name: "Content" })(
         </GridItem>
       </GridContainer>
       <GridContainer className={`${classes.mrAuto} ${classes.mlAuto}`}>
-        <GridItem xs={2} className={classes.textCenter}>
+        <GridItem
+          xs={2}
+          className={`${classes.textCenter} ${classes.apptContentIcon}`}
+          justify="center"
+        >
           <SubjectIcon className={classes.icon} />
         </GridItem>
         <GridItem xs={10} style={PaddingZeroStyle}>
@@ -87,10 +133,10 @@ class SectionMainSchedule extends React.Component {
                   <DayView
                     // startDayHour={7.5}
                     // endDayHour={25}
-                    cellDuration={30}
+                    cellDuration={60}
                     intervalCount={2}
                   />
-                  <Appointments />
+                  <Appointments appointmentComponent={Appointment} />
                   <AppointmentTooltip
                     showCloseButton
                     contentComponent={Content}

@@ -8,6 +8,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 27, 10, 30),
     endDate: new Date(2021, 1, 27, 11, 0),
     id: 0,
+    group: "Activities",
   },
   {
     title: "Opening Ceremony",
@@ -17,6 +18,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 27, 11, 0),
     endDate: new Date(2021, 1, 27, 11, 30),
     id: 1,
+    group: "Main Events",
   },
   {
     title: "Team Building",
@@ -26,6 +28,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 27, 11, 30),
     endDate: new Date(2021, 1, 27, 12, 0),
     id: 2,
+    group: "Events",
   },
   {
     title: "Intro to Git Worshop",
@@ -35,6 +38,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 27, 12, 30),
     endDate: new Date(2021, 1, 27, 13, 30),
     id: 3,
+    group: "Workshops",
   },
   {
     title: "Intro to Web Development Worshop",
@@ -44,6 +48,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 27, 13, 30),
     endDate: new Date(2021, 1, 27, 14, 30),
     id: 4,
+    group: "Workshops",
   },
   {
     title: "Mobile Development Worshop (featuring Credera)",
@@ -52,6 +57,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 27, 15, 0),
     endDate: new Date(2021, 1, 27, 16, 0),
     id: 5,
+    group: "Sponsor Workshops",
   },
   {
     title: "AWS Worshop (featuring Amazon AWS)",
@@ -60,6 +66,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 27, 16, 30),
     endDate: new Date(2021, 1, 27, 17, 30),
     id: 6,
+    group: "Sponsor Workshops",
   },
   {
     title: "Dinner Meet & Greet",
@@ -68,6 +75,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 27, 18, 0),
     endDate: new Date(2021, 1, 27, 18, 30),
     id: 7,
+    group: "Events",
   },
   {
     title: "Programming Contest",
@@ -77,6 +85,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 27, 19, 30),
     endDate: new Date(2021, 1, 27, 22, 30),
     id: 8,
+    group: "Activities",
   },
   {
     title: "Jackbox Party Pack",
@@ -86,15 +95,17 @@ export const appointments = [
     startDate: new Date(2021, 1, 27, 18, 30),
     endDate: new Date(2021, 1, 27, 19, 30),
     id: 9,
+    group: "Activities",
   },
   {
-    title: "Introduction to Machine Learning",
+    title: "Intro to Machine Learning",
     location: "Zoom",
     description:
       "Come learn about some basic machine learning using Tensorflow and Python!",
     startDate: new Date(2021, 1, 27, 19, 30),
     endDate: new Date(2021, 1, 27, 20, 30),
     id: 10,
+    group: "Workshops",
   },
   {
     title: "Jeopardy!",
@@ -104,6 +115,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 27, 21, 0),
     endDate: new Date(2021, 1, 27, 22, 0),
     id: 11,
+    group: "Activities",
   },
   {
     title: "Bingo",
@@ -113,6 +125,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 27, 22, 0),
     endDate: new Date(2021, 1, 27, 23, 0),
     id: 12,
+    group: "Activities",
   },
   {
     title: "Late Night Movie",
@@ -121,6 +134,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 27, 23, 0),
     endDate: new Date(2021, 1, 28, 0, 30),
     id: 13,
+    group: "Activities",
   },
   {
     title: "Among Us",
@@ -130,6 +144,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 28, 0, 30),
     endDate: new Date(2021, 1, 28, 1, 30),
     id: 14,
+    group: "Acitivites",
   },
   {
     title: "Breakfast Meet & Greet",
@@ -138,6 +153,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 28, 6, 0),
     endDate: new Date(2021, 1, 28, 6, 30),
     id: 15,
+    group: "Events",
   },
   {
     title: "Submission & Presentation Workshop",
@@ -147,6 +163,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 28, 6, 30),
     endDate: new Date(2021, 1, 28, 7, 30),
     id: 16,
+    group: "Workshops",
   },
   {
     title: "Pictionary",
@@ -156,6 +173,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 28, 8, 0),
     endDate: new Date(2021, 1, 28, 9, 0),
     id: 17,
+    group: "Activities",
   },
   {
     title: "Presentation Practice",
@@ -165,6 +183,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 28, 10, 0),
     endDate: new Date(2021, 1, 28, 11, 0),
     id: 18,
+    group: "Events",
   },
   {
     title: "Judging Period",
@@ -174,6 +193,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 28, 12, 0),
     endDate: new Date(2021, 1, 28, 13, 0),
     id: 19,
+    group: "Main Events",
   },
   {
     title: "Submission Review Stream",
@@ -183,6 +203,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 28, 12, 30),
     endDate: new Date(2021, 1, 28, 13, 30),
     id: 20,
+    group: "Main Events",
   },
   {
     title: "Lunch Meet & Greet",
@@ -191,6 +212,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 28, 13, 0),
     endDate: new Date(2021, 1, 28, 13, 30),
     id: 21,
+    group: "Events",
   },
   {
     title: "Closing Ceremony",
@@ -200,6 +222,7 @@ export const appointments = [
     startDate: new Date(2021, 1, 28, 13, 30),
     endDate: new Date(2021, 1, 28, 14, 0),
     id: 22,
+    group: "Main Events",
   },
 ];
 
