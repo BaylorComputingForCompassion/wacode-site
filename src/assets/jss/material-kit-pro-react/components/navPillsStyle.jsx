@@ -63,7 +63,10 @@ const navPillsStyle = theme => ({
     float: "none !important",
     "& + button": {
       margin: "10px 0"
-    }
+    },
+    "& ": {
+      margin: "10px 0"
+    },
   },
   labelContainer: {
     padding: "0!important",

@@ -31,73 +31,74 @@ class SectionPrompts extends React.Component {
               }}
               tabs={[
                 {
-                  tabButton: "Road Safety",
+                  tabButton: "Mental Health",
                   tabIcon: DirectionsCarIcon,
                   tabContent: (
                     <span style={{ color: "black", textAlign: "left" }}>
                       <p>
-                        In 2013, low- and middle-income countries had higher
-                        road traffic fatality rates per 100 000 population (24.1
-                        and 18.4, respectively) compared to high-income
-                        countries (9.2). The African region had the highest road
-                        traffic fatality rate, at 26.6, while the European
-                        region had the lowest rate, at 9.3.
+                        Mental health is one of the most important concerns of
+                        our generation. According to Mental Health America,
                       </p>
-                      <br />
+                      <ul>
+                        <li style={{ fontSize: "14px" }}>
+                          Nearly 1 in 5 American adults will have a diagnosable
+                          mental health condition in any given year.
+                        </li>
+                        <li style={{ fontSize: "14px" }}>
+                          46 percent of Americans will meet the criteria for a
+                          diagnosable mental health condition sometime in their
+                          life, and half of those people will develop conditions
+                          by the age of 14.
+                        </li>
+                      </ul>
                       <p>
-                        Your task is to create a product that can help to make
-                        the roads a safer place for drivers around the world.
+                        Create a solution that promotes the awareness of mental
+                        health issues or aids people in their management of
+                        their own mental health.
                       </p>
                     </span>
                   ),
                 },
                 {
-                  tabButton: "Sustainability",
+                  tabButton: "Resource Scarcity",
                   tabIcon: PublicIcon,
                   tabContent: (
                     <span style={{ color: "black", textAlign: "left" }}>
                       <p>
-                        Sustainability in the environment is the defining issue
-                        of our time and we are at a defining moment. From
-                        shifting weather patterns that threaten food production,
-                        to rising sea levels that increase the risk of
-                        catastrophic flooding, the impacts of the lack of
-                        environmental sustainability are global in scope and
-                        unprecedented.
+                        Due to the COVID-19 pandemic, recent major winter
+                        storms, and other natural disasters, many people have
+                        been struggling to get food, water, medical care, labor,
+                        vaccinations, and other resources for themselves and
+                        their families.
                       </p>
-                      <br />
                       <p>
-                        Your task is to create a product that can help promote,
-                        create, or improve existing solutions for a more
-                        environmentally sustainable society.
+                        Create a solution that helps families find the resources
+                        that they need, promotes conservation of limited
+                        resources, or assists in the allocation of these
+                        resources.
                       </p>
                     </span>
                   ),
                 },
                 {
-                  tabButton: "Violence Prevention",
+                  tabButton: "Accessibility",
                   tabIcon: PeopleIcon,
                   tabContent: (
                     <span style={{ color: "black", textAlign: "left" }}>
                       <p>
-                        Homicide estimates: Globally, interpersonal violence
-                        resulted in some 475 000 homicides in 2012 (overall rate
-                        of 6.7 per 100 000 population), of which 60% were in
-                        males aged 15-44 years, making homicide the third
-                        leading cause of death for males in this age group. In
-                        addition, of all adults, one in four report having been
-                        physically abused as children; one in five women and one
-                        in 10 men report having been sexually abused as
-                        children; one in three women report having been victims
-                        of physical and/or sexual intimate partner violence in
-                        their lifetime, and one in 17 older people report being
-                        abused in the past month.
+                        Even now in our highly innovative society, accessibility
+                        is often put on the back burner, both in the virtual and
+                        physical worlds. There are many types of disabilities,
+                        each with their own specific needs for those afflicted
+                        to function as well as possible in a society not always
+                        able to properly support them. Indiana University lists
+                        some of these to be vision, mobility, auditory,
+                        neurological, cognitive, medical, and psychological
+                        disabilities.
                       </p>
-                      <br />
                       <p>
-                        Your task is to create a product that can help with
-                        various violence reduction programs around our
-                        community.
+                        Create a solution that promotes, aids in, or expands
+                        accessibility, either in the physical or digital world.
                       </p>
                     </span>
                   ),

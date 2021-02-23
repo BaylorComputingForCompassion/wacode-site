@@ -10,6 +10,7 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 
 // Assets
 import Credera from "assets/img/SponsorLogos/Credera.png";
+import FBFK from "assets/img/SponsorLogos/FBFKLogo.png";
 
 // Links
 import { FundraiserLink, MailToLink } from "constants.js";
@@ -27,6 +28,7 @@ const torchStyle = {
 
 // Sponsor Links
 const CrederaJobsLink = "https://www.credera.com/jobs/";
+const FBFKLink = "https://www.fbfk.law/";
 
 function SectionSponsors({ ...props }) {
   const { classes, ...rest } = props;
@@ -37,7 +39,7 @@ function SectionSponsors({ ...props }) {
       </h2>
       <br />
       <GridContainer>
-        <GridItem xs={12} sm={6}>
+        <GridItem xs={12} sm={6} md={4}>
           <a href={CrederaJobsLink} target="_blank" rel="noopener noreferrer">
             <img style={logoStyle} src={Credera} alt="Credera Logo" />
           </a>
@@ -45,6 +47,17 @@ function SectionSponsors({ ...props }) {
         <GridItem
           xs={12}
           sm={6}
+          md={4}
+          style={{ display: "flex", alignItems: "center" }}
+        >
+          <a href={FBFKLink} target="_blank" rel="noopener noreferrer">
+            <img style={logoStyle} src={FBFK} alt="FBFK Logo" />
+          </a>
+        </GridItem>
+        <GridItem
+          xs={12}
+          sm={6}
+          md={4}
           style={{
             ...LinkStyle,
             fontFamily: "sans-serif",

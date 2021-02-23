@@ -21,7 +21,6 @@ import SectionSponsors from "./Sections/SectionSponsors";
 import {
   TwitterLink,
   C4CWebsiteLink,
-  RegistrationLink,
   LandingBackground,
   DiscordLink,
 } from "constants.js";
@@ -30,7 +29,7 @@ import {
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 import MainFooter from "components/Footer/MainFooter";
 import MainHeader from "components/Header/MainHeader";
-import { green } from "@material-ui/core/colors";
+import { red } from "@material-ui/core/colors";
 const TeamMargin = { marginTop: "-150px" };
 const IconStyle = { marginRight: "10px" };
 const LinkStyle = { color: "#3EAD7B" };
@@ -85,7 +84,7 @@ class LandingPage extends React.Component {
             <GridContainer>
               <GridItem xs={12} sm={8}>
                 <h1 className={classes.title}>Welcome to Wacode!</h1>
-                <h4>
+                {/* <h4>
                   Registration is now open for&nbsp;
                   <a href={C4CWebsiteLink}>
                     <span style={LinkStyle}>
@@ -96,10 +95,21 @@ class LandingPage extends React.Component {
                   at <strong>11am CST on Saturday, February 27th, 2021</strong>{" "}
                   at Baylor University! Schedule, prompt, and prize
                   announcements coming soon!
+                </h4> */}
+                <h4>
+                  Wacode is&nbsp;
+                  <a href={C4CWebsiteLink}>
+                    <span style={LinkStyle}>
+                      Computing For Compassion&apos;s
+                    </span>
+                  </a>{" "}
+                  annual 24-hour hackathon at Baylor University! Unfortunately,
+                  Wacode 2021 has been canceled due to unforseen circumstances,
+                  but check back next year for Wacode 2022!
                 </h4>
               </GridItem>
               <GridItem xs={12} sm={8}>
-                <Button
+                {/*<Button
                   href={RegistrationLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -107,7 +117,7 @@ class LandingPage extends React.Component {
                 >
                   <i className="fa fa-id-badge" style={IconStyle} />
                   Register Now!
-                </Button>
+                </Button>*/}
                 &nbsp;
                 <Button
                   href={DiscordLink}
@@ -146,8 +156,10 @@ class LandingPage extends React.Component {
         <div
           className={`${classes.banner} ${classes.bannerNotScrolled} banner`}
         >
-          Registration is now open for Wacode 2021! Click{" "}
-          <a href={RegistrationLink}>here</a> to register!
+          Due to unforseen circumstances, Wacode 2021 has unfortunately been
+          canceled. Come back for Wacode 2022!
+          {/* Registration is now open for Wacode 2021! Click{" "}
+          <a href={RegistrationLink}>here</a> to register! */}
         </div>
       </div>
     );
@@ -172,7 +184,7 @@ export default withStyles({
     width: "100%",
     height: "50px",
     lineHeight: "50px",
-    backgroundColor: green["700"],
+    backgroundColor: red["700"],
     color: "white",
     textAlign: "center",
     left: 0,
